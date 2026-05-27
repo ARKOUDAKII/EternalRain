@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://hjiih5tvmal7"]
+
+[ext_resource type="Script" uid="uid://cuko5sm6xs4x" path="res://scripts/skill_tree_button.gd" id="1_ma7fo"]
+
+[node name="Button" type="Button" unique_id=1222500443]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("1_ma7fo")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

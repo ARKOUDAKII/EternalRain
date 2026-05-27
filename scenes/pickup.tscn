@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://dfw004y1jiee0"]
+
+[ext_resource type="Script" uid="uid://e0bhdbmpduiq" path="res://scripts/pickup.gd" id="1_pg2rt"]
+[ext_resource type="Texture2D" uid="uid://bkrrc42i1o6l4" path="res://assets/PickupSpriteSheet.png" id="2_7cqbe"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gyxxy"]
+radius = 5.3851647
+
+[node name="Node2D" type="Node2D" unique_id=816661475]
+self_modulate = Color(1.224127, 1.224127, 1.224127, 1)
+z_index = 1
+script = ExtResource("1_pg2rt")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=664580224]
+z_as_relative = false
+texture_filter = 1
+position = Vector2(-8, -8)
+texture = ExtResource("2_7cqbe")
+centered = false
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=923607313]
+collision_layer = 0
+collision_mask = 128
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=520756373]
+shape = SubResource("CircleShape2D_gyxxy")
+
+[node name="Label" type="Label" parent="." unique_id=1530494388]
+visible = false
+offset_left = -4.0
+offset_top = -46.0
+offset_right = 5.0
+offset_bottom = -23.0
+text = "E"
+
+[connection signal="body_shape_entered" from="Area2D" to="." method="_on_area_2d_body_shape_entered"]
+[connection signal="body_shape_exited" from="Area2D" to="." method="_on_area_2d_body_shape_exited"]

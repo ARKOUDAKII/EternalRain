@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://b5dhk0hadbjxp"]
+
+[ext_resource type="PackedScene" uid="uid://hjiih5tvmal7" path="res://scenes/sk_button.tscn" id="1_xjm4f"]
+
+[node name="Node2D" type="Node2D" unique_id=1325868568]
+position = Vector2(10.000006, 37)
+scale = Vector2(0.6411964, 0.6411964)
+
+[node name="Button" parent="." unique_id=1222500443 instance=ExtResource("1_xjm4f")]
+offset_left = 1.5595932
+offset_top = -4.6787534
+offset_right = 48.559593
+offset_bottom = 26.321247
+text = "Dash"
+skill = "dash"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" parent="." unique_id=53379554 instance=ExtResource("1_xjm4f")]
+offset_left = 62.383377
+offset_top = -3.1191688
+offset_right = 70.38338
+offset_bottom = 4.8808312
+text = "Fireball"
+skill = "fireball"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button3" parent="." unique_id=345532641 instance=ExtResource("1_xjm4f")]
+offset_left = 141.92218
+offset_top = -3.1191688
+offset_right = 196.92218
+offset_bottom = 27.88083
+text = "Sneak"
+skill = "sneak"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button4" parent="." unique_id=1420176791 instance=ExtResource("1_xjm4f")]
+offset_left = 9.357512
+offset_top = 53.02587
+offset_right = 98.35751
+offset_bottom = 84.02588
+text = "Long Dash"
+skill = "ldash"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button5" parent="." unique_id=1477529228 instance=ExtResource("1_xjm4f")]
+offset_left = 110.7305
+offset_top = 54.58546
+offset_right = 222.7305
+offset_bottom = 85.585464
+text = "Charge Shoot"
+skill = "chshoot"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button6" parent="." unique_id=3230552 instance=ExtResource("1_xjm4f")]
+offset_left = 243.29517
+offset_top = 56.14504
+offset_right = 251.29517
+offset_bottom = 64.145035
+text = "Climb"
+skill = "climb"
+metadata/_edit_use_anchors_ = true
+
+[node name="Line2D" type="Line2D" parent="." unique_id=380138422]
+position = Vector2(26.512938, 24.953352)
+rotation = -0.45526826
+scale = Vector2(0.22489351, 0.97187155)
+points = PackedVector2Array(34.06138, -1.5014076, 38.669823, 40.115047)
+width = 1.0
+
+[node name="Line2D2" type="Line2D" parent="." unique_id=119579193]
+scale = Vector2(0.9473558, 0.9461016)
+points = PackedVector2Array(99.8134, 26.512934, 165.31595, 59.26421)
+width = 1.0
+
+[node name="Line2D3" type="Line2D" parent="." unique_id=1356088262]
+points = PackedVector2Array(182.47137, 26.512934, 268.2485, 60.82379)
+width = 1.0
+
+[node name="Label" type="Label" parent="." unique_id=409531623]
+offset_left = 1.5595703
+offset_top = -46.787533
+offset_right = 103.55957
+offset_bottom = -23.787533
+text = "Skill Points: 0"
+
+[node name="Label2" type="Label" parent="." unique_id=178419672]
+offset_left = 132.56467
+offset_top = -45.227947
+offset_right = 172.56467
+offset_bottom = -22.227947

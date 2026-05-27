@@ -1,0 +1,14 @@
+Timer
+CollisionShape2D
+Area2D
+Label
+Camera2D
+CharacterBody2D
+AnimatedSprite2D
+AnimationTree
+PointLight2D
+Node2D
+CanvasModulate
+Sprite2D
+RigidBody2D
+NavigationAgent2D

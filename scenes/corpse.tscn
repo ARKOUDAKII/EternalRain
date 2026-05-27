@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://b2m7yq8t5pphq"]
+
+[ext_resource type="Texture2D" uid="uid://cr45krhkw8sqy" path="res://assets/spritesheets/disciple-45x51.png" id="1_liquy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_liquy"]
+size = Vector2(28, 18)
+
+[node name="RigidBody2D" type="RigidBody2D" unique_id=1932274536]
+collision_layer = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2000560894]
+texture_filter = 1
+position = Vector2(0, -7)
+texture = ExtResource("1_liquy")
+region_enabled = true
+region_rect = Rect2(90.59056, 120, 33.60106, 33)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=994045370]
+shape = SubResource("RectangleShape2D_liquy")

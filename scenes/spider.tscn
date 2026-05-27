@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://qupli41dgija"]
+
+[ext_resource type="Script" uid="uid://cb37q2ee1ge33" path="res://scripts/spider.gd" id="1_c7em6"]
+[ext_resource type="Texture2D" uid="uid://dgokkc6wdu1i4" path="res://assets/spider.png" id="2_algeo"]
+[ext_resource type="Texture2D" uid="uid://b17wimhekaqvm" path="res://assets/DeathAnimation.png" id="2_k5hg5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_algeo"]
+size = Vector2(20, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_txxy0"]
+atlas = ExtResource("2_k5hg5")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wdplg"]
+atlas = ExtResource("2_k5hg5")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wj5t3"]
+atlas = ExtResource("2_k5hg5")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wghsh"]
+atlas = ExtResource("2_k5hg5")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k5hg5"]
+atlas = ExtResource("2_algeo")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d613k"]
+atlas = ExtResource("2_algeo")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_evcmw"]
+atlas = ExtResource("2_algeo")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_047qd"]
+atlas = ExtResource("2_algeo")
+region = Rect2(160, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wj5t3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_txxy0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wdplg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wj5t3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wghsh")
+}],
+"loop": true,
+"name": &"DEATH",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k5hg5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d613k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_evcmw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_047qd")
+}],
+"loop": true,
+"name": &"IDLE",
+"speed": 8.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_algeo"]
+font_size = 8
+
+[node name="Spider" type="CharacterBody2D" unique_id=171539743]
+collision_layer = 2
+script = ExtResource("1_c7em6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=99053484]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_algeo")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1674155737]
+texture_filter = 1
+texture_repeat = 1
+sprite_frames = SubResource("SpriteFrames_wj5t3")
+animation = &"IDLE"
+autoplay = "IDLE"
+
+[node name="Label" type="Label" parent="." unique_id=106109155]
+offset_left = -12.0
+offset_top = -14.0
+offset_right = 15.0
+offset_bottom = -2.0
+text = "HP:100"
+label_settings = SubResource("LabelSettings_algeo")
+
+[node name="DeathTimer" type="Timer" parent="." unique_id=170482247]
+one_shot = true
+
+[connection signal="timeout" from="DeathTimer" to="." method="_on_death_timer_timeout"]

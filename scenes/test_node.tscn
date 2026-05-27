@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cal7gddortyj7"]
+
+[ext_resource type="PackedScene" uid="uid://5s0njsnonv17" path="res://scenes/equipment_handler.tscn" id="2_wvxne"]
+
+[node name="TestNode" type="Node2D" unique_id=1636168437]
+
+[node name="equipment_handler" parent="." unique_id=2103546833 instance=ExtResource("2_wvxne")]

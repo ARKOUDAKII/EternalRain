@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://c7nww5okfgjva"]
+
+[ext_resource type="Texture2D" uid="uid://bhc0kkhq4n2f6" path="res://assets/slime_monster_spritesheet.png" id="1_7p1mj"]
+[ext_resource type="Script" uid="uid://dijh6b1vyq650" path="res://scripts/enemy.gd" id="1_md0e3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ra3w"]
+size = Vector2(10, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_md0e3"]
+atlas = ExtResource("1_7p1mj")
+region = Rect2(0, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ra3w"]
+atlas = ExtResource("1_7p1mj")
+region = Rect2(24, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5uy6h"]
+atlas = ExtResource("1_7p1mj")
+region = Rect2(48, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c4w8v"]
+atlas = ExtResource("1_7p1mj")
+region = Rect2(24, 48, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xwavj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_md0e3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ra3w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5uy6h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c4w8v")
+}],
+"loop": true,
+"name": &"IDLE",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_md0e3"]
+size = Vector2(16, 12)
+
+[sub_resource type="LabelSettings" id="LabelSettings_md0e3"]
+font_size = 8
+
+[node name="Enemy" type="CharacterBody2D" unique_id=1671774039]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(0, -2)
+collision_layer = 2
+script = ExtResource("1_md0e3")
+hp = 100.0
+speed = 100.0
+dir = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=21026462]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_4ra3w")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=601004043]
+position = Vector2(0, -4)
+scale = Vector2(0.87499994, 0.87499994)
+sprite_frames = SubResource("SpriteFrames_xwavj")
+animation = &"IDLE"
+autoplay = "IDLE"
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=2093224713]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=1827830938]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_md0e3")
+
+[node name="Label" type="Label" parent="." unique_id=330519539]
+offset_left = -13.0
+offset_top = -24.0
+offset_right = 14.0
+offset_bottom = -12.0
+text = "HP:100"
+label_settings = SubResource("LabelSettings_md0e3")
+
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]

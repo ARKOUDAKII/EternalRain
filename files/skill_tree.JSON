@@ -1,0 +1,37 @@
+{
+	"locked": {
+
+	},
+	"unlocked": {
+		"chshoot": {
+			"cost": 1.0,
+			"pre": [
+				"fireball"
+			]
+		},
+		"climb": {
+			"cost": 1.0,
+			"pre": [
+				"sneak"
+			]
+		},
+		"dash": {
+			"cost": 1.0,
+			"pre": []
+		},
+		"fireball": {
+			"cost": 1.0,
+			"pre": []
+		},
+		"ldash": {
+			"cost": 1.0,
+			"pre": [
+				"dash"
+			]
+		},
+		"sneak": {
+			"cost": 1.0,
+			"pre": []
+		}
+	}
+}

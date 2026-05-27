@@ -1,0 +1,151 @@
+[gd_scene format=3 uid="uid://d1gvmenq803ut"]
+
+[ext_resource type="Script" uid="uid://dxglqgoutqrlg" path="res://scripts/bat_2_0.gd" id="1_vccp3"]
+[ext_resource type="Texture2D" uid="uid://b17wimhekaqvm" path="res://assets/DeathAnimation.png" id="2_k3wwf"]
+[ext_resource type="Texture2D" uid="uid://cempvp1gs8ata" path="res://assets/BobTheBad(Hurt).png" id="3_x6qy0"]
+[ext_resource type="Texture2D" uid="uid://fa1jx0774tcu" path="res://assets/BobTheBad(Bat).png" id="4_v3u4t"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_of3th"]
+atlas = ExtResource("2_k3wwf")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lbi36"]
+atlas = ExtResource("2_k3wwf")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_434xc"]
+atlas = ExtResource("2_k3wwf")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ns1wm"]
+atlas = ExtResource("2_k3wwf")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m4ua1"]
+atlas = ExtResource("3_x6qy0")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o7204"]
+atlas = ExtResource("3_x6qy0")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s5xqj"]
+atlas = ExtResource("3_x6qy0")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vxv1v"]
+atlas = ExtResource("3_x6qy0")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_enfl2"]
+atlas = ExtResource("4_v3u4t")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a2qpg"]
+atlas = ExtResource("4_v3u4t")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d88th"]
+atlas = ExtResource("3_x6qy0")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vwhlu"]
+atlas = ExtResource("3_x6qy0")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tbyg2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_of3th")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lbi36")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_434xc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ns1wm")
+}],
+"loop": true,
+"name": &"DEATH",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m4ua1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o7204")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s5xqj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vxv1v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_enfl2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a2qpg")
+}],
+"loop": true,
+"name": &"IDLE",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d88th")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vwhlu")
+}],
+"loop": true,
+"name": &"SLEEP",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_x6qy0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_k3wwf"]
+radius = 115.15642
+
+[node name="wip" type="CharacterBody2D" unique_id=751953882]
+collision_layer = 2
+script = ExtResource("1_vccp3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=508596552]
+sprite_frames = SubResource("SpriteFrames_tbyg2")
+animation = &"IDLE"
+autoplay = "IDLE"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1006501573]
+shape = SubResource("CircleShape2D_x6qy0")
+
+[node name="DetectionArea" type="Area2D" parent="." unique_id=1533602562]
+collision_layer = 0
+collision_mask = 129
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea" unique_id=2096546464]
+shape = SubResource("CircleShape2D_k3wwf")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=367049041]
+
+[node name="Label" type="Label" parent="." unique_id=689231159]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="DetectionCooldown" type="Timer" parent="." unique_id=1029900875]
+
+[node name="SleepCooldown" type="Timer" parent="." unique_id=1234469939]
+
+[node name="DeathTimer" type="Timer" parent="." unique_id=217095158]
+
+[connection signal="body_shape_entered" from="DetectionArea" to="." method="_on_detection_area_body_shape_entered"]
+[connection signal="body_shape_exited" from="DetectionArea" to="." method="_on_detection_area_body_shape_exited"]
+[connection signal="target_reached" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_target_reached"]
+[connection signal="timeout" from="DetectionCooldown" to="." method="_on_detection_cooldown_timeout"]
+[connection signal="timeout" from="SleepCooldown" to="." method="_on_sleep_cooldown_timeout"]
+[connection signal="timeout" from="DeathTimer" to="." method="_on_death_timer_timeout"]

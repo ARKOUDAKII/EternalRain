@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://147x7s0x1qi4"]
+
+[ext_resource type="Script" uid="uid://b3mkdypuy5jfb" path="res://scripts/skill_tree.gd" id="1_ty3n3"]
+[ext_resource type="PackedScene" uid="uid://b5dhk0hadbjxp" path="res://scenes/skill_tree_menu.tscn" id="2_tnam6"]
+
+[node name="skill_tree" type="Node2D" unique_id=200024188 node_paths=PackedStringArray("menu")]
+z_index = 2
+script = ExtResource("1_ty3n3")
+menu = NodePath("menu")
+
+[node name="menu" parent="." unique_id=1325868568 instance=ExtResource("2_tnam6")]
+visible = false

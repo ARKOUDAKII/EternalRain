@@ -1,0 +1,185 @@
+[gd_scene format=3 uid="uid://dnhdjrv4glt8j"]
+
+[ext_resource type="Script" uid="uid://c1fyfwtfhnox" path="res://scripts/bat.gd" id="1_48wkk"]
+[ext_resource type="Texture2D" uid="uid://fa1jx0774tcu" path="res://assets/BobTheBad(Bat).png" id="1_uhqni"]
+[ext_resource type="Texture2D" uid="uid://cempvp1gs8ata" path="res://assets/BobTheBad(Hurt).png" id="2_cnldk"]
+[ext_resource type="Texture2D" uid="uid://b17wimhekaqvm" path="res://assets/DeathAnimation.png" id="2_ss3tx"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_cnldk"]
+font_size = 8
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_67y1s"]
+atlas = ExtResource("2_ss3tx")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p5otw"]
+atlas = ExtResource("2_ss3tx")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vjjhm"]
+atlas = ExtResource("2_ss3tx")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n8eff"]
+atlas = ExtResource("2_ss3tx")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rrah6"]
+atlas = ExtResource("2_ss3tx")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cnldk"]
+atlas = ExtResource("1_uhqni")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_48wkk"]
+atlas = ExtResource("1_uhqni")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ss3tx"]
+atlas = ExtResource("1_uhqni")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lv0ya"]
+atlas = ExtResource("1_uhqni")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5fn3r"]
+atlas = ExtResource("1_uhqni")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8qtcx"]
+atlas = ExtResource("1_uhqni")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x4bhu"]
+atlas = ExtResource("2_cnldk")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k0o7o"]
+atlas = ExtResource("2_cnldk")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x4bhu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_67y1s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p5otw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vjjhm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n8eff")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rrah6")
+}],
+"loop": true,
+"name": &"DEATH",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cnldk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_48wkk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ss3tx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lv0ya")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5fn3r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8qtcx")
+}],
+"loop": true,
+"name": &"IDLE",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x4bhu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k0o7o")
+}],
+"loop": true,
+"name": &"SLEEP",
+"speed": 2.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cnldk"]
+radius = 7.071068
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_48wkk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ss3tx"]
+radius = 128.19127
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1738126551]
+collision_layer = 2
+script = ExtResource("1_48wkk")
+
+[node name="Label" type="Label" parent="." unique_id=1220791705]
+offset_left = -17.0
+offset_top = -17.5
+offset_right = 17.0
+offset_bottom = -5.5
+text = "HP:100.0"
+label_settings = SubResource("LabelSettings_cnldk")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=1838163924]
+simplify_path = true
+debug_path_custom_color = Color(1, 0, 0, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=550433649]
+sprite_frames = SubResource("SpriteFrames_x4bhu")
+animation = &"IDLE"
+autoplay = "IDLE"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=224230098]
+shape = SubResource("CircleShape2D_cnldk")
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=1059903776]
+collision_layer = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=1164218663]
+shape = SubResource("CircleShape2D_48wkk")
+
+[node name="Detectbox" type="Area2D" parent="." unique_id=1849789772]
+collision_layer = 0
+collision_mask = 192
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detectbox" unique_id=2059018252]
+position = Vector2(1, 0)
+shape = SubResource("CircleShape2D_ss3tx")
+
+[node name="SleepTimer" type="Timer" parent="." unique_id=1349466901]
+wait_time = 5.0
+one_shot = true
+
+[node name="DeathTimer" type="Timer" parent="." unique_id=1107461738]
+one_shot = true
+
+[node name="HitTimer" type="Timer" parent="." unique_id=934045334]
+wait_time = 0.5
+one_shot = true
+
+[connection signal="target_reached" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_target_reached"]
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
+[connection signal="area_shape_entered" from="Detectbox" to="." method="_on_detectbox_area_shape_entered"]
+[connection signal="area_shape_exited" from="Detectbox" to="." method="_on_detectbox_area_shape_exited"]
+[connection signal="body_shape_entered" from="Detectbox" to="." method="_on_detectbox_body_shape_entered"]
+[connection signal="body_shape_exited" from="Detectbox" to="." method="_on_detectbox_body_shape_exited"]
+[connection signal="timeout" from="SleepTimer" to="." method="_on_sleep_timer_timeout"]
+[connection signal="timeout" from="DeathTimer" to="." method="_on_death_timer_timeout"]
+[connection signal="timeout" from="HitTimer" to="." method="_on_hit_timer_timeout"]
