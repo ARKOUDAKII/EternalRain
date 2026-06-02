@@ -1,4 +1,7 @@
-res://scenes/skill_tree.tscn
-res://scenes/player2_0.tscn
-res://scripts/player_2_0.gd
 res://scenes/game.tscn
+res://assets/CustomAssets/shaders/cave_bg.gdshader
+res://scenes/main_menu.tscn
+res://settings_menu.tscn
+res://scripts/settings_menu.gd
+res://scripts/main_menu.gd
+res://scenes/settings_menu.tscn

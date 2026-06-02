@@ -1,0 +1,180 @@
+[gd_scene format=3 uid="uid://c26kk5fiusp5b"]
+
+[ext_resource type="Script" uid="uid://kv6mxoegieap" path="res://scripts/settings_menu.gd" id="1_05p07"]
+
+[node name="SettingsMenu" type="Control" unique_id=1146524641]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_05p07")
+
+[node name="SettingsBackground" type="ColorRect" parent="." unique_id=1320905930]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.1254902, 0.1254902, 0.1254902, 0.54901963)
+
+[node name="SettingsLabel" type="Label" parent="." unique_id=1949889726]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 44.0
+offset_right = 139.0
+offset_bottom = 68.0
+text = "SETTINGS"
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1431195032]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 75
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 100
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer" unique_id=1065736165]
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/ScrollContainer" unique_id=1392562140]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="DifficultySection" type="VBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=2134540712]
+layout_mode = 2
+
+[node name="DifficultyLabel" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/DifficultySection" unique_id=1181528112]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Difficulty"
+
+[node name="DifficultyHSlider" type="HSlider" parent="MarginContainer/ScrollContainer/VBoxContainer/DifficultySection" unique_id=1965717823]
+layout_mode = 2
+max_value = 2.0
+value = 1.0
+
+[node name="ControlsSection" type="VBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=2105614932]
+layout_mode = 2
+
+[node name="ControlsLabel" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection" unique_id=1884750849]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Controls"
+
+[node name="MoveLeftRow" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection" unique_id=1151571292]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection/MoveLeftRow" unique_id=153211241]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Move Left
+"
+
+[node name="Button" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection/MoveLeftRow" unique_id=2060895667]
+layout_mode = 2
+
+[node name="MoveRightRow" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection" unique_id=1389223527]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection/MoveRightRow" unique_id=754711170]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Move Right"
+
+[node name="Button" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection/MoveRightRow" unique_id=23457393]
+layout_mode = 2
+
+[node name="JumpRow" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection" unique_id=864766029]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection/JumpRow" unique_id=806670631]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Jump"
+
+[node name="Button" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection/JumpRow" unique_id=454254455]
+layout_mode = 2
+
+[node name="rActionRow" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection" unique_id=1163846230]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection/rActionRow" unique_id=771573126]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Right Action"
+
+[node name="Button" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection/rActionRow" unique_id=1891492824]
+layout_mode = 2
+
+[node name="lActionRow" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection" unique_id=1063680632]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection/lActionRow" unique_id=1987775991]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Left Action
+"
+
+[node name="Button" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection/lActionRow" unique_id=627441065]
+layout_mode = 2
+
+[node name="AudioSection" type="VBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=536412506]
+layout_mode = 2
+
+[node name="AudioLabel" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/AudioSection" unique_id=145433267]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "AUDIO"
+
+[node name="MasterContainer" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer/AudioSection" unique_id=1523439849]
+layout_mode = 2
+
+[node name="MasterLabel" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/AudioSection/MasterContainer" unique_id=1874218758]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Master Volume"
+
+[node name="MasterSlider" type="HSlider" parent="MarginContainer/ScrollContainer/VBoxContainer/AudioSection/MasterContainer" unique_id=17416189]
+layout_mode = 2
+value = 80.0
+
+[node name="MusicContainer" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer/AudioSection" unique_id=30534814]
+layout_mode = 2
+
+[node name="MusicLabel" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/AudioSection/MusicContainer" unique_id=1386942786]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Music Volume"
+
+[node name="MusicSlider" type="HSlider" parent="MarginContainer/ScrollContainer/VBoxContainer/AudioSection/MusicContainer" unique_id=1954003963]
+layout_mode = 2
+
+[node name="SFXContainer" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer/AudioSection" unique_id=569556146]
+layout_mode = 2
+
+[node name="SFXLabel" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/AudioSection/SFXContainer" unique_id=2004868895]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "SFX Volume"
+
+[node name="SFXSlider" type="HSlider" parent="MarginContainer/ScrollContainer/VBoxContainer/AudioSection/SFXContainer" unique_id=425982537]
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="." unique_id=1599188573]
+layout_mode = 0
+offset_left = 1035.0
+offset_top = 583.0
+offset_right = 1103.0
+offset_bottom = 614.0
+text = "Back"
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

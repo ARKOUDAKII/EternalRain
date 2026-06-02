@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="testing"
-run/main_scene="uid://cie1331u8q8k7"
+run/main_scene="uid://bxqfwhuoiqds0"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
