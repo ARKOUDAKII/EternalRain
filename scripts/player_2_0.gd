@@ -5,6 +5,8 @@ extends CharacterBody2D
 @export var SPEED: float;
 @export var JUMP_SPEED: float;
 @export var DASH_SPEED: float;
+@export var MAX_DASH: int;
+@export var FIRE_DAMAGE: float;
 @export var DETECTION_RADIUS: float;
 @export var SPOINTS: int;
 @export_category("Friendly Nodes")
@@ -16,6 +18,8 @@ extends CharacterBody2D
 @export var skill_tree: Node2D;
 @export var SKTreeMenu: Node2D;
 @export var DetectionBox: Area2D;
+@export var mvmt_audio: AudioStreamPlayer2D
+@export var attack_audio: AudioStreamPlayer2D
 @export_category("Timers")
 @export var dash_timer: Timer;
 @export var dash_cooldown: Timer;
@@ -68,6 +72,7 @@ var dash_counter = 1;
 
 func _ready() -> void:
 	update_label()
+	update_stats()
 	active_state = States.GND
 	active_state = States.GND
 	max_speed = SPEED
@@ -76,13 +81,13 @@ func _ready() -> void:
 	detection_shape.radius = DETECTION_RADIUS
 	
 func _physics_process(delta: float) -> void:
-	print(active_state)
+	#print(active_state)
 	
 	if Input.is_action_just_pressed("pause"):
 		attempt_pause();
 
 	check_gravity()
-	attempt_h_mvmt(Input.get_axis("ui_left","ui_right"))	
+	attempt_h_mvmt(Input.get_axis("ui_left","ui_right"))
 
 	match active_state:
 		States.DASH:
@@ -138,6 +143,11 @@ func check_gravity() -> void:
 		if input_state["gravity"].has(active_state):
 			prev_state = active_state
 			active_state = States.AIRBRN
+	else:
+		if skill_tree.is_unlocked("airdash"):
+			dash_counter = MAX_DASH+1;
+		else:
+			dash_counter = MAX_DASH
 	
 func sktreemenu() -> void:
 	if !stmenu:
@@ -151,10 +161,12 @@ func sktreemenu() -> void:
 		skill_tree.toggle_menu(false)
 
 func attempt_jump() -> void:
-	if active_state == States.GND or active_state == States.SNEAK:
+	if active_state == States.CLMB:
 		velocity.y = JUMP_SPEED
+		active_state = States.AIRBRN
 	else:
-		velocity.y = -JUMP_SPEED
+		velocity.y = JUMP_SPEED
+	mvmt_audio.force_sound(&"jump")
 
 func attempt_h_mvmt(direction: int) -> void:
 	if input_state["directional.x"].has(active_state):
@@ -162,15 +174,22 @@ func attempt_h_mvmt(direction: int) -> void:
 			velocity.x = direction * SPEED
 			Body.flip_h = (1-direction)/2
 			Head.flip_h = (1-direction)/2
+			if active_state == States.GND:
+				if !mvmt_audio.playing:
+					mvmt_audio.load_n_play(&"walk")
+			else:
+				if mvmt_audio.get_playing() == &"walk":
+					mvmt_audio.stop()
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
+			if mvmt_audio.get_playing() == &"walk":
+					mvmt_audio.stop()
 
 func attempt_v_mvmt(active: bool) -> void:
 	if skill_tree.is_unlocked("climb"):
 		if active:
 			active_state = States.CLMB
 		else:
-			print("are you here")
 			active_state = States.AIRBRN
 
 func attempt_fireball(Move: Moves) -> void:
@@ -189,17 +208,17 @@ func attempt_fireball(Move: Moves) -> void:
 					attack_handler.fireball(charge_multiplier, 20*charge_multiplier)
 		Moves.Ultimate:
 			if skill_tree.is_unlocked("detonation"):
-				attack_handler.detonate();
+				attack_handler.detonate(1, 20);
 		_:
 			print("Boom")
 
 func attempt_dash() -> void:
-	if skill_tree.is_unlocked("airdash"):
-		pass
-	elif skill_tree.is_unlocked("dash"):
-		if dash_cooldown.is_stopped():
+	if skill_tree.is_unlocked("dash"):
+		if dash_cooldown.is_stopped() and dash_counter:
+			dash_counter -= 1;
 			dash_timer.start()
 			dash_cooldown.start()
+			mvmt_audio.force_sound(&"dash")
 			prev_state = active_state
 			active_state = States.DASH
 
@@ -217,10 +236,20 @@ func climb(direction: int):
 	if is_on_wall():
 		if direction:
 			velocity.y = JUMP_SPEED * .25 * -direction
+			if active_state == States.CLMB:
+				if !mvmt_audio.playing:
+					mvmt_audio.load_n_play(&"climb")
+			else:
+				if mvmt_audio.get_playing() == &"climb":
+					mvmt_audio.stop()
 		else:
 			velocity.y = 0
+			if mvmt_audio.get_playing() == &"climb":
+					mvmt_audio.stop()
 	else:
 		active_state = States.AIRBRN
+		if mvmt_audio.get_playing() == &"climb":
+					mvmt_audio.stop()
 	
 func dash():
 	if skill_tree.is_unlocked("ldash"):
@@ -234,10 +263,15 @@ func airbrn(delta: float):
 	else:
 		active_state = States.GND
 
+func update_stats():
+	if skill_tree.is_unlocked("airdash"):
+		MAX_DASH += 1
+
 func player_hit(damage: float) -> void:
 	HP -= damage;
 	if HP <= 0:
 		set_physics_process(false)
+		dead = 1
 	update_label()
 
 func update_label() -> void:

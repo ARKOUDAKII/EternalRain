@@ -20,6 +20,7 @@ func apply_effect(pickup: PickupCatalog):
 				player.HP += 20.0
 		PickupCatalog.FIREORB:
 			player.SPOINTS += 1
+			player.skill_tree.update_label()
 		PickupCatalog.HAMMER:
 			if equipment_handler.cureq["Equipped"] == "HELM":
 				equipment_handler.cureq["Boon"] += 20.0

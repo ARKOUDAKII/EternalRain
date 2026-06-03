@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var player: CharacterBody2D = $Player
+@export var player: CharacterBody2D
 var scene = preload("res://scenes/respawn.tscn")
 
 # Called when the node enters the scene tree for the first time.

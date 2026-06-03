@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ba5h21e11ll3w"
+path="res://.godot/imported/Goblin_02.mp3-7f6ca193833e41b98f9bb2f6fdc35de9.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Fantasy Sound Library/Fantasy Sound Library/Mp3/Goblin_02.mp3"
+dest_files=["res://.godot/imported/Goblin_02.mp3-7f6ca193833e41b98f9bb2f6fdc35de9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

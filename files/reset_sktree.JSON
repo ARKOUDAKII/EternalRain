@@ -32,6 +32,24 @@
 		"sneak": {
 			"cost": 1.0,
 			"pre": []
+		},
+		"airdash": {
+			"cost": 2.0,
+			"pre": [
+				"ldash"
+			]
+		},
+		"detonation": {
+			"cost": 2.0,
+			"pre": [
+				"chshoot"
+			]
+		},
+		"heatsense": {
+			"cost": 2.0,
+			"pre": [
+				"climb"
+			]
 		}
 	}
 }

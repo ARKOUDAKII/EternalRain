@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dbnkjgrqs212q"
+path="res://.godot/imported/Spider Chattering.wav-87d976784fdd27120e368eeb798d18ac.sample"
+
+[deps]
+
+source_file="res://assets/sfx/Spider Chattering.wav"
+dest_files=["res://.godot/imported/Spider Chattering.wav-87d976784fdd27120e368eeb798d18ac.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

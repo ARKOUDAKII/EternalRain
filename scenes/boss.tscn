@@ -137,9 +137,27 @@ size = Vector2(23, 37)
 [sub_resource type="LabelSettings" id="LabelSettings_neq0i"]
 font_size = 8
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=640253718]
+[sub_resource type="Gradient" id="Gradient_neq0i"]
+offsets = PackedFloat32Array(0, 0.6764706)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_jncid"]
+gradient = SubResource("Gradient_neq0i")
+fill = 1
+fill_from = Vector2(0.515, 0.525)
+fill_to = Vector2(0, 1)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=640253718 node_paths=PackedStringArray("animated_sprite_2d", "charge_timer", "agent", "chase_timer", "label", "death_timer", "point_light_2d", "audio_stream_player_2d")]
 collision_layer = 2
 script = ExtResource("1_dlmty")
+animated_sprite_2d = NodePath("AnimatedSprite2D")
+charge_timer = NodePath("ChargeTimer")
+agent = NodePath("NavigationAgent2D")
+chase_timer = NodePath("ChaseTimer")
+label = NodePath("Label")
+death_timer = NodePath("DeathTimer")
+point_light_2d = NodePath("PointLight2D")
+audio_stream_player_2d = NodePath("AudioStreamPlayer2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1914179375]
 sprite_frames = SubResource("SpriteFrames_dlmty")
@@ -173,6 +191,15 @@ offset_right = 9.0
 offset_bottom = -20.0
 text = "HP:100"
 label_settings = SubResource("LabelSettings_neq0i")
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=262832445]
+visible = false
+position = Vector2(1, 0)
+color = Color(1, 0, 0, 1)
+texture = SubResource("GradientTexture2D_jncid")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1911719619]
+bus = &"SFX"
 
 [connection signal="target_reached" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_target_reached"]
 [connection signal="timeout" from="ChargeTimer" to="." method="_on_charge_timer_timeout"]
