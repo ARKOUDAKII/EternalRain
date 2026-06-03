@@ -8,6 +8,7 @@ var skill_tree_path = "res://files/skill_tree.JSON"
 var reset_path = "res://files/reset_sktree.JSON"
 
 var dash_bonus: float;
+var dash_plus: int;
 var fireball_bonus: float;
 
 var UnlockedSkills: Dictionary;
@@ -60,7 +61,6 @@ func unlock_skill(skill: String) -> bool:
 		update_label()
 		innit_buttons()
 		store_unlocked_to_JSON()
-		player.update_stats()
 		return true;
 		
 func is_unlocked(skill: String) -> bool:

@@ -3,6 +3,12 @@
 
 	},
 	"unlocked": {
+		"airdash": {
+			"cost": 2.0,
+			"pre": [
+				"ldash"
+			]
+		},
 		"chshoot": {
 			"cost": 1.0,
 			"pre": [
@@ -19,9 +25,21 @@
 			"cost": 1.0,
 			"pre": []
 		},
+		"detonation": {
+			"cost": 2.0,
+			"pre": [
+				"chshoot"
+			]
+		},
 		"fireball": {
 			"cost": 1.0,
 			"pre": []
+		},
+		"heatsense": {
+			"cost": 2.0,
+			"pre": [
+				"climb"
+			]
 		},
 		"ldash": {
 			"cost": 1.0,

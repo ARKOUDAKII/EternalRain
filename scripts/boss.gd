@@ -4,20 +4,22 @@ var target_scene = preload("res://scenes/target_position.tscn")
 var fireball_scene = preload("res://scenes/fireball.tscn")
 var corpse_scene = preload("res://scenes/corpse.tscn")
 
+@export_category("Statistics")
 @export var SPEED: float;
 @export var HP: float;
 @export var damage: float;
-
+@export_category("Friendly Nodes")
 @export var zone: Area2D;
 @export var player: CharacterBody2D;
-
-@onready var collision_shape_2d: CollisionShape2D = $CollisionShape2D
-@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
-@onready var charge_timer: Timer = $ChargeTimer
-@onready var agent: NavigationAgent2D = $NavigationAgent2D
-@onready var chase_timer: Timer = $ChaseTimer
-@onready var label: Label = $Label
-@onready var death_timer: Timer = $DeathTimer
+@export_category("Child Nodes")
+@export var animated_sprite_2d: AnimatedSprite2D
+@export var charge_timer: Timer
+@export var agent: NavigationAgent2D 
+@export var chase_timer: Timer 
+@export var label: Label 
+@export var death_timer: Timer 
+@export var point_light_2d: PointLight2D 
+@export var audio_stream_player_2d: AudioStreamPlayer2D
 
 const err = .5;
 
@@ -32,6 +34,14 @@ enum States {
 	SHOOT_R,
 	DEATH,
 	PASS
+}
+
+var sfx_lib = {
+	&"charge" : load("res://assets/sfx/spell.wav"),
+	&"shoot" : load("res://assets/sfx/magic1.wav"),
+	&"chase" : load("res://assets/sfx/Spell_01.mp3"),
+	&"hurt" : load("res://assets/sfx/enemy_hurt.mp3"),
+	&"death" : load("res://assets/sfx/enemy_death.mp3")
 }
 
 @onready var r_target = target_scene.instantiate()
@@ -53,7 +63,9 @@ var max_hp: float;
 var max_speed: float;
 
 
-func _ready() -> void:	
+func _ready() -> void:
+	if player.skill_tree.is_unlocked("heatsense"):
+		point_light_2d.visible = true
 	active_state = States.IDLE
 	max_hp = HP
 	max_speed = SPEED
@@ -71,6 +83,7 @@ func _ready() -> void:
 	
 	r_target.global_position = r_corner
 	zone.add_child(r_target)
+
 
 func _physics_process(delta: float) -> void:
 	
@@ -118,6 +131,8 @@ func shoot_r() -> void:
 		charge_timer.start()
 		charging = 1;
 		animated_sprite_2d.play("CHARGE")
+		audio_stream_player_2d.stream = sfx_lib[&"charge"]
+		audio_stream_player_2d.play()
 	
 	if charged>0 and charged<5:
 		if global_position.y >= (current_target_position.global_position.y-20*charged+err):
@@ -131,6 +146,8 @@ func shoot_r() -> void:
 			waterbolt.SPEED = 400.0
 			waterbolt.ANGLE = (int(!animated_sprite_2d.flip_h)) + 180*(int(animated_sprite_2d.flip_h))
 			add_child(waterbolt)
+			audio_stream_player_2d.stream = sfx_lib[&"shoot"]
+			audio_stream_player_2d.play()
 			charged += 1
 	elif charged >= 5:
 		animated_sprite_2d.play("IDLE")
@@ -150,6 +167,8 @@ func shoot_d() -> void:
 		charged = 0;
 		charging = 1;
 		animated_sprite_2d.play("CHARGE")
+		audio_stream_player_2d.stream = sfx_lib[&"charge"]
+		audio_stream_player_2d.play()
 		
 	if charged:
 		animated_sprite_2d.play("IDLE")
@@ -163,6 +182,8 @@ func shoot_d() -> void:
 			waterbolt.SPEED = 400.0
 			waterbolt.ANGLE = (360 - i*15)*(int(!animated_sprite_2d.flip_h)) + (180 + i*15)*(int(animated_sprite_2d.flip_h))
 			add_child(waterbolt)
+			audio_stream_player_2d.stream = sfx_lib[&"shoot"]
+			audio_stream_player_2d.play()
 		active_state = roll(false)
 		
 func relax() -> void:
@@ -186,6 +207,8 @@ func death():
 		dying = 1;
 		velocity = Vector2(0,0)
 		animated_sprite_2d.play("DEATH")
+		audio_stream_player_2d.stream = sfx_lib[&"death"]
+		audio_stream_player_2d.play()
 		death_timer.start()
 	
 func roll(force: bool) -> States:
@@ -218,6 +241,8 @@ func track_player() -> void:
 func hit(damage: float):
 	HP -= damage
 	label.text = "HP:"+str(HP)
+	audio_stream_player_2d.stream = sfx_lib[&"hurt"]
+	audio_stream_player_2d.play()
 	if HP <= 0:
 		label.text = "HP:0"
 		active_state = States.DEATH

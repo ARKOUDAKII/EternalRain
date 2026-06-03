@@ -79,9 +79,26 @@ animations = [{
 [sub_resource type="LabelSettings" id="LabelSettings_algeo"]
 font_size = 8
 
-[node name="Spider" type="CharacterBody2D" unique_id=171539743]
+[sub_resource type="Gradient" id="Gradient_k5hg5"]
+offsets = PackedFloat32Array(0, 0.6764706)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_d613k"]
+gradient = SubResource("Gradient_k5hg5")
+fill = 1
+fill_from = Vector2(0.515, 0.525)
+fill_to = Vector2(0, 1)
+
+[node name="Spider" type="CharacterBody2D" unique_id=171539743 node_paths=PackedStringArray("animated_sprite_2d", "label", "death_timer", "point_light_2d", "audio_steam_player_2d", "timer")]
+z_index = 4
 collision_layer = 2
 script = ExtResource("1_c7em6")
+animated_sprite_2d = NodePath("AnimatedSprite2D")
+label = NodePath("Label")
+death_timer = NodePath("DeathTimer")
+point_light_2d = NodePath("PointLight2D")
+audio_steam_player_2d = NodePath("AudioStreamPlayer2D")
+timer = NodePath("Timer")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=99053484]
 position = Vector2(0, 2)
@@ -104,5 +121,17 @@ label_settings = SubResource("LabelSettings_algeo")
 
 [node name="DeathTimer" type="Timer" parent="." unique_id=170482247]
 one_shot = true
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1372638501]
+visible = false
+position = Vector2(1, 0)
+color = Color(1, 0, 0, 1)
+texture = SubResource("GradientTexture2D_d613k")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=257834171]
+max_distance = 200.0
+bus = &"SFX"
+
+[node name="Timer" type="Timer" parent="." unique_id=551686608]
 
 [connection signal="timeout" from="DeathTimer" to="." method="_on_death_timer_timeout"]

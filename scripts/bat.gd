@@ -1,17 +1,28 @@
 extends CharacterBody2D
 
+@export_category("Statistics")
 @export var HP: float;
 @export var SPEED: float;
 @export var damage: float;
 @export var ROAM_AREA: Area2D
+@export var player: CharacterBody2D;
+@export_category("Child Nodes")
+@export var agent: NavigationAgent2D
+@export var sleep_timer: Timer 
+@export var animated_sprite_2d: AnimatedSprite2D 
+@export var detectbox: Area2D
+@export var label: Label 
+@export var death_timer: Timer 
+@export var hit_timer: Timer
+@export var point_light_2d: PointLight2D
+@export var audio_stream_player_2d: AudioStreamPlayer2D
+@export var audio_timer: Timer
 
-@onready var agent: NavigationAgent2D = $NavigationAgent2D
-@onready var sleep_timer: Timer = $SleepTimer
-@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
-@onready var detectbox: Area2D = $Detectbox
-@onready var label: Label = $Label
-@onready var death_timer: Timer = $DeathTimer
-@onready var hit_timer: Timer = $HitTimer
+var sfx_lib = {
+	&"move" : load("res://assets/sfx/bat/ogg/bat_01.ogg"),
+	&"hurt" : load("res://assets/sfx/bat/ogg/bat_03.ogg"),
+	&"death" : load("res://assets/sfx/bat/ogg/bat_02.ogg")
+}
 
 enum Mode {
 	SLEEP,
@@ -26,10 +37,11 @@ var ntp: Vector2;
 var roam_radius: float;
 var detect_radius: float;
 var max_speed: float;
-var player:CharacterBody2D
 var rng = RandomNumberGenerator.new()
 
 func _ready() -> void:
+	if player.skill_tree.is_unlocked("heatsense"):
+		point_light_2d.visible = true
 	detect_radius = detectbox.get_child(0).shape.radius
 	roam_radius = ROAM_AREA.get_child(0).shape.radius
 	sleep_area = ROAM_AREA.global_position + Vector2(0, -roam_radius);
@@ -91,18 +103,21 @@ func hit(damage: float):
 	hit_timer.start()
 	HP -= damage;
 	label.text = "HP:"+str(HP)
+	audio_stream_player_2d.stream = sfx_lib[&"hurt"]
+	audio_stream_player_2d.play()
 	if HP <= 0:
 		detectbox.monitoring = false
 		active_mode = Mode.DEATH
 		update_animation()
 		SPEED = 0;
+		audio_stream_player_2d.stream = sfx_lib[&"death"]
+		audio_stream_player_2d.play()
 		death_timer.start()
 
 func _on_detectbox_area_shape_entered(area_rid: RID, area: Area2D, area_shape_index: int, local_shape_index: int) -> void:
 	if active_mode == Mode.SLEEP:
 		detectbox.get_child(0).shape.radius = detect_radius
 		agent.navigation_layers = 1
-	player = area.get_parent()
 	SPEED = max_speed
 	active_mode = Mode.HUNT
 	update_animation()
@@ -114,7 +129,6 @@ func _on_detectbox_body_shape_entered(body_rid: RID, body: Node2D, body_shape_in
 	if active_mode == Mode.SLEEP:
 		detectbox.get_child(0).shape.radius = detect_radius
 		agent.navigation_layers = 1
-	player = body
 	SPEED = max_speed
 	active_mode = Mode.HUNT
 	update_animation()
@@ -149,3 +163,8 @@ func _on_death_timer_timeout() -> void:
 
 func _on_hit_timer_timeout() -> void:
 	modulate = Color(1,1,1)
+
+
+func _on_audio_timer_timeout() -> void:
+	audio_stream_player_2d.stream = sfx_lib[&"move"]
+	audio_stream_player_2d.play()

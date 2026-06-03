@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://ikow2djmye7r"]
+
+[ext_resource type="Script" uid="uid://dfvc7a4fuqkad" path="res://scripts/audio_test.gd" id="1_byrnv"]
+[ext_resource type="AudioStream" uid="uid://06un8ejqsbi3" path="res://assets/over_ancient_waters_looping.ogg" id="2_dglwb"]
+[ext_resource type="Texture2D" uid="uid://bhc0kkhq4n2f6" path="res://assets/slime_monster_spritesheet.png" id="3_628o6"]
+[ext_resource type="Texture2D" uid="uid://dfofc30qc27jr" path="res://assets/back_cave.png" id="4_0ga73"]
+
+[node name="Node2D" type="Node2D" unique_id=789671522]
+script = ExtResource("1_byrnv")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1659477757]
+stream = ExtResource("2_dglwb")
+volume_db = -16.0
+autoplay = true
+max_distance = 500.0
+parameters/looping = false
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=475193551]
+position = Vector2(-58, -14)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=2112189455]
+zoom = Vector2(2.5, 2.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=791494968]
+texture_filter = 1
+texture = ExtResource("3_628o6")
+region_enabled = true
+region_rect = Rect2(0.47367096, 49.294968, 22.891117, 21.256027)
+
+[node name="BackCave" type="Sprite2D" parent="." unique_id=1790595553]
+z_index = -7
+y_sort_enabled = true
+position = Vector2(-58.5, -164)
+scale = Vector2(1.2115, 0.802)
+texture = ExtResource("4_0ga73")

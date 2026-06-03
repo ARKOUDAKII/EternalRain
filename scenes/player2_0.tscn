@@ -13,6 +13,8 @@
 [ext_resource type="Script" uid="uid://cc55pbrugv8tp" path="res://scripts/head.gd" id="7_rqmkb"]
 [ext_resource type="PackedScene" uid="uid://b5dhk0hadbjxp" path="res://scenes/skill_tree_menu.tscn" id="10_a5c0g"]
 [ext_resource type="Script" uid="uid://dy00qty67vxmw" path="res://scripts/hitbox.gd" id="13_pjmnm"]
+[ext_resource type="Script" uid="uid://c4lxvgw0fks6f" path="res://scripts/mvmt_audio.gd" id="14_mx46h"]
+[ext_resource type="Script" uid="uid://dw43kw7jph5rb" path="res://scripts/attack_audio.gd" id="15_1o885"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l0jjt"]
 atlas = ExtResource("2_l0jjt")
@@ -247,7 +249,7 @@ font_size = 8
 [sub_resource type="LabelSettings" id="LabelSettings_rqmkb"]
 font_size = 8
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=489747155 node_paths=PackedStringArray("Body", "Head", "attack_handler", "equipment_handler", "pickup_handler", "skill_tree", "SKTreeMenu", "DetectionBox", "dash_timer", "dash_cooldown", "charge_timer", "hp_label", "Boon")]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=489747155 node_paths=PackedStringArray("Body", "Head", "attack_handler", "equipment_handler", "pickup_handler", "skill_tree", "SKTreeMenu", "DetectionBox", "mvmt_audio", "attack_audio", "dash_timer", "dash_cooldown", "charge_timer", "hp_label", "Boon")]
 collision_layer = 128
 script = ExtResource("1_xo2g3")
 Body = NodePath("Body")
@@ -258,6 +260,8 @@ pickup_handler = NodePath("pickup_handler")
 skill_tree = NodePath("skill_tree")
 SKTreeMenu = NodePath("sktreemenu")
 DetectionBox = NodePath("DetectionArea")
+mvmt_audio = NodePath("mvmt_audio")
+attack_audio = NodePath("attack_audio")
 dash_timer = NodePath("DashTimer")
 dash_cooldown = NodePath("DashCooldown")
 charge_timer = NodePath("ChargeTimer")
@@ -361,6 +365,15 @@ offset_bottom = -33.0
 text = "Boon:100"
 label_settings = SubResource("LabelSettings_rqmkb")
 metadata/_edit_use_anchors_ = true
+
+[node name="mvmt_audio" type="AudioStreamPlayer2D" parent="." unique_id=1837522118 node_paths=PackedStringArray("player")]
+bus = &"SFX"
+script = ExtResource("14_mx46h")
+player = NodePath("..")
+
+[node name="attack_audio" type="AudioStreamPlayer2D" parent="." unique_id=391821589]
+bus = &"SFX"
+script = ExtResource("15_1o885")
 
 [connection signal="timeout" from="DashTimer" to="." method="_on_dash_timer_timeout"]
 [connection signal="body_shape_entered" from="Hitbox" to="Hitbox" method="_on_body_shape_entered"]

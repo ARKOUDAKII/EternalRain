@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c6cnjly3dm755"
+path="res://.godot/imported/Spider Chattering.mp3-6064e09f34fcda96db9619a7169d95fb.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Spider Chattering.mp3"
+dest_files=["res://.godot/imported/Spider Chattering.mp3-6064e09f34fcda96db9619a7169d95fb.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

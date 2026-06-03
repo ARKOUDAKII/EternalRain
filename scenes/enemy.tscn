@@ -48,7 +48,17 @@ size = Vector2(16, 12)
 [sub_resource type="LabelSettings" id="LabelSettings_md0e3"]
 font_size = 8
 
-[node name="Enemy" type="CharacterBody2D" unique_id=1671774039]
+[sub_resource type="Gradient" id="Gradient_md0e3"]
+offsets = PackedFloat32Array(0, 0.6764706)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_4ra3w"]
+gradient = SubResource("Gradient_md0e3")
+fill = 1
+fill_from = Vector2(0.515, 0.525)
+fill_to = Vector2(0, 1)
+
+[node name="Enemy" type="CharacterBody2D" unique_id=1671774039 node_paths=PackedStringArray("label", "point_light_2d", "audio_stream_player_2d", "timer")]
 modulate = Color(0, 1, 0, 1)
 position = Vector2(0, -2)
 collision_layer = 2
@@ -56,6 +66,10 @@ script = ExtResource("1_md0e3")
 hp = 100.0
 speed = 100.0
 dir = 1
+label = NodePath("Label")
+point_light_2d = NodePath("PointLight2D")
+audio_stream_player_2d = NodePath("AudioStreamPlayer2D")
+timer = NodePath("Timer")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=21026462]
 position = Vector2(0, -2)
@@ -84,4 +98,19 @@ offset_bottom = -12.0
 text = "HP:100"
 label_settings = SubResource("LabelSettings_md0e3")
 
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=412328976]
+visible = false
+position = Vector2(1, 0)
+color = Color(1, 0, 0, 1)
+texture = SubResource("GradientTexture2D_4ra3w")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1858563284]
+max_distance = 500.0
+bus = &"SFX"
+
+[node name="Timer" type="Timer" parent="." unique_id=823498646]
+wait_time = 2.0
+autostart = true
+
 [connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

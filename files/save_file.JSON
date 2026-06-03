@@ -1,0 +1,67 @@
+{
+    "enemies" : [
+        {
+            "type" : "spider",
+            "hp" : 0,
+            "x" : 0,
+            "y" : 0 
+        },
+        {
+            "type" : "bat",
+            "hp" : 0,
+            "x" : 0,
+            "y" : 0 
+        }
+    ],
+    "pickups" : [
+        {
+            "type": "candle",
+            "x" : 0,
+            "y" : 0
+        },
+        {
+            "type": "hammer",
+            "x" : 0,
+            "y" : 0
+        },
+        {
+            "type": "sewkit",
+            "x" : 0,
+            "y" : 0
+        }
+    ],
+    "equipment" : [
+        {
+            "type": "helm",
+            "boon" : 0,
+            "x" : 0,
+            "y" : 0
+        },
+        {
+            "type" : "hat",
+            "boon" : 0,
+            "x" : 0,
+            "y" : 0
+        }
+    ],
+    "environment": [
+        {
+            "type": "fakewall",
+            "height" : 3,
+            "x" : 0,
+            "y" : 0
+        },
+        {
+            "type": "fakewall",
+            "height" : 3,
+            "x" : 0,
+            "y" : 0
+        },
+        {
+            "type": "vines",
+            "height" : 3,
+            "x" : 0,
+            "y" : 0
+        }
+    ]
+}
