@@ -5,7 +5,7 @@ var fireball_scene = preload("res://scenes/fireball.tscn")
 var corpse_scene = preload("res://scenes/corpse.tscn")
 
 @export_category("Statistics")
-@export var SPEED: float;
+@export var MAX_SPEED: float;
 @export var HP: float;
 @export var damage: float;
 @export_category("Friendly Nodes")
@@ -62,19 +62,24 @@ var charged: int;
 var charging: int;
 var chasing: int;
 var max_hp: float;
-var max_speed: float;
+var SPEED = MAX_SPEED;
 
 
 func _ready() -> void:
 	
-	zone = get_node(zone_path)
-	player = get_node(player_path)
+	zone = get_tree().current_scene.get_node(zone_path)
+	player = get_tree().current_scene.get_node(player_path)
+	
+	if !player:
+		player = get_tree().current_scene.get_node("Player")
+	
+	if !zone:
+		zone = get_tree().current_scene.get_node("BossZone")
 	
 	if player.skill_tree.is_unlocked("heatsense"):
 		point_light_2d.visible = true
 	active_state = States.IDLE
 	max_hp = HP
-	max_speed = SPEED
 	label.text = "HP:"+str(HP)
 	
 	center = Vector2(0,0)
@@ -274,7 +279,7 @@ func save() -> Dictionary:
 	return {
 		"scene" : get_scene_file_path(),
 		"HP" : HP,
-		"SPEED" : SPEED,
+		"MAX_SPEED" : MAX_SPEED,
 		"damage" : damage,
 		"x" : position.x,
 		"y" : position.y,

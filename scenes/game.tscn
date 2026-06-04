@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://cie1331u8q8k7"]
 
 [ext_resource type="Script" uid="uid://bmd1y4gup82kx" path="res://scripts/game.gd" id="1_iywne"]
-[ext_resource type="PackedScene" uid="uid://dkeskcbc6smqt" path="res://scenes/player2_0.tscn" id="2_dinhu"]
 [ext_resource type="Texture2D" uid="uid://bolrmm8iw7iot" path="res://assets/TILES.png" id="2_e2o6t"]
 [ext_resource type="PackedScene" uid="uid://co34pnsgin1nu" path="res://scenes/killzone.tscn" id="3_feb5d"]
+[ext_resource type="PackedScene" uid="uid://btu0hpkueyrhu" path="res://scenes/transition.tscn" id="7_u5sy4"]
 [ext_resource type="PackedScene" uid="uid://ctnim3kvwse4g" path="res://scenes/false_wall.tscn" id="11_kvpfn"]
 [ext_resource type="PackedScene" uid="uid://optsfy0rimi4" path="res://scenes/vines.tscn" id="12_dinhu"]
 [ext_resource type="AudioStream" uid="uid://1ctraxvl5kwf" path="res://assets/bg music/over_ancient_waters_looping.ogg" id="13_kvuet"]
@@ -123,24 +123,11 @@ size = Vector2(146, 13)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vtaks"]
 size = Vector2(315, 189)
 
-[node name="Test_Level" type="Node2D" unique_id=1317198475 node_paths=PackedStringArray("player")]
+[node name="Test_Level" type="Node2D" unique_id=1317198475]
 position = Vector2(1, 0)
 script = ExtResource("1_iywne")
-player = NodePath("Player")
-
-[node name="Player" parent="." unique_id=489747155 instance=ExtResource("2_dinhu")]
-position = Vector2(-705, -225)
-HP = 100.0
-SPEED = 150.0
-JUMP_SPEED = -400.0
-DASH_SPEED = 600.0
-MAX_DASH = 1
-FIRE_DAMAGE = 20.0
-DETECTION_RADIUS = 75.0
-SPOINTS = 2
-
-[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1742119165]
-zoom = Vector2(2.5, 2.5)
+path = "res://files/save_file.JSON"
+start = Vector2(-300, -800)
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1693869550]
 position = Vector2(2, -1)
@@ -165,20 +152,20 @@ position = Vector2(590, -83)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RoamArea" unique_id=524946555]
 shape = SubResource("CircleShape2D_0tnpc")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=280682200]
+[node name="SpiderZone" type="Area2D" parent="." unique_id=280682200]
 position = Vector2(145, -214)
 collision_layer = 0
 collision_mask = 128
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1858353898]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpiderZone" unique_id=1858353898]
 shape = SubResource("RectangleShape2D_0tnpc")
 
-[node name="Zone" type="Area2D" parent="." unique_id=1878980100]
+[node name="BossZone" type="Area2D" parent="." unique_id=1878980100]
 position = Vector2(-543, -66)
 collision_layer = 0
 collision_mask = 128
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Zone" unique_id=388710945]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BossZone" unique_id=388710945]
 shape = SubResource("RectangleShape2D_vtaks")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=162068138]
@@ -207,3 +194,8 @@ vine_group = NodePath("..")
 stream = ExtResource("13_kvuet")
 autoplay = true
 bus = &"BG"
+
+[node name="Transition" parent="." unique_id=2084617539 node_paths=PackedStringArray("level") instance=ExtResource("7_u5sy4")]
+position = Vector2(-759, -230)
+level_destination = "res://scenes/test_level_2.tscn"
+level = NodePath("..")

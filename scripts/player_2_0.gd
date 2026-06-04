@@ -280,3 +280,16 @@ func update_label() -> void:
 	
 func _on_dash_timer_timeout() -> void:
 	active_state = prev_state
+	
+func save() -> Dictionary:
+	return {
+		"HP" : HP,
+		"SPEED" : SPEED,
+		"JUMP_SPEED" : JUMP_SPEED,
+		"DASH_SPEED" : DASH_SPEED,
+		"MAX_DASH" : MAX_DASH,
+		"FIRE_DAMAGE" : FIRE_DAMAGE,
+		"DETECTION_RADIUS" : DETECTION_RADIUS,
+		"SPOINTS" : SPOINTS
+	}
+	

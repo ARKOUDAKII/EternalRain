@@ -3,7 +3,7 @@ extends CharacterBody2D
 @export_category("Statistics")
 @export var hp: float;
 @export var damage = 20
-@export var SPEED: float;
+@export var MAX_SPEED: float;
 @export var dir: Direction;
 @export_category("Friendly Nodes")
 @export var player:CharacterBody2D;
@@ -26,10 +26,14 @@ enum Direction {
 }
 
 var rng = RandomNumberGenerator.new()
+var SPEED = MAX_SPEED;
 
 func _ready() -> void:
 	
-	player = get_node(player_path)
+	player = get_tree().current_scene.get_node(player_path)
+	
+	if !player:
+		player = get_tree().current_scene.get_node("Player")
 	
 	
 	if player.skill_tree.is_unlocked("heatsense"):
@@ -78,7 +82,7 @@ func save() -> Dictionary:
 	return {
 		"scene" : get_scene_file_path(),
 		"hp" : hp,
-		"SPEED" : SPEED,
+		"MAX_SPEED" : MAX_SPEED,
 		"damage" : damage,
 		"x" : position.x,
 		"y" : position.y,
