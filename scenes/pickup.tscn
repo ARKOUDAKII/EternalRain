@@ -6,10 +6,12 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_gyxxy"]
 radius = 5.3851647
 
-[node name="Node2D" type="Node2D" unique_id=816661475]
+[node name="Node2D" type="Node2D" unique_id=816661475 node_paths=PackedStringArray("label", "sprite_2d")]
 self_modulate = Color(1.224127, 1.224127, 1.224127, 1)
 z_index = 1
 script = ExtResource("1_pg2rt")
+label = NodePath("Label")
+sprite_2d = NodePath("Sprite2D")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=664580224]
 z_as_relative = false

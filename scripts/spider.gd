@@ -1,11 +1,14 @@
 extends CharacterBody2D
 
 @export_category("Statistics")
-@export var Zone: Area2D;
 @export var HP: float;
 @export var SPEED: float;
 @export var damage: float;
+@export_category("Friendly Nodes")
+@export var Zone: Area2D;
+@export var Zone_path: String;
 @export var player: CharacterBody2D;
+@export var player_path: String;
 @export_category("Child Nodes")
 @export var animated_sprite_2d: AnimatedSprite2D 
 @export var label: Label 
@@ -26,6 +29,10 @@ var max_speed: float;
 var limit: Array;
 
 func _ready() -> void:
+	
+	player = get_node(player_path)
+	Zone = get_node(Zone_path)
+	
 	if player.skill_tree.is_unlocked("heatsense"):
 		point_light_2d.visible = true
 	Zone.body_shape_entered.connect(_on_zone_body_shape_entered)
@@ -80,3 +87,15 @@ func _on_zone_body_shape_exited(body_rid: RID, body: CharacterBody2D, body_shape
 
 func _on_death_timer_timeout() -> void:
 	queue_free()
+	
+func save() -> Dictionary:
+	return {
+		"scene" : get_scene_file_path(),
+		"HP" : HP,
+		"SPEED" : SPEED,
+		"damage" : damage,
+		"x" : position.x,
+		"y" : position.y,
+		"Zone_path" : Zone.get_path(),
+		"player_path" : player.get_path()
+	}

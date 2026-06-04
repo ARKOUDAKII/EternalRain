@@ -4,8 +4,11 @@ extends CharacterBody2D
 @export var HP: float;
 @export var SPEED: float;
 @export var damage: float;
+@export_category("Friendly Nodes")
 @export var ROAM_AREA: Area2D
+@export var ROAM_AREA_path: String
 @export var player: CharacterBody2D;
+@export var player_path: String
 @export_category("Child Nodes")
 @export var agent: NavigationAgent2D
 @export var sleep_timer: Timer 
@@ -40,6 +43,10 @@ var max_speed: float;
 var rng = RandomNumberGenerator.new()
 
 func _ready() -> void:
+	
+	player = get_node(player_path)
+	ROAM_AREA = get_node(ROAM_AREA_path)
+	
 	if player.skill_tree.is_unlocked("heatsense"):
 		point_light_2d.visible = true
 	detect_radius = detectbox.get_child(0).shape.radius
@@ -168,3 +175,15 @@ func _on_hit_timer_timeout() -> void:
 func _on_audio_timer_timeout() -> void:
 	audio_stream_player_2d.stream = sfx_lib[&"move"]
 	audio_stream_player_2d.play()
+
+func save() -> Dictionary:
+	return {
+		"scene" : get_scene_file_path(),
+		"HP" : HP,
+		"SPEED" : SPEED,
+		"damage" : damage,
+		"x" : position.x,
+		"y" : position.y,
+		"ROAM_AREA_path" : ROAM_AREA.get_path(),
+		"player_path" : player.get_path()
+	}

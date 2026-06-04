@@ -4,12 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://dkeskcbc6smqt" path="res://scenes/player2_0.tscn" id="2_dinhu"]
 [ext_resource type="Texture2D" uid="uid://bolrmm8iw7iot" path="res://assets/TILES.png" id="2_e2o6t"]
 [ext_resource type="PackedScene" uid="uid://co34pnsgin1nu" path="res://scenes/killzone.tscn" id="3_feb5d"]
-[ext_resource type="PackedScene" uid="uid://c7nww5okfgjva" path="res://scenes/enemy.tscn" id="4_lbhrr"]
-[ext_resource type="PackedScene" uid="uid://c14adkf6o36tk" path="res://scenes/rigid_body_2d.tscn" id="6_p57ef"]
-[ext_resource type="PackedScene" uid="uid://dfw004y1jiee0" path="res://scenes/pickup.tscn" id="8_gee14"]
-[ext_resource type="PackedScene" uid="uid://dnhdjrv4glt8j" path="res://scenes/bat.tscn" id="9_0tnpc"]
-[ext_resource type="PackedScene" uid="uid://qupli41dgija" path="res://scenes/spider.tscn" id="9_vtaks"]
-[ext_resource type="PackedScene" uid="uid://c6q46kd4k7k4v" path="res://scenes/boss.tscn" id="10_vtaks"]
 [ext_resource type="PackedScene" uid="uid://ctnim3kvwse4g" path="res://scenes/false_wall.tscn" id="11_kvpfn"]
 [ext_resource type="PackedScene" uid="uid://optsfy0rimi4" path="res://scenes/vines.tscn" id="12_dinhu"]
 [ext_resource type="AudioStream" uid="uid://1ctraxvl5kwf" path="res://assets/bg music/over_ancient_waters_looping.ogg" id="13_kvuet"]
@@ -165,48 +159,11 @@ collision_mask = 128
 position = Vector2(3, 63)
 shape = SubResource("WorldBoundaryShape2D_fc0e3")
 
-[node name="Enemy" parent="." unique_id=1671774039 node_paths=PackedStringArray("player") instance=ExtResource("4_lbhrr")]
-position = Vector2(57, 28)
-player = NodePath("../Player")
-
-[node name="RigidBody2D" parent="." unique_id=1609068601 instance=ExtResource("6_p57ef")]
-position = Vector2(-90, -232)
-ImportedEquipment = "HAT"
-ImportedBoon = 100.0
-
-[node name="RigidBody2D2" parent="." unique_id=839329807 instance=ExtResource("6_p57ef")]
-position = Vector2(-74, -291)
-ImportedEquipment = "HELM"
-ImportedBoon = 20.0
-
-[node name="Node2D2" parent="." unique_id=816661475 instance=ExtResource("8_gee14")]
-position = Vector2(192, -13)
-
-[node name="Node2D3" parent="." unique_id=171571029 instance=ExtResource("8_gee14")]
-position = Vector2(241, -113)
-pickup = "HAMMER"
-
-[node name="Node2D4" parent="." unique_id=1315092256 instance=ExtResource("8_gee14")]
-position = Vector2(64, -303)
-pickup = "FIREORB"
-
-[node name="Node2D5" parent="." unique_id=1736439117 instance=ExtResource("8_gee14")]
-position = Vector2(315, -60)
-pickup = "SEW"
-
 [node name="RoamArea" type="Area2D" parent="." unique_id=1058677045]
 position = Vector2(590, -83)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RoamArea" unique_id=524946555]
 shape = SubResource("CircleShape2D_0tnpc")
-
-[node name="CharacterBody2D" parent="." unique_id=1738126551 node_paths=PackedStringArray("ROAM_AREA", "player") instance=ExtResource("9_0tnpc")]
-position = Vector2(589, -132)
-HP = 100.0
-SPEED = 200.0
-damage = 20.0
-ROAM_AREA = NodePath("../RoamArea")
-player = NodePath("../Player")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=280682200]
 position = Vector2(145, -214)
@@ -216,18 +173,6 @@ collision_mask = 128
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1858353898]
 shape = SubResource("RectangleShape2D_0tnpc")
 
-[node name="Enemy2" parent="." unique_id=374355731 node_paths=PackedStringArray("player") instance=ExtResource("4_lbhrr")]
-position = Vector2(-127, -248)
-player = NodePath("../Player")
-
-[node name="Spider" parent="." unique_id=171539743 node_paths=PackedStringArray("Zone", "player") instance=ExtResource("9_vtaks")]
-position = Vector2(182, -225)
-Zone = NodePath("../Area2D")
-HP = 100.0
-SPEED = 200.0
-damage = 20.0
-player = NodePath("../Player")
-
 [node name="Zone" type="Area2D" parent="." unique_id=1878980100]
 position = Vector2(-543, -66)
 collision_layer = 0
@@ -235,14 +180,6 @@ collision_mask = 128
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Zone" unique_id=388710945]
 shape = SubResource("RectangleShape2D_vtaks")
-
-[node name="Boss" parent="." unique_id=640253718 node_paths=PackedStringArray("zone", "player") instance=ExtResource("10_vtaks")]
-position = Vector2(-593, -135)
-SPEED = 200.0
-HP = 500.0
-damage = 10.0
-zone = NodePath("../Zone")
-player = NodePath("../Player")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=162068138]
 visible = false

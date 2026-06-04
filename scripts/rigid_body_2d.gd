@@ -1,10 +1,11 @@
 extends RigidBody2D
 
+@export_category("Statistics")
 @export var ImportedEquipment: String;
 @export var ImportedBoon: float;
-
-@onready var sprite_2d: Sprite2D = $Sprite2D
-@onready var label: Label = $Label
+@export_category("Child Nodes")
+@export var sprite_2d: Sprite2D
+@export var label: Label
 
 var SpriteDictionary = {
 	"NONE": Rect2(0, 0, 0, 0),
@@ -43,3 +44,13 @@ func _on_area_2d_body_shape_exited(body_rid: RID, body: Node2D, body_shape_index
 	label.visible = false
 	conbody = null
 	set_process(false)
+
+
+func save() -> Dictionary:
+	return {
+		"scene" : get_scene_file_path(),
+		"ImportedEquipment" : ImportedEquipment,
+		"ImportedBoon" : ImportedBoon,
+		"x" : position.x,
+		"y" : position.y
+	}

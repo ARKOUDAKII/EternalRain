@@ -10,7 +10,9 @@ var corpse_scene = preload("res://scenes/corpse.tscn")
 @export var damage: float;
 @export_category("Friendly Nodes")
 @export var zone: Area2D;
+@export var zone_path: String
 @export var player: CharacterBody2D;
+@export var player_path: String;
 @export_category("Child Nodes")
 @export var animated_sprite_2d: AnimatedSprite2D
 @export var charge_timer: Timer
@@ -64,6 +66,10 @@ var max_speed: float;
 
 
 func _ready() -> void:
+	
+	zone = get_node(zone_path)
+	player = get_node(player_path)
+	
 	if player.skill_tree.is_unlocked("heatsense"):
 		point_light_2d.visible = true
 	active_state = States.IDLE
@@ -263,3 +269,15 @@ func _on_death_timer_timeout() -> void:
 func _on_navigation_agent_2d_target_reached() -> void:
 	chasing = 0;
 	active_state = roll(true)
+	
+func save() -> Dictionary:
+	return {
+		"scene" : get_scene_file_path(),
+		"HP" : HP,
+		"SPEED" : SPEED,
+		"damage" : damage,
+		"x" : position.x,
+		"y" : position.y,
+		"zone_path" : zone.get_path(),
+		"player_path" : player.get_path()
+	}
