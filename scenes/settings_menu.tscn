@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c26kk5fiusp5b"]
 
 [ext_resource type="Script" uid="uid://kv6mxoegieap" path="res://scripts/settings_menu.gd" id="1_05p07"]
+[ext_resource type="FontFile" uid="uid://bj23cskxael68" path="res://assets/Buttons/november/novem___.ttf" id="2_cr101"]
 
 [node name="SettingsMenu" type="Control" unique_id=1146524641]
 layout_mode = 3
@@ -18,7 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.1254902, 0.1254902, 0.1254902, 0.54901963)
+color = Color(0.1254902, 0.1254902, 0.1254902, 0.78431374)
 
 [node name="SettingsLabel" type="Label" parent="." unique_id=1949889726]
 layout_mode = 0
@@ -26,148 +27,207 @@ offset_left = 60.0
 offset_top = 44.0
 offset_right = 139.0
 offset_bottom = 68.0
+theme_override_fonts/font = ExtResource("2_cr101")
+theme_override_font_sizes/font_size = 30
 text = "SETTINGS"
 
-[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1431195032]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 75
-theme_override_constants/margin_top = 100
-theme_override_constants/margin_right = 100
-theme_override_constants/margin_bottom = 100
-
-[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer" unique_id=1065736165]
-layout_mode = 2
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1065736165]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 100.0
+offset_right = 1052.0
+offset_bottom = 548.0
 horizontal_scroll_mode = 0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/ScrollContainer" unique_id=1392562140]
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer" unique_id=1431195032]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_right = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/MarginContainer" unique_id=1392562140]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_constants/separation = 27
 
-[node name="DifficultySection" type="VBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=2134540712]
+[node name="DifficultySection" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=2134540712]
 layout_mode = 2
+theme_override_constants/separation = 10
 
-[node name="DifficultyLabel" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/DifficultySection" unique_id=1181528112]
+[node name="DifficultyLabel" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/DifficultySection" unique_id=1181528112]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_cr101")
 theme_override_font_sizes/font_size = 25
 text = "Difficulty"
 
-[node name="DifficultyHSlider" type="HSlider" parent="MarginContainer/ScrollContainer/VBoxContainer/DifficultySection" unique_id=1965717823]
+[node name="DifficultyHSlider" type="HSlider" parent="ScrollContainer/MarginContainer/VBoxContainer/DifficultySection" unique_id=1965717823]
 layout_mode = 2
 max_value = 2.0
 value = 1.0
 
-[node name="ControlsSection" type="VBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=2105614932]
+[node name="ControlsSection" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=2105614932]
 layout_mode = 2
+theme_override_constants/separation = 10
 
-[node name="ControlsLabel" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection" unique_id=1884750849]
+[node name="ControlsLabel" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection" unique_id=1884750849]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_cr101")
 theme_override_font_sizes/font_size = 25
 text = "Controls"
 
-[node name="MoveLeftRow" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection" unique_id=1151571292]
+[node name="MoveLeftRow" type="HBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection" unique_id=1151571292]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection/MoveLeftRow" unique_id=153211241]
+[node name="Label" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection/MoveLeftRow" unique_id=153211241]
 layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_cr101")
 theme_override_font_sizes/font_size = 18
-text = "Move Left
-"
+text = "Move Left"
 
-[node name="Button" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection/MoveLeftRow" unique_id=2060895667]
+[node name="Button" type="Button" parent="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection/MoveLeftRow" unique_id=2060895667]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_cr101")
+
+[node name="MoveRightRow" type="HBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection" unique_id=1389223527]
 layout_mode = 2
 
-[node name="MoveRightRow" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection" unique_id=1389223527]
+[node name="Label" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection/MoveRightRow" unique_id=754711170]
 layout_mode = 2
-
-[node name="Label" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection/MoveRightRow" unique_id=754711170]
-layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_cr101")
 theme_override_font_sizes/font_size = 18
 text = "Move Right"
 
-[node name="Button" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection/MoveRightRow" unique_id=23457393]
+[node name="Button" type="Button" parent="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection/MoveRightRow" unique_id=23457393]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_cr101")
+
+[node name="JumpRow" type="HBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection" unique_id=864766029]
 layout_mode = 2
 
-[node name="JumpRow" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection" unique_id=864766029]
+[node name="Label" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection/JumpRow" unique_id=806670631]
 layout_mode = 2
-
-[node name="Label" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection/JumpRow" unique_id=806670631]
-layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_cr101")
 theme_override_font_sizes/font_size = 18
 text = "Jump"
 
-[node name="Button" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection/JumpRow" unique_id=454254455]
+[node name="Button" type="Button" parent="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection/JumpRow" unique_id=454254455]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_cr101")
+
+[node name="rActionRow" type="HBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection" unique_id=1163846230]
 layout_mode = 2
 
-[node name="rActionRow" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection" unique_id=1163846230]
+[node name="Label" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection/rActionRow" unique_id=771573126]
 layout_mode = 2
-
-[node name="Label" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection/rActionRow" unique_id=771573126]
-layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_cr101")
 theme_override_font_sizes/font_size = 18
 text = "Right Action"
 
-[node name="Button" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection/rActionRow" unique_id=1891492824]
+[node name="Button" type="Button" parent="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection/rActionRow" unique_id=1891492824]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_cr101")
+
+[node name="lActionRow" type="HBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection" unique_id=1063680632]
 layout_mode = 2
 
-[node name="lActionRow" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection" unique_id=1063680632]
+[node name="Label" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection/lActionRow" unique_id=1987775991]
 layout_mode = 2
-
-[node name="Label" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection/lActionRow" unique_id=1987775991]
-layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_cr101")
 theme_override_font_sizes/font_size = 18
-text = "Left Action
-"
+text = "Left Action"
 
-[node name="Button" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/ControlsSection/lActionRow" unique_id=627441065]
+[node name="Button" type="Button" parent="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection/lActionRow" unique_id=627441065]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_cr101")
+
+[node name="InteractRow" type="HBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection" unique_id=1511138700]
 layout_mode = 2
 
-[node name="AudioSection" type="VBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=536412506]
+[node name="Label" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection/InteractRow" unique_id=717151032]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_cr101")
+theme_override_font_sizes/font_size = 18
+text = "Interact"
+
+[node name="Button" type="Button" parent="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection/InteractRow" unique_id=492657902]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_cr101")
+
+[node name="CrouchStealthRow" type="HBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection" unique_id=1103220643]
 layout_mode = 2
 
-[node name="AudioLabel" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/AudioSection" unique_id=145433267]
+[node name="Label" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection/CrouchStealthRow" unique_id=23404734]
 layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_cr101")
+theme_override_font_sizes/font_size = 18
+text = "Crouch/Stealth"
+
+[node name="Button" type="Button" parent="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection/CrouchStealthRow" unique_id=2037335521]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_cr101")
+
+[node name="AudioSection" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=536412506]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="AudioLabel" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/AudioSection" unique_id=145433267]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_cr101")
 theme_override_font_sizes/font_size = 25
 text = "AUDIO"
 
-[node name="MasterContainer" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer/AudioSection" unique_id=1523439849]
+[node name="MasterContainer" type="HBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/AudioSection" unique_id=1523439849]
 layout_mode = 2
 
-[node name="MasterLabel" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/AudioSection/MasterContainer" unique_id=1874218758]
+[node name="MasterLabel" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/AudioSection/MasterContainer" unique_id=1874218758]
 layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_cr101")
 theme_override_font_sizes/font_size = 18
 text = "Master Volume"
 
-[node name="MasterSlider" type="HSlider" parent="MarginContainer/ScrollContainer/VBoxContainer/AudioSection/MasterContainer" unique_id=17416189]
+[node name="MasterSlider" type="HSlider" parent="ScrollContainer/MarginContainer/VBoxContainer/AudioSection/MasterContainer" unique_id=17416189]
 layout_mode = 2
+size_flags_horizontal = 3
 value = 80.0
 
-[node name="MusicContainer" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer/AudioSection" unique_id=30534814]
+[node name="MusicContainer" type="HBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/AudioSection" unique_id=30534814]
 layout_mode = 2
 
-[node name="MusicLabel" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/AudioSection/MusicContainer" unique_id=1386942786]
+[node name="MusicLabel" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/AudioSection/MusicContainer" unique_id=1386942786]
 layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_cr101")
 theme_override_font_sizes/font_size = 18
 text = "Music Volume"
 
-[node name="MusicSlider" type="HSlider" parent="MarginContainer/ScrollContainer/VBoxContainer/AudioSection/MusicContainer" unique_id=1954003963]
+[node name="MusicSlider" type="HSlider" parent="ScrollContainer/MarginContainer/VBoxContainer/AudioSection/MusicContainer" unique_id=1954003963]
+layout_mode = 2
+size_flags_horizontal = 3
+value = 80.0
+
+[node name="SFXContainer" type="HBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/AudioSection" unique_id=569556146]
 layout_mode = 2
 
-[node name="SFXContainer" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer/AudioSection" unique_id=569556146]
+[node name="SFXLabel" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/AudioSection/SFXContainer" unique_id=2004868895]
 layout_mode = 2
-
-[node name="SFXLabel" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/AudioSection/SFXContainer" unique_id=2004868895]
-layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_cr101")
 theme_override_font_sizes/font_size = 18
 text = "SFX Volume"
 
-[node name="SFXSlider" type="HSlider" parent="MarginContainer/ScrollContainer/VBoxContainer/AudioSection/SFXContainer" unique_id=425982537]
+[node name="SFXSlider" type="HSlider" parent="ScrollContainer/MarginContainer/VBoxContainer/AudioSection/SFXContainer" unique_id=425982537]
 layout_mode = 2
+size_flags_horizontal = 3
+value = 80.0
 
 [node name="BackButton" type="Button" parent="." unique_id=1599188573]
 layout_mode = 0
@@ -175,6 +235,17 @@ offset_left = 1035.0
 offset_top = 583.0
 offset_right = 1103.0
 offset_bottom = 614.0
+theme_override_fonts/font = ExtResource("2_cr101")
 text = "Back"
 
+[connection signal="pressed" from="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection/MoveLeftRow/Button" to="." method="_on_move_left_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection/MoveRightRow/Button" to="." method="_on_move_right_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection/JumpRow/Button" to="." method="_on_jump_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection/rActionRow/Button" to="." method="_on_r_action_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection/lActionRow/Button" to="." method="_on_l_action_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection/InteractRow/Button" to="." method="_on_interact_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/MarginContainer/VBoxContainer/ControlsSection/CrouchStealthRow/Button" to="." method="_on_crouch_stealth_button_pressed"]
+[connection signal="value_changed" from="ScrollContainer/MarginContainer/VBoxContainer/AudioSection/MasterContainer/MasterSlider" to="." method="_on_master_slider_value_changed"]
+[connection signal="value_changed" from="ScrollContainer/MarginContainer/VBoxContainer/AudioSection/MusicContainer/MusicSlider" to="." method="_on_music_slider_value_changed"]
+[connection signal="value_changed" from="ScrollContainer/MarginContainer/VBoxContainer/AudioSection/SFXContainer/SFXSlider" to="." method="_on_sfx_slider_value_changed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

@@ -1,26 +1,24 @@
 extends Node2D
 
 @export var player: CharacterBody2D
-@export var path: String
-@export var start : Vector2
-@export var camera_x :Vector2
-@export var camera_y : Vector2
-
+@export var path : String
 var player_path = "res://files/player_file.JSON"
+@export var start : Vector2
+@export var camera_x : Vector2
+@export var camera_y : Vector2
 var scene = preload("res://scenes/respawn.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	#save()
 	load_player()
 	load_savefile()
-	
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if player.dead:
 		var instance = scene.instantiate()
-		instance.position = player.position + Vector2(-50, -50)
+		instance.position = player.position 
 		add_child(instance)
 
 func save() -> bool:
@@ -132,3 +130,11 @@ func transition(level: String) -> void:
 	#save()
 	save_player()
 	get_tree().change_scene_to_file(level)
+
+# Pause
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("pause"):
+		# Checks if pause scene is already open
+		if not has_node("PauseMenu"):
+			var pause_menu = preload("res://scenes/pause_menu.tscn").instantiate()
+			add_child(pause_menu)

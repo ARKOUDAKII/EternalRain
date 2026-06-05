@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://gpbn76dunyqh" path="res://assets/Torch_Sheet.png" id="5_rtw2f"]
 [ext_resource type="Texture2D" uid="uid://bolrmm8iw7iot" path="res://assets/TILES.png" id="6_oa1go"]
 [ext_resource type="Texture2D" uid="uid://c3au84kiv4c5i" path="res://assets/CustomAssets/Cave Tileset Pack/PNG files/CaveG.png" id="7_tbmy8"]
+[ext_resource type="AudioStream" uid="uid://1ctraxvl5kwf" path="res://assets/bg music/over_ancient_waters_looping.ogg" id="10_5dd4i"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_wu84c"]
 shader = ExtResource("2_bqqt6")
@@ -5070,6 +5071,11 @@ theme_override_fonts/font = ExtResource("2_ekxnf")
 theme_override_font_sizes/font_size = 30
 text = "Quit Game"
 metadata/_edit_use_anchors_ = true
+
+[node name="Background" type="AudioStreamPlayer" parent="MainMenu Controller" unique_id=106731112]
+stream = ExtResource("10_5dd4i")
+autoplay = true
+bus = &"Music"
 
 [connection signal="pressed" from="MainMenu Controller/StartButton" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="MainMenu Controller/SettingsButton" to="." method="_on_settings_pressed"]

@@ -22,3 +22,6 @@ res://scenes/boss_arena.tscn
 res://scripts/boss.gd
 res://scenes/boss.tscn
 res://scenes/equipment_handler.tscn
+res://scenes/respawn.tscn
+res://scripts/respawn.gd
+res://scripts/settings_menu.gd
