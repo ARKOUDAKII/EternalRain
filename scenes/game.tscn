@@ -203,17 +203,16 @@ shape = SubResource("CircleShape2D_0tnpc")
 [node name="CharacterBody2D" parent="." unique_id=1738126551 node_paths=PackedStringArray("ROAM_AREA", "player") instance=ExtResource("9_0tnpc")]
 position = Vector2(589, -132)
 HP = 100.0
-SPEED = 200.0
 damage = 20.0
 ROAM_AREA = NodePath("../RoamArea")
 player = NodePath("../Player")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=280682200]
+[node name="SpiderZone" type="Area2D" parent="." unique_id=280682200]
 position = Vector2(145, -214)
 collision_layer = 0
 collision_mask = 128
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1858353898]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpiderZone" unique_id=1858353898]
 shape = SubResource("RectangleShape2D_0tnpc")
 
 [node name="Enemy2" parent="." unique_id=374355731 node_paths=PackedStringArray("player") instance=ExtResource("4_lbhrr")]
@@ -222,26 +221,24 @@ player = NodePath("../Player")
 
 [node name="Spider" parent="." unique_id=171539743 node_paths=PackedStringArray("Zone", "player") instance=ExtResource("9_vtaks")]
 position = Vector2(182, -225)
-Zone = NodePath("../Area2D")
 HP = 100.0
-SPEED = 200.0
 damage = 20.0
+Zone = NodePath("../SpiderZone")
 player = NodePath("../Player")
 
-[node name="Zone" type="Area2D" parent="." unique_id=1878980100]
+[node name="BossZone" type="Area2D" parent="." unique_id=1878980100]
 position = Vector2(-543, -66)
 collision_layer = 0
 collision_mask = 128
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Zone" unique_id=388710945]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BossZone" unique_id=388710945]
 shape = SubResource("RectangleShape2D_vtaks")
 
 [node name="Boss" parent="." unique_id=640253718 node_paths=PackedStringArray("zone", "player") instance=ExtResource("10_vtaks")]
 position = Vector2(-593, -135)
-SPEED = 200.0
 HP = 500.0
 damage = 10.0
-zone = NodePath("../Zone")
+zone = NodePath("../BossZone")
 player = NodePath("../Player")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=162068138]
