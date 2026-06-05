@@ -269,4 +269,4 @@ vine_group = NodePath("..")
 [node name="Background" type="AudioStreamPlayer" parent="." unique_id=2002559440]
 stream = ExtResource("13_kvuet")
 autoplay = true
-bus = &"BG"
+bus = &"Music"

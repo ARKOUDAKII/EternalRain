@@ -1,6 +1,11 @@
 {
 	"locked": {
-
+		"heatsense": {
+			"cost": 2.0,
+			"pre": [
+				"climb"
+			]
+		}
 	},
 	"unlocked": {
 		"airdash": {
@@ -34,12 +39,6 @@
 		"fireball": {
 			"cost": 1.0,
 			"pre": []
-		},
-		"heatsense": {
-			"cost": 2.0,
-			"pre": [
-				"climb"
-			]
 		},
 		"ldash": {
 			"cost": 1.0,

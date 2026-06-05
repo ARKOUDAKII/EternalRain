@@ -12,5 +12,13 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if player.dead:
 		var instance = scene.instantiate()
-		instance.position = player.position + Vector2(-50, -50)
+		instance.position = player.position 
 		add_child(instance)
+
+# Pause
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("pause"):
+		# Checks if pause scene is already open
+		if not has_node("PauseMenu"):
+			var pause_menu = preload("res://scenes/pause_menu.tscn").instantiate()
+			add_child(pause_menu)
