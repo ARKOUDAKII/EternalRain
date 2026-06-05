@@ -1,11 +1,8 @@
 {
+	"unlocked": {
+
+	},
 	"locked": {
-		"airdash": {
-			"cost": 2.0,
-			"pre": [
-				"ldash"
-			]
-		},
 		"chshoot": {
 			"cost": 1.0,
 			"pre": [
@@ -22,33 +19,37 @@
 			"cost": 1.0,
 			"pre": []
 		},
-		"detonation": {
-			"cost": 2.0,
-			"pre": [
-				"chshoot"
-			]
-		},
 		"fireball": {
 			"cost": 1.0,
 			"pre": []
-		},
-		"heatsense": {
-			"cost": 2.0,
-			"pre": [
-				"climb"
-			]
 		},
 		"ldash": {
 			"cost": 1.0,
 			"pre": [
 				"dash"
 			]
-		}
-	},
-	"unlocked": {
+		},
 		"sneak": {
 			"cost": 1.0,
 			"pre": []
+		},
+		"airdash": {
+			"cost": 2.0,
+			"pre": [
+				"ldash"
+			]
+		},
+		"detonation": {
+			"cost": 2.0,
+			"pre": [
+				"chshoot"
+			]
+		},
+		"heatsense": {
+			"cost": 2.0,
+			"pre": [
+				"climb"
+			]
 		}
 	}
 }
