@@ -1,1 +1,3 @@
 {"HP":500.0,"MAX_SPEED":200.0,"damage":10.0,"player_path":"/root/boss_area/Player","scene":"res://scenes/boss.tscn","x":72.0,"y":-45.0,"zone_path":"/root/boss_area/Zone"}
+{"ImportedBoon":100.0,"ImportedEquipment":"HAT","scene":"res://scenes/rigid_body_2d.tscn","x":325.0,"y":-50.0}
+{"ImportedBoon":100.0,"ImportedEquipment":"HELM","scene":"res://scenes/rigid_body_2d.tscn","x":-170.0,"y":-50.0}

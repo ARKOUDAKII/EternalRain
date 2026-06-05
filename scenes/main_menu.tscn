@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bolrmm8iw7iot" path="res://assets/TILES.png" id="6_oa1go"]
 [ext_resource type="Texture2D" uid="uid://c3au84kiv4c5i" path="res://assets/CustomAssets/Cave Tileset Pack/PNG files/CaveG.png" id="7_tbmy8"]
 [ext_resource type="AudioStream" uid="uid://1ctraxvl5kwf" path="res://assets/bg music/over_ancient_waters_looping.ogg" id="10_5dd4i"]
+[ext_resource type="PackedScene" uid="uid://dkeskcbc6smqt" path="res://scenes/player2_0.tscn" id="11_lgwnu"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_wu84c"]
 shader = ExtResource("2_bqqt6")
@@ -4954,9 +4955,10 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Main Menu" type="Node2D" unique_id=187541376]
+[node name="Main Menu" type="Node2D" unique_id=187541376 node_paths=PackedStringArray("player")]
 position = Vector2(0, -1)
 script = ExtResource("1_l6cm7")
+player = NodePath("MainMenu Controller/CharacterBody2D")
 
 [node name="MainMenu Controller" type="Control" parent="." unique_id=1952531849]
 layout_mode = 3
@@ -5114,6 +5116,9 @@ metadata/_edit_use_anchors_ = true
 [node name="Background" type="AudioStreamPlayer" parent="MainMenu Controller" unique_id=106731112]
 stream = ExtResource("10_5dd4i")
 autoplay = true
+
+[node name="CharacterBody2D" parent="MainMenu Controller" unique_id=489747155 instance=ExtResource("11_lgwnu")]
+position = Vector2(791, 900)
 
 [connection signal="pressed" from="MainMenu Controller/StartButton" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="MainMenu Controller/Resume" to="." method="_on_resume_pressed"]

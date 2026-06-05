@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bmd1y4gup82kx" path="res://scripts/game.gd" id="1_5gcvm"]
 [ext_resource type="Texture2D" uid="uid://c3au84kiv4c5i" path="res://assets/CustomAssets/Cave Tileset Pack/PNG files/CaveG.png" id="1_lpckb"]
+[ext_resource type="Script" uid="uid://b2jdkfmrv7pem" path="res://scripts/boss_battle.gd" id="3_n4yxd"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_61fi6"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -1083,6 +1084,7 @@ layer_1/tile_data = PackedInt32Array(262143, 1310720, 24, 327679, 1310720, 25, 1
 position = Vector2(72, -45)
 collision_layer = 0
 collision_mask = 128
+script = ExtResource("3_n4yxd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BossZone" unique_id=690523964]
 shape = SubResource("RectangleShape2D_lpckb")

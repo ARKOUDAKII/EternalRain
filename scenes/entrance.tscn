@@ -1043,6 +1043,9 @@ distance = -69.0
 
 [node name="entrance" type="Node2D" unique_id=1185898010]
 script = ExtResource("1_gm1gp")
+start = Vector2(100, -100)
+camera_x = Vector2(-200, 1400)
+camera_y = Vector2(0, 550)
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1066020547]
 texture_filter = 1

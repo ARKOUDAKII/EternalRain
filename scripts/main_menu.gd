@@ -1,5 +1,6 @@
 extends Node2D
 
+@export var player: CharacterBody2D
 
 func _on_start_pressed() -> void:
 	new_game()
@@ -36,6 +37,9 @@ func new_game() -> void:
 	
 	json_string = json.stringify(new)
 	file.store_line(json_string)
+	
+	player.skill_tree.reset_skill_tree_JSON()
+	
 	file.close()
 
 func _on_quit_game_pressed() -> void:
