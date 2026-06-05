@@ -1077,6 +1077,8 @@ layer_1/name = "Fg"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=502997131]
 
-[node name="Transition" parent="." unique_id=2084617539 instance=ExtResource("2_onw6w")]
+[node name="Transition" parent="." unique_id=2084617539 node_paths=PackedStringArray("level") instance=ExtResource("2_onw6w")]
 position = Vector2(703, 125)
 scale = Vector2(-4.442699, 1.447921)
+level_destination = "res://scenes/drop.tscn"
+level = NodePath("..")

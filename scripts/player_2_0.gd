@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @export_category("Statistics")
 @export var HP: float;
-@export var SPEED: float;
+@export var MAX_SPEED: float;
 @export var JUMP_SPEED: float;
 @export var DASH_SPEED: float;
 @export var MAX_DASH: int;
@@ -66,6 +66,7 @@ var prev_state: States;
 var max_detect_radius: float;
 var detection_shape: Shape2D;
 var collision_box_height: float;
+var SPEED: float;
 
 var stmenu = 1;
 var dead = 0;
@@ -73,6 +74,7 @@ var dead = 0;
 var dash_counter = 1;
 
 func _ready() -> void:
+	SPEED = MAX_SPEED
 	update_label()
 	update_stats()
 	active_state = States.GND
@@ -289,7 +291,7 @@ func _on_dash_timer_timeout() -> void:
 func save() -> Dictionary:
 	return {
 		"HP" : HP,
-		"SPEED" : SPEED,
+		"MAX_SPEED" : MAX_SPEED,
 		"JUMP_SPEED" : JUMP_SPEED,
 		"DASH_SPEED" : DASH_SPEED,
 		"MAX_DASH" : MAX_DASH,
