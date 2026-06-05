@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://bmd1y4gup82kx" path="res://scripts/game.gd" id="1_1420p"]
 [ext_resource type="Texture2D" uid="uid://c3au84kiv4c5i" path="res://assets/CustomAssets/Cave Tileset Pack/PNG files/CaveG.png" id="1_xu1lf"]
 [ext_resource type="PackedScene" uid="uid://btu0hpkueyrhu" path="res://scenes/transition.tscn" id="2_1420p"]
-<<<<<<< HEAD
 [ext_resource type="Shader" uid="uid://kh47m26mc63r" path="res://assets/CustomAssets/shaders/inGame_cave_bg.gdshader" id="2_gikgh"]
 [ext_resource type="Texture2D" uid="uid://deqtoi8faeemm" path="res://assets/CustomAssets/Cave Tileset Pack/PNG files/ParallaxCave1.png" id="3_m4efe"]
 [ext_resource type="Texture2D" uid="uid://c13qpp5x1u6uf" path="res://assets/CustomAssets/Cave Tileset Pack/PNG files/ParallaxCave2.png" id="5_xv8t0"]
@@ -21118,9 +21117,6 @@ sources/3 = SubResource("TileSetAtlasSource_akx6j")
 sources/4 = SubResource("TileSetAtlasSource_l3rpm")
 sources/5 = SubResource("TileSetAtlasSource_lxojc")
 sources/6 = SubResource("TileSetAtlasSource_hfqwy")
-=======
-[ext_resource type="PackedScene" uid="uid://co34pnsgin1nu" path="res://scenes/killzone.tscn" id="4_ubc33"]
->>>>>>> cebb4f3d509e6c24dc22fe15d83d10cb21e0cd2d
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_61fi6"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
