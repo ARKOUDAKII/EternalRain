@@ -129,7 +129,7 @@ func move_to(position: Vector2):
 
 func chase() -> void:
 	if chasing:
-		agent.target_position = player.positionprint("stop chasing")
+		agent.target_position = player.position
 		var dir = to_local(agent.get_next_path_position()).normalized()
 		velocity = dir * SPEED
 	else:

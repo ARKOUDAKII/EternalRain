@@ -65,11 +65,19 @@ func load_player() -> bool:
 	var parse_result = json.parse(json_string)
 	if not parse_result == OK:
 		return false
-	
+
+	var equipment = {
+		"Equipped" : "",
+		"Boon" : ""
+	};
 	var stats = json.data
 	var new_player = load("res://scenes/player2_0.tscn").instantiate()
 	new_player.position = start
 	for s in stats.keys():
+		if s == "EQUIPMENT":
+			equipment["Equipped"] = s
+		if s == "BOON":
+			equipment["Boon"] = s
 		new_player.set(s, stats[s])
 	var camera = Camera2D.new()
 	camera.zoom = Vector2(2.5,2.5)
@@ -79,6 +87,7 @@ func load_player() -> bool:
 	camera.limit_top = camera_y.x
 	camera.limit_bottom = camera_y.y
 	new_player.add_child(camera)
+	#new_player.equipment_handler.equip(equipment["Equipped"], equipment["Boon"])
 	new_player.name = "Player"
 	player = new_player
 	get_tree().current_scene.add_child(new_player)
