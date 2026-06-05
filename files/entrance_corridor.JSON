@@ -1,0 +1,2 @@
+{"pickup":"FIREORB","scene":"res://scenes/pickup.tscn","x":-118.0,"y":-22.0}
+{"HP":100.0,"MAX_SPEED":200.0,"ROAM_AREA_path":"/root/entrance_corridor/RoamArea","damage":20.0,"player_path":"/root/entrance_corridor/Player","scene":"res://scenes/bat.tscn","x":275.0,"y":-7.0}

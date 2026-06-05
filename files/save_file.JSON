@@ -1,67 +1,9 @@
-{
-    "enemies" : [
-        {
-            "type" : "spider",
-            "hp" : 0,
-            "x" : 0,
-            "y" : 0 
-        },
-        {
-            "type" : "bat",
-            "hp" : 0,
-            "x" : 0,
-            "y" : 0 
-        }
-    ],
-    "pickups" : [
-        {
-            "type": "candle",
-            "x" : 0,
-            "y" : 0
-        },
-        {
-            "type": "hammer",
-            "x" : 0,
-            "y" : 0
-        },
-        {
-            "type": "sewkit",
-            "x" : 0,
-            "y" : 0
-        }
-    ],
-    "equipment" : [
-        {
-            "type": "helm",
-            "boon" : 0,
-            "x" : 0,
-            "y" : 0
-        },
-        {
-            "type" : "hat",
-            "boon" : 0,
-            "x" : 0,
-            "y" : 0
-        }
-    ],
-    "environment": [
-        {
-            "type": "fakewall",
-            "height" : 3,
-            "x" : 0,
-            "y" : 0
-        },
-        {
-            "type": "fakewall",
-            "height" : 3,
-            "x" : 0,
-            "y" : 0
-        },
-        {
-            "type": "vines",
-            "height" : 3,
-            "x" : 0,
-            "y" : 0
-        }
-    ]
-}
+{"MAX_SPEED":0.0,"damage":20.0,"hp":100.0,"player_path":"/root/Test_Level/Player","scene":"res://scenes/enemy.tscn","x":541.156799316406,"y":663649.375}
+{"pickup":"TORCH","scene":"res://scenes/pickup.tscn","x":192.0,"y":-13.0}
+{"pickup":"HAMMER","scene":"res://scenes/pickup.tscn","x":241.0,"y":-113.0}
+{"pickup":"FIREORB","scene":"res://scenes/pickup.tscn","x":64.0,"y":-303.0}
+{"pickup":"SEW","scene":"res://scenes/pickup.tscn","x":315.0,"y":-60.0}
+{"HP":100.0,"MAX_SPEED":200.0,"ROAM_AREA_path":"/root/Test_Level/RoamArea","damage":20.0,"player_path":"/root/Test_Level/Player","scene":"res://scenes/bat.tscn","x":589.0,"y":-132.0}
+{"MAX_SPEED":0.0,"damage":20.0,"hp":100.0,"player_path":"/root/Test_Level/Player","scene":"res://scenes/enemy.tscn","x":-72.0640411376953,"y":-211.074722290039}
+{"HP":100.0,"MAX_SPEED":150.0,"Zone_path":"/root/Test_Level/SpiderZone","damage":20.0,"player_path":"/root/Test_Level/Player","scene":"res://scenes/spider.tscn","x":71.2531127929688,"y":-219.07600402832}
+{"HP":500.0,"MAX_SPEED":200.0,"damage":10.0,"player_path":"/root/Test_Level/Player","scene":"res://scenes/boss.tscn","x":-593.0,"y":-135.0,"zone_path":"/root/Test_Level/BossZone"}

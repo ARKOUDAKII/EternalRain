@@ -1,11 +1,14 @@
 extends CharacterBody2D
 
 @export_category("Statistics")
-@export var Zone: Area2D;
 @export var HP: float;
-@export var SPEED: float;
+@export var MAX_SPEED: float;
 @export var damage: float;
+@export_category("Friendly Nodes")
+@export var Zone: Area2D;
+@export var Zone_path: String;
 @export var player: CharacterBody2D;
+@export var player_path: String;
 @export_category("Child Nodes")
 @export var animated_sprite_2d: AnimatedSprite2D 
 @export var label: Label 
@@ -22,18 +25,29 @@ var sfx_lib = {
 
 var dir: int;
 var dead = 1;
-var max_speed: float;
+var SPEED = MAX_SPEED;
 var limit: Array;
 
 func _ready() -> void:
-	if player.skill_tree.is_unlocked("heatsense"):
-		point_light_2d.visible = true
+	
+	player = get_tree().current_scene.get_node(player_path)
+	Zone = get_tree().current_scene.get_node(Zone_path)
+	
+	if !player:
+		player = get_tree().current_scene.get_node("Player")
+	
+	if !Zone:
+		Zone = get_tree().current_scene.get_node("SpiderZone")
+	
+	if player:
+		if player.skill_tree.is_unlocked("heatsense"):
+			point_light_2d.visible = true
+	
 	Zone.body_shape_entered.connect(_on_zone_body_shape_entered)
 	Zone.body_shape_exited.connect(_on_zone_body_shape_exited)
 	label.text = "HP:"+str(HP)
 	dir = 1;
-	max_speed = SPEED;
-	SPEED = 0.5*max_speed
+	SPEED = 0.5*MAX_SPEED
 	limit = [Zone.position.x - (Zone.get_child(0).shape.size.x/2), Zone.position.x + (Zone.get_child(0).shape.size.x/2)]
 	
 func _physics_process(delta: float) -> void:
@@ -69,14 +83,26 @@ func hit(damage: float):
 		death_timer.start()
 	
 func _on_zone_body_shape_entered(body_rid: RID, body: CharacterBody2D, body_shape_index: int, local_shape_index: int) -> void:
-	SPEED = max_speed
+	SPEED = MAX_SPEED
 	if body.position.x < position.x:
 		dir = -1;
 	else:
 		dir = 1;
 		
 func _on_zone_body_shape_exited(body_rid: RID, body: CharacterBody2D, body_shape_index: int, local_shape_index: int) -> void:
-	SPEED = 0.5 * max_speed
+	SPEED = 0.5 * MAX_SPEED
 
 func _on_death_timer_timeout() -> void:
 	queue_free()
+	
+func save() -> Dictionary:
+	return {
+		"scene" : get_scene_file_path(),
+		"HP" : HP,
+		"MAX_SPEED" : MAX_SPEED,
+		"damage" : damage,
+		"x" : position.x,
+		"y" : position.y,
+		"Zone_path" : Zone.get_path(),
+		"player_path" : player.get_path()
+	}

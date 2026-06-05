@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://drlhed53c2pln"]
+
+[ext_resource type="Script" uid="uid://dib0yj16rsopq" path="res://scripts/game_master.gd" id="1_g0w00"]
+[ext_resource type="PackedScene" uid="uid://bxqfwhuoiqds0" path="res://scenes/main_menu.tscn" id="2_g0w00"]
+
+[node name="GameMaster" type="Node2D" unique_id=894438066 node_paths=PackedStringArray("current_level")]
+script = ExtResource("1_g0w00")
+current_level = NodePath("Main Menu")
+
+[node name="Main Menu" parent="." unique_id=187541376 instance=ExtResource("2_g0w00")]

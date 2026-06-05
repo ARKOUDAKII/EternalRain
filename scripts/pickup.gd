@@ -1,9 +1,10 @@
 extends Node2D
 
+@export_category("Statistics")
 @export var pickup: String
-
-@onready var label: Label = $Label
-@onready var sprite_2d: Sprite2D = $Sprite2D
+@export_category("Child Nodes")
+@export var label: Label
+@export var sprite_2d: Sprite2D 
 
 var conbody;
 
@@ -35,3 +36,11 @@ func _on_area_2d_body_shape_exited(body_rid: RID, body: Node2D, body_shape_index
 	set_process(false)
 	conbody = false;
 	label.visible = false
+
+func save() -> Dictionary:
+	return {
+			"scene" : get_scene_file_path(),
+			"pickup" : pickup,
+			"x" : position.x,
+			"y" : position.y
+		}

@@ -2,8 +2,9 @@ extends AnimatableBody2D
 
 @export_enum("TOP:1","BOTTOM:2") var type: String
 
-@onready var destruct_timer: Timer = $DestructTimer
-@onready var basic_testing_tiles: AnimatedSprite2D = $BasicTestingTiles
+@export_category("Child Nodes")
+@export var destruct_timer: Timer 
+@export var basic_testing_tiles: AnimatedSprite2D
 
 func _ready() -> void:
 	basic_testing_tiles.play("fakewall"+type);

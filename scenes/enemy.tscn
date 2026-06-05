@@ -64,7 +64,6 @@ position = Vector2(0, -2)
 collision_layer = 2
 script = ExtResource("1_md0e3")
 hp = 100.0
-speed = 100.0
 dir = 1
 label = NodePath("Label")
 point_light_2d = NodePath("PointLight2D")
@@ -106,7 +105,6 @@ texture = SubResource("GradientTexture2D_4ra3w")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1858563284]
 max_distance = 500.0
-bus = &"SFX"
 
 [node name="Timer" type="Timer" parent="." unique_id=823498646]
 wait_time = 2.0

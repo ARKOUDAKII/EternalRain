@@ -249,11 +249,12 @@ font_size = 8
 [sub_resource type="LabelSettings" id="LabelSettings_rqmkb"]
 font_size = 8
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=489747155 node_paths=PackedStringArray("Body", "Head", "attack_handler", "equipment_handler", "pickup_handler", "skill_tree", "SKTreeMenu", "DetectionBox", "mvmt_audio", "attack_audio", "dash_timer", "dash_cooldown", "charge_timer", "hp_label", "Boon")]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=489747155 node_paths=PackedStringArray("Body", "Head", "Collision", "attack_handler", "equipment_handler", "pickup_handler", "skill_tree", "SKTreeMenu", "DetectionBox", "mvmt_audio", "attack_audio", "dash_timer", "dash_cooldown", "charge_timer", "hp_label", "Boon")]
 collision_layer = 128
 script = ExtResource("1_xo2g3")
 Body = NodePath("Body")
 Head = NodePath("Head")
+Collision = NodePath("CollisionShape2D")
 attack_handler = NodePath("attack_handler")
 equipment_handler = NodePath("equipment_handler")
 pickup_handler = NodePath("pickup_handler")

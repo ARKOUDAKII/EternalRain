@@ -1,11 +1,9 @@
 extends Node2D
 
-@export var transitions: Array
 @export var path: String;
-@export var current_save_file: String;
 
 func _ready() -> void: # on ready load the level
-	pass
+	print(get_scene_file_path())
 
 func save_to_file() -> bool: #save current level to JSON file
 	

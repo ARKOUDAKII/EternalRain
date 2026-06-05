@@ -3,9 +3,11 @@ extends CharacterBody2D
 @export_category("Statistics")
 @export var hp: float;
 @export var damage = 20
-@export var speed: float;
+@export var MAX_SPEED: float;
 @export var dir: Direction;
+@export_category("Friendly Nodes")
 @export var player:CharacterBody2D;
+@export var player_path: String;
 @export_category("Child Nodes")
 @export var label: Label 
 @export var point_light_2d: PointLight2D
@@ -24,14 +26,22 @@ enum Direction {
 }
 
 var rng = RandomNumberGenerator.new()
+var SPEED = MAX_SPEED;
 
 func _ready() -> void:
-	if player.skill_tree.is_unlocked("heatsense"):
-		point_light_2d.visible = true
+	
+	player = get_tree().current_scene.get_node(player_path)
+	
+	if !player:
+		player = get_tree().current_scene.get_node("Player")
+	
+	if player:
+		if player.skill_tree.is_unlocked("heatsense"):
+			point_light_2d.visible = true
 	if !hp:
 		hp = 200;
-	if !speed:
-		speed = 100.0
+	if !SPEED:
+		SPEED = 100.0
 		
 	label.text = "HP:"+str(hp)
 
@@ -43,7 +53,7 @@ func _physics_process(delta: float) -> void:
 	if rng.randf_range(0, 1) < .005:
 		dir = -dir
 
-	velocity.x = dir * speed * 10 * delta
+	velocity.x = dir * SPEED * 10 * delta
 	
 	move_and_slide()
 
@@ -67,3 +77,14 @@ func _on_timer_timeout() -> void:
 	audio_stream_player_2d.play()
 	if hp <= 0:
 		queue_free()
+
+func save() -> Dictionary:
+	return {
+		"scene" : get_scene_file_path(),
+		"hp" : hp,
+		"MAX_SPEED" : MAX_SPEED,
+		"damage" : damage,
+		"x" : position.x,
+		"y" : position.y,
+		"player_path" : player.get_path()
+	}

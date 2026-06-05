@@ -1,0 +1,11 @@
+{"SPEED":100.0,"damage":20,"hp":100.0,"player_path":"/root/Test_Level/Player","scene":"res://scenes/enemy.tscn","x":57.0,"y":28.0}
+{"ImportedBoon":100.0,"ImportedEquipment":"HAT","scene":"res://scenes/rigid_body_2d.tscn","x":-90.0,"y":-232.0}
+{"ImportedBoon":20.0,"ImportedEquipment":"HELM","scene":"res://scenes/rigid_body_2d.tscn","x":-74.0,"y":-291.0}
+{"pickup":"TORCH","scene":"res://scenes/pickup.tscn","x":192.0,"y":-13.0}
+{"pickup":"HAMMER","scene":"res://scenes/pickup.tscn","x":241.0,"y":-113.0}
+{"pickup":"FIREORB","scene":"res://scenes/pickup.tscn","x":64.0,"y":-303.0}
+{"pickup":"SEW","scene":"res://scenes/pickup.tscn","x":315.0,"y":-60.0}
+{"HP":100.0,"ROAM_AREA_path":"/root/GameMaster/Test_Level/RoamArea","MAX_SPEED":200.0,"damage":20.0,"player_path":"/root/GameMaster/Player","scene":"res://scenes/bat.tscn","x":589.0,"y":-132.0}
+{"SPEED":100.0,"damage":20,"hp":100.0,"player_path":"/root/GameMaster/Player","scene":"res://scenes/enemy.tscn","x":-127.0,"y":-248.0}
+{"HP":100.0,"MAX_SPEED":100.0,"Zone_path":"/root/GameMaster/Test_Level/Area2D","damage":20.0,"player_path":"/root/GameMaster/Player","scene":"res://scenes/spider.tscn","x":182.0,"y":-225.0}
+{"HP":500.0,"MAX_SPEED":200.0,"damage":10.0,"player_path":"/root/GameMaster/Player","scene":"res://scenes/boss.tscn","x":-593.0,"y":-135.0,"zone_path":"/root/GameMaster/Test_Level/Zone"}
