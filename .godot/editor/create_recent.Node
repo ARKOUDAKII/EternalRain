@@ -1,9 +1,10 @@
+CollisionShape2D
+ColorRect
+Area2D
+TileMap
 TileMapLayer
 AudioStreamPlayer
-CollisionShape2D
-Area2D
 Node2D
-TileMap
 Camera2D
 CharacterBody2D
 MarginContainer
@@ -11,4 +12,3 @@ Button
 HSlider
 Label
 HBoxContainer
-VBoxContainer

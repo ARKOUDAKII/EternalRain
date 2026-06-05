@@ -2,3 +2,16 @@ res://scenes/pause_menu.tscn
 res://assets/CustomAssets/shaders/cave_bg.gdshader
 res://scenes/game.tscn
 res://scripts/game.gd
+res://scenes/hub_area_1.tscn
+res://scripts/enemy.gd
+res://scripts/spider.gd
+res://scenes/corridor_1.tscn
+res://scenes/peak_corridor.tscn
+res://scenes/peak.tscn
+res://scenes/drop.tscn
+res://scenes/corridor_2.tscn
+res://scenes/reward_area_1.tscn
+res://scenes/hidden_area_1.tscn
+res://scenes/boss_arena.tscn
+res://scripts/boss.gd
+res://scenes/boss.tscn
