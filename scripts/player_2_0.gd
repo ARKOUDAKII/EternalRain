@@ -295,6 +295,8 @@ func save() -> Dictionary:
 		"MAX_DASH" : MAX_DASH,
 		"FIRE_DAMAGE" : FIRE_DAMAGE,
 		"DETECTION_RADIUS" : DETECTION_RADIUS,
-		"SPOINTS" : SPOINTS
+		"SPOINTS" : SPOINTS,
+		"EQUIPEMENT" : equipment_handler.cureq["Equipped"],
+		"BOON" : equipment_handler.cureq["Boon"]
 	}
 	

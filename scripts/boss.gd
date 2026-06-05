@@ -62,7 +62,7 @@ var charged: int;
 var charging: int;
 var chasing: int;
 var max_hp: float;
-var SPEED = MAX_SPEED;
+var SPEED : float;
 
 
 func _ready() -> void:
@@ -78,13 +78,15 @@ func _ready() -> void:
 	
 	if player.skill_tree.is_unlocked("heatsense"):
 		point_light_2d.visible = true
+		
 	active_state = States.IDLE
+	SPEED = MAX_SPEED
 	max_hp = HP
 	label.text = "HP:"+str(HP)
 	
 	center = Vector2(0,0)
-	l_corner = Vector2(-zone.get_child(0).shape.size.x/2, zone.get_child(0).shape.size.y/2)
-	r_corner = Vector2(zone.get_child(0).shape.size.x/2, zone.get_child(0).shape.size.y/2)
+	l_corner = Vector2(-zone.get_child(0).shape.size.x/4, zone.get_child(0).shape.size.y/2)
+	r_corner = Vector2(zone.get_child(0).shape.size.x/4, zone.get_child(0).shape.size.y/2)
 
 	center_target.global_position = center
 	zone.add_child(center_target)
@@ -97,7 +99,6 @@ func _ready() -> void:
 
 
 func _physics_process(delta: float) -> void:
-	
 	if active_state == States.DEATH:
 		death()
 	else:
@@ -128,11 +129,11 @@ func move_to(position: Vector2):
 
 func chase() -> void:
 	if chasing:
-		agent.target_position = player.position
+		agent.target_position = player.positionprint("stop chasing")
 		var dir = to_local(agent.get_next_path_position()).normalized()
 		velocity = dir * SPEED
 	else:
-		active_state = roll(false)
+		active_state = roll(true)
 
 func shoot_r() -> void:
 	if !current_target_position.overlaps_body($".") and charged == 0:
@@ -230,6 +231,7 @@ func roll(force: bool) -> States:
 
 	if rng.randf_range(0, 100) < fraction1 and !force:
 		chase_timer.start()
+		print('chasing')
 		chasing = 1;
 		return States.CHASE
 	else:
@@ -263,6 +265,7 @@ func _on_charge_timer_timeout() -> void:
 
 func _on_chase_timer_timeout() -> void:
 	chasing = 0;
+	print("stop chasing")
 
 func _on_death_timer_timeout() -> void:
 	var corpse = corpse_scene.instantiate()
