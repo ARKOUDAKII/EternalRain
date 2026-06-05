@@ -1,0 +1,2 @@
+{"scene" : "res://scenes/pickup.tscn", "pickup": "FIREORB", "x" : -118.0, "y" : -22.0}
+{"scene" : "res://scenes/bat.tscn", "HP" : 100, "MAX_SPEED": 150.0, "damage" : 20.0, "x" : 228.0, "y" : -5.0, "ROAM_AREA_path" : "/root/entrance_corridor/RoamArea", "player_path": "/root/entrance_corridor/Player"}

@@ -3,6 +3,8 @@ extends Node2D
 @export var player: CharacterBody2D
 @export var path: String
 @export var start : Vector2
+@export var camera_x :Vector2
+@export var camera_y : Vector2
 
 var player_path = "res://files/player_file.JSON"
 var scene = preload("res://scenes/respawn.tscn")
@@ -71,6 +73,11 @@ func load_player() -> bool:
 		new_player.set(s, stats[s])
 	var camera = Camera2D.new()
 	camera.zoom = Vector2(2.5,2.5)
+	camera.limit_enabled = true
+	camera.limit_left = camera_x.x
+	camera.limit_right = camera_x.y
+	camera.limit_top = camera_y.x
+	camera.limit_bottom = camera_y.y
 	new_player.add_child(camera)
 	new_player.name = "Player"
 	player = new_player
@@ -113,6 +120,6 @@ func load_savefile() -> bool:
 	return true
 	
 func transition(level: String) -> void:
-	save()
+	#save()
 	save_player()
 	get_tree().change_scene_to_file(level)

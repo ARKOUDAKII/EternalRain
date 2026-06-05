@@ -1,0 +1,2 @@
+{"HP":75.0,"MAX_SPEED":150.0,"Zone_path":"/root/corridor_2/SpiderZone","damage":20.0,"player_path":"/root/corridor_2/Player","scene":"res://scenes/spider.tscn","x":300.0,"y":7.0}
+{"ImportedBoon":100.0,"ImportedEquipment":"HAT","scene":"res://scenes/rigid_body_2d.tscn","x":-13.0,"y":5.0}

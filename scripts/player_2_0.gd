@@ -9,9 +9,10 @@ extends CharacterBody2D
 @export var FIRE_DAMAGE: float;
 @export var DETECTION_RADIUS: float;
 @export var SPOINTS: int;
-@export_category("Friendly Nodes")
+@export_category("Child Nodes")
 @export var Body: AnimatedSprite2D;
 @export var Head: AnimatedSprite2D;
+@export var Collision: CollisionShape2D
 @export var attack_handler: Node2D;
 @export var equipment_handler: Node2D;
 @export var pickup_handler: Node2D;
@@ -64,6 +65,7 @@ var active_state: States;
 var prev_state: States;
 var max_detect_radius: float;
 var detection_shape: Shape2D;
+var collision_box_height: float;
 
 var stmenu = 1;
 var dead = 0;
@@ -79,6 +81,7 @@ func _ready() -> void:
 	max_detect_radius = DETECTION_RADIUS
 	detection_shape = DetectionBox.get_child(0).shape
 	detection_shape.radius = DETECTION_RADIUS
+	collision_box_height = Collision.shape.size.y
 	
 func _physics_process(delta: float) -> void:
 	#print(active_state)
@@ -226,11 +229,13 @@ func attempt_sneak(active: bool) -> void:
 	if active:
 		SPEED = max_speed*.5
 		detection_shape.radius = max_detect_radius*.5
-		active_state = States.SNEAK 
+		active_state = States.SNEAK
+		Collision.shape.size.y = collision_box_height * .9 
 	else:
 		active_state = States.GND
 		SPEED = max_speed
 		detection_shape.radius = max_detect_radius
+		Collision.shape.size.y = collision_box_height
 
 func climb(direction: int):
 	if is_on_wall():

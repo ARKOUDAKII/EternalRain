@@ -1,0 +1,9 @@
+{"scene" : "res://scenes/enemy.tscn", "hp" : 100.0, "MAX_SPEED" : 100.0, "damage" : 20.0, "x": 162.0, "y": -14.0, "player_path" : "/root/hub_area_1/player"}
+{"scene" : "res://scenes/enemy.tscn", "hp" : 100.0, "MAX_SPEED" : 100.0, "damage" : 20.0, "x": 414.0, "y": 92.0, "player_path" : "/root/hub_area_1/player"}
+{"scene" : "res://scenes/enemy.tscn", "hp" : 100.0, "MAX_SPEED" : 100.0, "damage" : 20.0, "x": 738.0, "y": -250.0, "player_path" : "/root/hub_area_1/player"}
+{"scene" : "res://scenes/enemy.tscn", "hp" : 100.0, "MAX_SPEED" : 100.0, "damage" : 20.0, "x": 1035.0, "y": -48.0, "player_path" : "/root/hub_area_1/player"}
+{"scene" : "res://scenes/bat.tscn", "HP": 100.0, "MAX_SPEED": 175.0, "damage": 20.0, "x" :856.0, "y" :-735.0, "ROAM_AREA_path" : "/root/hub_area_1/RoamArea", "player_path" : "/root/hub_area_1/Player"}
+{"scene" : "res://scenes/spider.tscn", "HP": 100.0, "MAX_SPEED": 150.0, "damage": 20.0, "x" :648.0, "y":303.0, "Zone_path" : "root/hub_area_1/Zone", "player_path" : "root/hub_area_1/Player"}
+{"scene" : "res://scenes/spider.tscn", "HP": 100.0, "MAX_SPEED": 150.0, "damage": 20.0, "x" :740.0, "y":303.0, "Zone_path" : "root/hub_area_1/Zone", "player_path" : "root/hub_area_1/Player"}
+{"scene" : "res://scenes/spider.tscn", "HP": 100.0, "MAX_SPEED": 150.0, "damage": 20.0, "x" :1000.0, "y":303.0, "Zone_path" : "root/hub_area_1/Zone", "player_path" : "root/hub_area_1/Player"}
+{"scene" : "res://scenes/pickup.tscn", "pickup" : "FIREORB", "x" :187.835, "y" :-31.365}

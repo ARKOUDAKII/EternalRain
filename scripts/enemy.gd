@@ -35,9 +35,9 @@ func _ready() -> void:
 	if !player:
 		player = get_tree().current_scene.get_node("Player")
 	
-	
-	if player.skill_tree.is_unlocked("heatsense"):
-		point_light_2d.visible = true
+	if player:
+		if player.skill_tree.is_unlocked("heatsense"):
+			point_light_2d.visible = true
 	if !hp:
 		hp = 200;
 	if !SPEED:

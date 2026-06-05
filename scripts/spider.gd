@@ -39,8 +39,10 @@ func _ready() -> void:
 	if !Zone:
 		Zone = get_tree().current_scene.get_node("SpiderZone")
 	
-	if player.skill_tree.is_unlocked("heatsense"):
-		point_light_2d.visible = true
+	if player:
+		if player.skill_tree.is_unlocked("heatsense"):
+			point_light_2d.visible = true
+	
 	Zone.body_shape_entered.connect(_on_zone_body_shape_entered)
 	Zone.body_shape_exited.connect(_on_zone_body_shape_exited)
 	label.text = "HP:"+str(HP)

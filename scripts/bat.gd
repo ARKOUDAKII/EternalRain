@@ -39,7 +39,7 @@ var sleep_area: Vector2;
 var ntp: Vector2;
 var roam_radius: float;
 var detect_radius: float;
-var SPEED = MAX_SPEED;
+var SPEED: float;
 var rng = RandomNumberGenerator.new()
 
 func _ready() -> void:
@@ -49,17 +49,24 @@ func _ready() -> void:
 	
 	if !player:
 		player = get_tree().current_scene.get_node("Player")
+		print('here')
 		
 	if !ROAM_AREA:
 		ROAM_AREA = get_tree().current_scene.get_node("RoamArea")
 	
-	if player.skill_tree.is_unlocked("heatsense"):
-		point_light_2d.visible = true
+	if player:
+		if player.skill_tree.is_unlocked("heatsense"):
+			point_light_2d.visible = true
+			
+	SPEED = MAX_SPEED
+	active_mode = Mode.SLEEP
+		
 	detect_radius = detectbox.get_child(0).shape.radius
 	roam_radius = ROAM_AREA.get_child(0).shape.radius
 	sleep_area = ROAM_AREA.global_position + Vector2(0, -roam_radius);
 	ntp = polar_coords(ROAM_AREA.global_position, roam_radius)
 	label.text = "HP:"+str(HP)
+	print(sleep_area)
 
 func _process(delta: float) -> void:
 	#print("Active Mode: ",active_mode,"\nCurrent ntp: ",ntp)
