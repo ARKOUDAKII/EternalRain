@@ -22236,6 +22236,8 @@ position = Vector2(183, 315)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RoamArea" unique_id=1475671731]
 shape = SubResource("CircleShape2D_guncg")
 
-[node name="Transition" parent="." unique_id=2084617539 instance=ExtResource("3_8i0xm")]
+[node name="Transition" parent="." unique_id=2084617539 node_paths=PackedStringArray("level") instance=ExtResource("3_8i0xm")]
 position = Vector2(187.99998, 552)
 scale = Vector2(12.16, 1)
+level_destination = "res://scenes/hidden_area_1.tscn"
+level = NodePath("..")

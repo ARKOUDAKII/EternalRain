@@ -271,7 +271,7 @@ func _on_death_timer_timeout() -> void:
 	var corpse = corpse_scene.instantiate()
 	corpse.global_position = global_position
 	get_tree().current_scene.add_child(corpse)
-	zone.queue_free()
+	zone.win()
 	queue_free()
 
 func _on_navigation_agent_2d_target_reached() -> void:

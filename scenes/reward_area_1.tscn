@@ -22229,9 +22229,11 @@ layer_1/name = "Fg"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=144698061]
 
-[node name="Transition" parent="." unique_id=2084617539 instance=ExtResource("2_mvqwp")]
+[node name="Transition" parent="." unique_id=2084617539 node_paths=PackedStringArray("level") instance=ExtResource("2_mvqwp")]
 position = Vector2(660, 230.99998)
 scale = Vector2(7.7599974, 1)
+level_destination = "res://scenes/boss_arena.tscn"
+level = NodePath("..")
 
 [node name="Node2D" parent="." unique_id=816661475 instance=ExtResource("4_bdhyn")]
 position = Vector2(290, -130)

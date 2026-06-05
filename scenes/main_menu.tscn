@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bolrmm8iw7iot" path="res://assets/TILES.png" id="6_oa1go"]
 [ext_resource type="Texture2D" uid="uid://c3au84kiv4c5i" path="res://assets/CustomAssets/Cave Tileset Pack/PNG files/CaveG.png" id="7_tbmy8"]
 [ext_resource type="AudioStream" uid="uid://1ctraxvl5kwf" path="res://assets/bg music/over_ancient_waters_looping.ogg" id="10_5dd4i"]
+[ext_resource type="PackedScene" uid="uid://dkeskcbc6smqt" path="res://scenes/player2_0.tscn" id="11_lgwnu"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_wu84c"]
 shader = ExtResource("2_bqqt6")
@@ -4954,9 +4955,10 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Main Menu" type="Node2D" unique_id=187541376]
+[node name="Main Menu" type="Node2D" unique_id=187541376 node_paths=PackedStringArray("player")]
 position = Vector2(0, -1)
 script = ExtResource("1_l6cm7")
+player = NodePath("MainMenu Controller/CharacterBody2D")
 
 [node name="MainMenu Controller" type="Control" parent="." unique_id=1952531849]
 layout_mode = 3
@@ -4968,9 +4970,10 @@ metadata/_edit_use_anchors_ = true
 [node name="TextureRect" type="TextureRect" parent="MainMenu Controller" unique_id=1829768327]
 material = SubResource("ShaderMaterial_wu84c")
 layout_mode = 1
-anchors_preset = 15
+anchors_preset = -1
+anchor_top = -0.0046296297
 anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_bottom = 0.9953704
 offset_left = 2.0
 offset_top = 1.0
 offset_right = 2.0
@@ -5023,7 +5026,12 @@ autoplay = "default"
 frame_progress = 0.21131516
 
 [node name="Title" type="Label" parent="MainMenu Controller" unique_id=1815148714]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.015652174
+anchor_top = -0.11111111
+anchor_right = 0.015652174
+anchor_bottom = -0.11111111
 offset_left = 360.0
 offset_top = 208.0
 offset_right = 780.0
@@ -5034,7 +5042,12 @@ text = "Eternal Rain"
 metadata/_edit_use_anchors_ = true
 
 [node name="StartButton" type="Button" parent="MainMenu Controller" unique_id=201264049]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.006956522
+anchor_top = -0.13117284
+anchor_right = 0.006956522
+anchor_bottom = -0.13117284
 offset_left = 448.0
 offset_top = 320.0
 offset_right = 704.0
@@ -5043,11 +5056,34 @@ theme_override_colors/font_pressed_color = Color(0.46832657, 1.1250563e-06, 4.81
 theme_override_colors/font_hover_color = Color(0, 0, 0.97587764, 1)
 theme_override_fonts/font = ExtResource("2_ekxnf")
 theme_override_font_sizes/font_size = 30
-text = "Start Game"
+text = "Start New Game"
+metadata/_edit_use_anchors_ = true
+
+[node name="Resume" type="Button" parent="MainMenu Controller" unique_id=1643178733]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.007826087
+anchor_top = 0.010802469
+anchor_right = 0.007826087
+anchor_bottom = 0.010802469
+offset_left = 448.0
+offset_top = 320.0
+offset_right = 704.0
+offset_bottom = 384.0
+theme_override_colors/font_pressed_color = Color(0.46832657, 1.1250563e-06, 4.813075e-08, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0.97587764, 1)
+theme_override_fonts/font = ExtResource("2_ekxnf")
+theme_override_font_sizes/font_size = 30
+text = "Resume"
 metadata/_edit_use_anchors_ = true
 
 [node name="SettingsButton" type="Button" parent="MainMenu Controller" unique_id=150088222]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.008695652
+anchor_top = -0.0061728396
+anchor_right = 0.008695652
+anchor_bottom = -0.0061728396
 offset_left = 448.0
 offset_top = 416.0
 offset_right = 704.0
@@ -5060,7 +5096,12 @@ text = "Settings"
 metadata/_edit_use_anchors_ = true
 
 [node name="QuitGameButton" type="Button" parent="MainMenu Controller" unique_id=1873016576]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.008695652
+anchor_top = -0.023148147
+anchor_right = 0.008695652
+anchor_bottom = -0.023148147
 offset_left = 448.0
 offset_top = 512.0
 offset_right = 704.0
@@ -5075,8 +5116,11 @@ metadata/_edit_use_anchors_ = true
 [node name="Background" type="AudioStreamPlayer" parent="MainMenu Controller" unique_id=106731112]
 stream = ExtResource("10_5dd4i")
 autoplay = true
-bus = &"Music"
+
+[node name="CharacterBody2D" parent="MainMenu Controller" unique_id=489747155 instance=ExtResource("11_lgwnu")]
+position = Vector2(791, 900)
 
 [connection signal="pressed" from="MainMenu Controller/StartButton" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="MainMenu Controller/Resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="MainMenu Controller/SettingsButton" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="MainMenu Controller/QuitGameButton" to="." method="_on_quit_game_pressed"]

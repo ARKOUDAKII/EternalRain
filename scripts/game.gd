@@ -7,18 +7,31 @@ var player_path = "res://files/player_file.JSON"
 @export var camera_x : Vector2
 @export var camera_y : Vector2
 var scene = preload("res://scenes/respawn.tscn")
+var Camera;
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	load_player()
 	load_savefile()
+	
+	var file = FileAccess.open("res://files/lvl.JSON", FileAccess.WRITE)
+	var new = {
+		"scene" : scene_file_path
+	}
+	
+	var json = JSON.new()
+	var json_string = json.stringify(new)
+	
+	file.store_line(json_string)
+	file.close()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	
 	if player.dead:
 		var instance = scene.instantiate()
-		instance.position = player.position 
+		instance.position = Camera.global_position 
 		add_child(instance)
 
 func save() -> bool:
@@ -85,6 +98,7 @@ func load_player() -> bool:
 	camera.limit_top = camera_y.x
 	camera.limit_bottom = camera_y.y
 	new_player.add_child(camera)
+	Camera = camera
 	#new_player.equipment_handler.equip(equipment["Equipped"], equipment["Boon"])
 	new_player.name = "Player"
 	player = new_player

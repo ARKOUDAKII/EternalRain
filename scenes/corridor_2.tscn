@@ -22309,6 +22309,8 @@ shape = SubResource("RectangleShape2D_c3eku")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=948533017]
 
-[node name="Transition" parent="." unique_id=2084617539 instance=ExtResource("4_i5g73")]
+[node name="Transition" parent="." unique_id=2084617539 node_paths=PackedStringArray("level") instance=ExtResource("4_i5g73")]
 position = Vector2(526, -27)
 scale = Vector2(0.8111267, 3.277928)
+level_destination = "res://scenes/reward_area_1.tscn"
+level = NodePath("..")

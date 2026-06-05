@@ -1,13 +1,5 @@
 {
 	"locked": {
-		"heatsense": {
-			"cost": 2.0,
-			"pre": [
-				"climb"
-			]
-		}
-	},
-	"unlocked": {
 		"airdash": {
 			"cost": 2.0,
 			"pre": [
@@ -40,12 +32,20 @@
 			"cost": 1.0,
 			"pre": []
 		},
+		"heatsense": {
+			"cost": 2.0,
+			"pre": [
+				"climb"
+			]
+		},
 		"ldash": {
 			"cost": 1.0,
 			"pre": [
 				"dash"
 			]
-		},
+		}
+	},
+	"unlocked": {
 		"sneak": {
 			"cost": 1.0,
 			"pre": []
