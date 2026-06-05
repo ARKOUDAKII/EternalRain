@@ -273,53 +273,53 @@ bat_03.ogg::AudioStreamOggVorbis::5021391105203730611::1780666659::1780668518::1
 ::res://assets/sfx/Fantasy Sound Library/__MACOSX/::1780666659
 ::res://assets/sfx/Fantasy Sound Library/__MACOSX/Fantasy Sound Library/::1780666659
 ::res://assets/sfx/Fantasy Sound Library/__MACOSX/Fantasy Sound Library/Mp3/::1780666659
-::res://assets/sfx/Fantasy Sound Library/__MACOSX/Fantasy Sound Library/Wav/::1780682711
-._Ambience_Cave_00.wav::AudioStreamWAV::9078305994318244510::1780666659::1780682711::1::::<><><>0<>0<>a5e8daac3d26ccfbf2ffb645ccfc302f<>res://.godot/imported/._Ambience_Cave_00.wav-00472b7ad0ce7eb299843624c2ddf8cb.sample::
-._Dragon_Growl_00.wav::AudioStreamWAV::5658886480478762905::1780666659::1780682711::1::::<><><>0<>0<>333a5dc30adbe5f667bf4e5055939f07<>res://.godot/imported/._Dragon_Growl_00.wav-7317d90b840a212fecddb998277742d4.sample::
-._Dragon_Growl_01.wav::AudioStreamWAV::3055545122035765701::1780666659::1780682711::1::::<><><>0<>0<>c447e4587f4c3d0ef299881b0217a30e<>res://.godot/imported/._Dragon_Growl_01.wav-85d380e12c7ad8ae817db8fe17566e53.sample::
-._Goblin_00.wav::AudioStreamWAV::1874906270812418745::1780666659::1780682711::1::::<><><>0<>0<>ccde0181934b7376b8b9e6ccded2339d<>res://.godot/imported/._Goblin_00.wav-a9738d7fbb20364e47cbea227863f97f.sample::
-._Goblin_01.wav::AudioStreamWAV::6717958644742070767::1780666659::1780682711::1::::<><><>0<>0<>1a22a98f3e164205b0f1be2acdab8208<>res://.godot/imported/._Goblin_01.wav-e926376ede7bf1fc6849a0d47f36a8ba.sample::
-._Goblin_02.wav::AudioStreamWAV::9127565757924627634::1780666659::1780682711::1::::<><><>0<>0<>1bb18315f1397402c45c22a4831dc785<>res://.godot/imported/._Goblin_02.wav-a1c65277e638c1df3f503c5217622117.sample::
-._Goblin_03.wav::AudioStreamWAV::770040773654803446::1780666659::1780682711::1::::<><><>0<>0<>fc646602cdbb5960014894757034c153<>res://.godot/imported/._Goblin_03.wav-c3b434206529a233d8bf895624e5bd62.sample::
-._Goblin_04.wav::AudioStreamWAV::3238179375030400843::1780666659::1780682711::1::::<><><>0<>0<>787821fade9fcd1afbaaf13c40b23491<>res://.godot/imported/._Goblin_04.wav-ec96c1973bb8bbb6393fcabd77e45018.sample::
-._Inventory_Open_00.wav::AudioStreamWAV::7661283573684895260::1780666659::1780682711::1::::<><><>0<>0<>c82f1d595c99c7e50adb4b0fc5eb9225<>res://.godot/imported/._Inventory_Open_00.wav-46ae43e3c8a075e29b4abebb91ad9d65.sample::
-._Inventory_Open_01.wav::AudioStreamWAV::6139498836427253804::1780666659::1780682711::1::::<><><>0<>0<>82cdbb3c86dd215efb5fe0480429d268<>res://.godot/imported/._Inventory_Open_01.wav-505eda80e257917ed106d64748775510.sample::
-._Jingle_Achievement_00.wav::AudioStreamWAV::195024750312687844::1780666659::1780682711::1::::<><><>0<>0<>25c05635a2d1229055bb43b5cc69e26b<>res://.godot/imported/._Jingle_Achievement_00.wav-ca0c3ea9429dd87c2348da4d2158a5d6.sample::
-._Jingle_Lose_00.wav::AudioStreamWAV::8665304044615347689::1780666659::1780682711::1::::<><><>0<>0<>36db7df877fe4138f26325d626bd1c80<>res://.godot/imported/._Jingle_Lose_00.wav-b94bc31007d5383a4f6caba320c64c8e.sample::
-._Jingle_Win_00.wav::AudioStreamWAV::475654865685476237::1780666659::1780682711::1::::<><><>0<>0<>0fb2d7f1ec0632dece5ad20705e65af3<>res://.godot/imported/._Jingle_Win_00.wav-471449908641e7090273bc122e82b7e0.sample::
-._Menu_Select_00.wav::AudioStreamWAV::5913814270862669797::1780666659::1780682711::1::::<><><>0<>0<>7308f7e85ad2f3b08485159b659f2c33<>res://.godot/imported/._Menu_Select_00.wav-a37f5996be6da20c4675e2df573cb6ac.sample::
-._Pickup_Gold_00.wav::AudioStreamWAV::9013147320371538062::1780666659::1780682711::1::::<><><>0<>0<>5e44926813e700b5cad9c9ea5f3bed48<>res://.godot/imported/._Pickup_Gold_00.wav-af6dbeb916baebb5684564bf02e0e928.sample::
-._Pickup_Gold_01.wav::AudioStreamWAV::1070923529795330293::1780666659::1780682711::1::::<><><>0<>0<>f91f5f98dfa1589d8adb799e8648c10c<>res://.godot/imported/._Pickup_Gold_01.wav-602b64afc18c913175d914b548f3f507.sample::
-._Pickup_Gold_02.wav::AudioStreamWAV::1070609256204482757::1780666659::1780682711::1::::<><><>0<>0<>e476254488f78711b8e3e733621245a3<>res://.godot/imported/._Pickup_Gold_02.wav-2533387a714d7df830e871dc81eb033a.sample::
-._Pickup_Gold_03.wav::AudioStreamWAV::4650007166322761627::1780666659::1780682711::1::::<><><>0<>0<>c241aa00ed29a8acf0806438ebb015f3<>res://.godot/imported/._Pickup_Gold_03.wav-8356b0a785fe22b1131be577c9ae49f5.sample::
-._Pickup_Gold_04.wav::AudioStreamWAV::3740021881847478835::1780666659::1780682711::1::::<><><>0<>0<>8c5b5bcc8ad242b80cec692b9b6c9549<>res://.godot/imported/._Pickup_Gold_04.wav-83acb27ff57c375e62f17462b7590430.sample::
-._Spell_00.wav::AudioStreamWAV::4450794042155684493::1780666659::1780682711::1::::<><><>0<>0<>8f3a159e15abd5d37ba415b2cff34a56<>res://.godot/imported/._Spell_00.wav-f77415f2c75e386cbe9ba8582a2b008a.sample::
-._Spell_01.wav::AudioStreamWAV::7221080273133336307::1780666659::1780682711::1::::<><><>0<>0<>8d386f373430beeb3a53d76ec03c0944<>res://.godot/imported/._Spell_01.wav-2e7d68c7ea2b71333b874ce808dd0621.sample::
-._Spell_02.wav::AudioStreamWAV::1782611156682260706::1780666659::1780682711::1::::<><><>0<>0<>b70963f9b53840955ad5858d26807f87<>res://.godot/imported/._Spell_02.wav-17b6b0636b1ba7c4c6cea59f0f9d2145.sample::
-._Spell_03.wav::AudioStreamWAV::8810567666944931510::1780666659::1780682711::1::::<><><>0<>0<>771e9fc4971c482479daa6edfca25924<>res://.godot/imported/._Spell_03.wav-1392889b57302320b6acde43c4921025.sample::
-._Spell_04.wav::AudioStreamWAV::6007626236626188774::1780666659::1780682711::1::::<><><>0<>0<>7b69a6352c4e884a4d1aba3b28cf647a<>res://.godot/imported/._Spell_04.wav-0f4846c37261dfb675a7ad4a191d8078.sample::
-._Trap_00.wav::AudioStreamWAV::1443207440765983371::1780666659::1780682711::1::::<><><>0<>0<>84f4a08fa43bc47534f0fbd34b496ef1<>res://.godot/imported/._Trap_00.wav-bf32b0adf4a088724107731ecafd957e.sample::
-._Trap_01.wav::AudioStreamWAV::153815759854132790::1780666659::1780682711::1::::<><><>0<>0<>354df4b0ce1fdb8be49d80067478ce34<>res://.godot/imported/._Trap_01.wav-082722cb97dbe8441c4e56563c7b1e50.sample::
-._Trap_02.wav::AudioStreamWAV::4763640731627678436::1780666659::1780682711::1::::<><><>0<>0<>4f177ec616617cfc06ff40a76be2e77d<>res://.godot/imported/._Trap_02.wav-594b5c1ff963cf95d802b870c7136887.sample::
-::res://assets/sfx/Fantasy Sound Library/__MACOSX/Fantasy Sound Library/Wav/Footsteps/::1780682711
-._Footstep_Dirt_00.wav::AudioStreamWAV::8287778237675326416::1780666659::1780682711::1::::<><><>0<>0<>6bbbddc12e748b55541a5aa9117c4750<>res://.godot/imported/._Footstep_Dirt_00.wav-16b75cf94c24b3735356ce45548fe000.sample::
-._Footstep_Dirt_01.wav::AudioStreamWAV::9059034523876761014::1780666659::1780682711::1::::<><><>0<>0<>dac8eae4e4611e1f71c9aae0d045e2ef<>res://.godot/imported/._Footstep_Dirt_01.wav-97265091ca275dd91033dc7b580752a7.sample::
-._Footstep_Dirt_02.wav::AudioStreamWAV::4264800040386689371::1780666659::1780682711::1::::<><><>0<>0<>4da471b7c1e399acc689b8acc855c673<>res://.godot/imported/._Footstep_Dirt_02.wav-d36dd12430863213a0be3e34909c35cd.sample::
-._Footstep_Dirt_03.wav::AudioStreamWAV::5677957362126276249::1780666659::1780682711::1::::<><><>0<>0<>f0144ac77b61daf4cf465cdf4da405e5<>res://.godot/imported/._Footstep_Dirt_03.wav-a2c119c7820d4e2c7eb7d41ee599c153.sample::
-._Footstep_Dirt_04.wav::AudioStreamWAV::3900758655763672726::1780666659::1780682711::1::::<><><>0<>0<>4442f6354ec544b58652d1d5b76e3bce<>res://.godot/imported/._Footstep_Dirt_04.wav-e2fee4dbfe43efbe325cdcf380921cea.sample::
-._Footstep_Dirt_05.wav::AudioStreamWAV::691615621920838662::1780666659::1780682711::1::::<><><>0<>0<>de8da64a0cbb8f4cab5493022f3079ab<>res://.godot/imported/._Footstep_Dirt_05.wav-4586834dc719b41ae84b7a1aee0460b0.sample::
-._Footstep_Dirt_06.wav::AudioStreamWAV::5432256947352464741::1780666659::1780682711::1::::<><><>0<>0<>9e43601861d188924b762f556cd55885<>res://.godot/imported/._Footstep_Dirt_06.wav-5dcacf556cf191674be0549392ff78f0.sample::
-._Footstep_Dirt_07.wav::AudioStreamWAV::5891642025662423261::1780666659::1780682711::1::::<><><>0<>0<>9c95a079c004a8e265fe677502aad231<>res://.godot/imported/._Footstep_Dirt_07.wav-9e2ce2a4b4a942a37474ad0409863d4a.sample::
-._Footstep_Dirt_08.wav::AudioStreamWAV::6150997514011780970::1780666659::1780682712::1::::<><><>0<>0<>baa844ab2850de0a191ad1716bbf7bf8<>res://.godot/imported/._Footstep_Dirt_08.wav-6c5fca7b873298c8622889ebed3dad71.sample::
-._Footstep_Dirt_09.wav::AudioStreamWAV::3205934436933409256::1780666659::1780682712::1::::<><><>0<>0<>674f5ee336116fa9e9c3dfbeadb4d912<>res://.godot/imported/._Footstep_Dirt_09.wav-437cbedc6392ed3dfc3dffbc8eee916a.sample::
-._Footstep_Water_00.wav::AudioStreamWAV::1649941811017522950::1780666659::1780682712::1::::<><><>0<>0<>fad30e1f7255729cb181bf2d9ee526cb<>res://.godot/imported/._Footstep_Water_00.wav-13e8cf12483361de2f95194c439b0bb0.sample::
-._Footstep_Water_01.wav::AudioStreamWAV::6508591548619070315::1780666659::1780682712::1::::<><><>0<>0<>b91807ebd426b1b5b844b1c4906f8d1b<>res://.godot/imported/._Footstep_Water_01.wav-f6f6343504fc44cfe8184aecaec63b2e.sample::
-._Footstep_Water_02.wav::AudioStreamWAV::1962942284989981348::1780666659::1780682712::1::::<><><>0<>0<>ee5b7cfe4c511ffdab89e991cfb99b23<>res://.godot/imported/._Footstep_Water_02.wav-2745dff2e3112a036d60538187ce24d9.sample::
-._Footstep_Water_03.wav::AudioStreamWAV::7272580836986335394::1780666659::1780682712::1::::<><><>0<>0<>eede8fcf3248355f291678f8fc766e2d<>res://.godot/imported/._Footstep_Water_03.wav-8d0ac7742494f56be33ccb83a86cc7d3.sample::
-._Footstep_Water_04.wav::AudioStreamWAV::4392340066085566370::1780666659::1780682712::1::::<><><>0<>0<>8a2b3712df2046363ffd63cdb03f7edc<>res://.godot/imported/._Footstep_Water_04.wav-04f6bbb144ce906f453a75d9b125e8f4.sample::
-._Footstep_Water_05.wav::AudioStreamWAV::181437156410661345::1780666659::1780682712::1::::<><><>0<>0<>0917c7e3ca62d6a68bbef36d641d825d<>res://.godot/imported/._Footstep_Water_05.wav-97b2aba38075fe735366ff75125cc793.sample::
-._Footstep_Water_06.wav::AudioStreamWAV::7850428000157789011::1780666659::1780682712::1::::<><><>0<>0<>baea42c8a3a60bd9bd535dcc53010c85<>res://.godot/imported/._Footstep_Water_06.wav-695c11d0f3923b396fae862a4a0e7a56.sample::
-._Footstep_Water_07.wav::AudioStreamWAV::6067479824275867930::1780666659::1780682712::1::::<><><>0<>0<>0733074b042d51a8e91bc447903405fa<>res://.godot/imported/._Footstep_Water_07.wav-407d978854dbe36f5345c52ac9a8bef5.sample::
+::res://assets/sfx/Fantasy Sound Library/__MACOSX/Fantasy Sound Library/Wav/::1780682712
+._Ambience_Cave_00.wav::AudioStreamWAV::9078305994318244510::1780666659::1780683310::1::::<><><>0<>0<>a5e8daac3d26ccfbf2ffb645ccfc302f<>res://.godot/imported/._Ambience_Cave_00.wav-00472b7ad0ce7eb299843624c2ddf8cb.sample::
+._Dragon_Growl_00.wav::AudioStreamWAV::5658886480478762905::1780666659::1780683310::1::::<><><>0<>0<>333a5dc30adbe5f667bf4e5055939f07<>res://.godot/imported/._Dragon_Growl_00.wav-7317d90b840a212fecddb998277742d4.sample::
+._Dragon_Growl_01.wav::AudioStreamWAV::3055545122035765701::1780666659::1780683310::1::::<><><>0<>0<>c447e4587f4c3d0ef299881b0217a30e<>res://.godot/imported/._Dragon_Growl_01.wav-85d380e12c7ad8ae817db8fe17566e53.sample::
+._Goblin_00.wav::AudioStreamWAV::1874906270812418745::1780666659::1780683310::1::::<><><>0<>0<>ccde0181934b7376b8b9e6ccded2339d<>res://.godot/imported/._Goblin_00.wav-a9738d7fbb20364e47cbea227863f97f.sample::
+._Goblin_01.wav::AudioStreamWAV::6717958644742070767::1780666659::1780683310::1::::<><><>0<>0<>1a22a98f3e164205b0f1be2acdab8208<>res://.godot/imported/._Goblin_01.wav-e926376ede7bf1fc6849a0d47f36a8ba.sample::
+._Goblin_02.wav::AudioStreamWAV::9127565757924627634::1780666659::1780683310::1::::<><><>0<>0<>1bb18315f1397402c45c22a4831dc785<>res://.godot/imported/._Goblin_02.wav-a1c65277e638c1df3f503c5217622117.sample::
+._Goblin_03.wav::AudioStreamWAV::770040773654803446::1780666659::1780683310::1::::<><><>0<>0<>fc646602cdbb5960014894757034c153<>res://.godot/imported/._Goblin_03.wav-c3b434206529a233d8bf895624e5bd62.sample::
+._Goblin_04.wav::AudioStreamWAV::3238179375030400843::1780666659::1780683310::1::::<><><>0<>0<>787821fade9fcd1afbaaf13c40b23491<>res://.godot/imported/._Goblin_04.wav-ec96c1973bb8bbb6393fcabd77e45018.sample::
+._Inventory_Open_00.wav::AudioStreamWAV::7661283573684895260::1780666659::1780683310::1::::<><><>0<>0<>c82f1d595c99c7e50adb4b0fc5eb9225<>res://.godot/imported/._Inventory_Open_00.wav-46ae43e3c8a075e29b4abebb91ad9d65.sample::
+._Inventory_Open_01.wav::AudioStreamWAV::6139498836427253804::1780666659::1780683310::1::::<><><>0<>0<>82cdbb3c86dd215efb5fe0480429d268<>res://.godot/imported/._Inventory_Open_01.wav-505eda80e257917ed106d64748775510.sample::
+._Jingle_Achievement_00.wav::AudioStreamWAV::195024750312687844::1780666659::1780683310::1::::<><><>0<>0<>25c05635a2d1229055bb43b5cc69e26b<>res://.godot/imported/._Jingle_Achievement_00.wav-ca0c3ea9429dd87c2348da4d2158a5d6.sample::
+._Jingle_Lose_00.wav::AudioStreamWAV::8665304044615347689::1780666659::1780683310::1::::<><><>0<>0<>36db7df877fe4138f26325d626bd1c80<>res://.godot/imported/._Jingle_Lose_00.wav-b94bc31007d5383a4f6caba320c64c8e.sample::
+._Jingle_Win_00.wav::AudioStreamWAV::475654865685476237::1780666659::1780683310::1::::<><><>0<>0<>0fb2d7f1ec0632dece5ad20705e65af3<>res://.godot/imported/._Jingle_Win_00.wav-471449908641e7090273bc122e82b7e0.sample::
+._Menu_Select_00.wav::AudioStreamWAV::5913814270862669797::1780666659::1780683310::1::::<><><>0<>0<>7308f7e85ad2f3b08485159b659f2c33<>res://.godot/imported/._Menu_Select_00.wav-a37f5996be6da20c4675e2df573cb6ac.sample::
+._Pickup_Gold_00.wav::AudioStreamWAV::9013147320371538062::1780666659::1780683310::1::::<><><>0<>0<>5e44926813e700b5cad9c9ea5f3bed48<>res://.godot/imported/._Pickup_Gold_00.wav-af6dbeb916baebb5684564bf02e0e928.sample::
+._Pickup_Gold_01.wav::AudioStreamWAV::1070923529795330293::1780666659::1780683310::1::::<><><>0<>0<>f91f5f98dfa1589d8adb799e8648c10c<>res://.godot/imported/._Pickup_Gold_01.wav-602b64afc18c913175d914b548f3f507.sample::
+._Pickup_Gold_02.wav::AudioStreamWAV::1070609256204482757::1780666659::1780683310::1::::<><><>0<>0<>e476254488f78711b8e3e733621245a3<>res://.godot/imported/._Pickup_Gold_02.wav-2533387a714d7df830e871dc81eb033a.sample::
+._Pickup_Gold_03.wav::AudioStreamWAV::4650007166322761627::1780666659::1780683310::1::::<><><>0<>0<>c241aa00ed29a8acf0806438ebb015f3<>res://.godot/imported/._Pickup_Gold_03.wav-8356b0a785fe22b1131be577c9ae49f5.sample::
+._Pickup_Gold_04.wav::AudioStreamWAV::3740021881847478835::1780666659::1780683310::1::::<><><>0<>0<>8c5b5bcc8ad242b80cec692b9b6c9549<>res://.godot/imported/._Pickup_Gold_04.wav-83acb27ff57c375e62f17462b7590430.sample::
+._Spell_00.wav::AudioStreamWAV::4450794042155684493::1780666659::1780683310::1::::<><><>0<>0<>8f3a159e15abd5d37ba415b2cff34a56<>res://.godot/imported/._Spell_00.wav-f77415f2c75e386cbe9ba8582a2b008a.sample::
+._Spell_01.wav::AudioStreamWAV::7221080273133336307::1780666659::1780683310::1::::<><><>0<>0<>8d386f373430beeb3a53d76ec03c0944<>res://.godot/imported/._Spell_01.wav-2e7d68c7ea2b71333b874ce808dd0621.sample::
+._Spell_02.wav::AudioStreamWAV::1782611156682260706::1780666659::1780683310::1::::<><><>0<>0<>b70963f9b53840955ad5858d26807f87<>res://.godot/imported/._Spell_02.wav-17b6b0636b1ba7c4c6cea59f0f9d2145.sample::
+._Spell_03.wav::AudioStreamWAV::8810567666944931510::1780666659::1780683310::1::::<><><>0<>0<>771e9fc4971c482479daa6edfca25924<>res://.godot/imported/._Spell_03.wav-1392889b57302320b6acde43c4921025.sample::
+._Spell_04.wav::AudioStreamWAV::6007626236626188774::1780666659::1780683310::1::::<><><>0<>0<>7b69a6352c4e884a4d1aba3b28cf647a<>res://.godot/imported/._Spell_04.wav-0f4846c37261dfb675a7ad4a191d8078.sample::
+._Trap_00.wav::AudioStreamWAV::1443207440765983371::1780666659::1780683310::1::::<><><>0<>0<>84f4a08fa43bc47534f0fbd34b496ef1<>res://.godot/imported/._Trap_00.wav-bf32b0adf4a088724107731ecafd957e.sample::
+._Trap_01.wav::AudioStreamWAV::153815759854132790::1780666659::1780683310::1::::<><><>0<>0<>354df4b0ce1fdb8be49d80067478ce34<>res://.godot/imported/._Trap_01.wav-082722cb97dbe8441c4e56563c7b1e50.sample::
+._Trap_02.wav::AudioStreamWAV::4763640731627678436::1780666659::1780683310::1::::<><><>0<>0<>4f177ec616617cfc06ff40a76be2e77d<>res://.godot/imported/._Trap_02.wav-594b5c1ff963cf95d802b870c7136887.sample::
+::res://assets/sfx/Fantasy Sound Library/__MACOSX/Fantasy Sound Library/Wav/Footsteps/::1780682712
+._Footstep_Dirt_00.wav::AudioStreamWAV::8287778237675326416::1780666659::1780683310::1::::<><><>0<>0<>6bbbddc12e748b55541a5aa9117c4750<>res://.godot/imported/._Footstep_Dirt_00.wav-16b75cf94c24b3735356ce45548fe000.sample::
+._Footstep_Dirt_01.wav::AudioStreamWAV::9059034523876761014::1780666659::1780683310::1::::<><><>0<>0<>dac8eae4e4611e1f71c9aae0d045e2ef<>res://.godot/imported/._Footstep_Dirt_01.wav-97265091ca275dd91033dc7b580752a7.sample::
+._Footstep_Dirt_02.wav::AudioStreamWAV::4264800040386689371::1780666659::1780683310::1::::<><><>0<>0<>4da471b7c1e399acc689b8acc855c673<>res://.godot/imported/._Footstep_Dirt_02.wav-d36dd12430863213a0be3e34909c35cd.sample::
+._Footstep_Dirt_03.wav::AudioStreamWAV::5677957362126276249::1780666659::1780683310::1::::<><><>0<>0<>f0144ac77b61daf4cf465cdf4da405e5<>res://.godot/imported/._Footstep_Dirt_03.wav-a2c119c7820d4e2c7eb7d41ee599c153.sample::
+._Footstep_Dirt_04.wav::AudioStreamWAV::3900758655763672726::1780666659::1780683310::1::::<><><>0<>0<>4442f6354ec544b58652d1d5b76e3bce<>res://.godot/imported/._Footstep_Dirt_04.wav-e2fee4dbfe43efbe325cdcf380921cea.sample::
+._Footstep_Dirt_05.wav::AudioStreamWAV::691615621920838662::1780666659::1780683310::1::::<><><>0<>0<>de8da64a0cbb8f4cab5493022f3079ab<>res://.godot/imported/._Footstep_Dirt_05.wav-4586834dc719b41ae84b7a1aee0460b0.sample::
+._Footstep_Dirt_06.wav::AudioStreamWAV::5432256947352464741::1780666659::1780683310::1::::<><><>0<>0<>9e43601861d188924b762f556cd55885<>res://.godot/imported/._Footstep_Dirt_06.wav-5dcacf556cf191674be0549392ff78f0.sample::
+._Footstep_Dirt_07.wav::AudioStreamWAV::5891642025662423261::1780666659::1780683310::1::::<><><>0<>0<>9c95a079c004a8e265fe677502aad231<>res://.godot/imported/._Footstep_Dirt_07.wav-9e2ce2a4b4a942a37474ad0409863d4a.sample::
+._Footstep_Dirt_08.wav::AudioStreamWAV::6150997514011780970::1780666659::1780683310::1::::<><><>0<>0<>baa844ab2850de0a191ad1716bbf7bf8<>res://.godot/imported/._Footstep_Dirt_08.wav-6c5fca7b873298c8622889ebed3dad71.sample::
+._Footstep_Dirt_09.wav::AudioStreamWAV::3205934436933409256::1780666659::1780683310::1::::<><><>0<>0<>674f5ee336116fa9e9c3dfbeadb4d912<>res://.godot/imported/._Footstep_Dirt_09.wav-437cbedc6392ed3dfc3dffbc8eee916a.sample::
+._Footstep_Water_00.wav::AudioStreamWAV::1649941811017522950::1780666659::1780683310::1::::<><><>0<>0<>fad30e1f7255729cb181bf2d9ee526cb<>res://.godot/imported/._Footstep_Water_00.wav-13e8cf12483361de2f95194c439b0bb0.sample::
+._Footstep_Water_01.wav::AudioStreamWAV::6508591548619070315::1780666659::1780683310::1::::<><><>0<>0<>b91807ebd426b1b5b844b1c4906f8d1b<>res://.godot/imported/._Footstep_Water_01.wav-f6f6343504fc44cfe8184aecaec63b2e.sample::
+._Footstep_Water_02.wav::AudioStreamWAV::1962942284989981348::1780666659::1780683310::1::::<><><>0<>0<>ee5b7cfe4c511ffdab89e991cfb99b23<>res://.godot/imported/._Footstep_Water_02.wav-2745dff2e3112a036d60538187ce24d9.sample::
+._Footstep_Water_03.wav::AudioStreamWAV::7272580836986335394::1780666659::1780683310::1::::<><><>0<>0<>eede8fcf3248355f291678f8fc766e2d<>res://.godot/imported/._Footstep_Water_03.wav-8d0ac7742494f56be33ccb83a86cc7d3.sample::
+._Footstep_Water_04.wav::AudioStreamWAV::4392340066085566370::1780666659::1780683310::1::::<><><>0<>0<>8a2b3712df2046363ffd63cdb03f7edc<>res://.godot/imported/._Footstep_Water_04.wav-04f6bbb144ce906f453a75d9b125e8f4.sample::
+._Footstep_Water_05.wav::AudioStreamWAV::181437156410661345::1780666659::1780683310::1::::<><><>0<>0<>0917c7e3ca62d6a68bbef36d641d825d<>res://.godot/imported/._Footstep_Water_05.wav-97b2aba38075fe735366ff75125cc793.sample::
+._Footstep_Water_06.wav::AudioStreamWAV::7850428000157789011::1780666659::1780683310::1::::<><><>0<>0<>baea42c8a3a60bd9bd535dcc53010c85<>res://.godot/imported/._Footstep_Water_06.wav-695c11d0f3923b396fae862a4a0e7a56.sample::
+._Footstep_Water_07.wav::AudioStreamWAV::6067479824275867930::1780666659::1780683310::1::::<><><>0<>0<>0733074b042d51a8e91bc447903405fa<>res://.godot/imported/._Footstep_Water_07.wav-407d978854dbe36f5345c52ac9a8bef5.sample::
 ::res://assets/sfx/Fantasy Sound Library/Fantasy Sound Library/::1780666658
 ::res://assets/sfx/Fantasy Sound Library/Fantasy Sound Library/Mp3/::1780668518
 Ambience_Cave_00.mp3::AudioStreamMP3::5557595134343615560::1780666658::1780668518::1::::<><><>0<>0<>19d7344ae485fbf84de4676952b18f67<>res://.godot/imported/Ambience_Cave_00.mp3-40e2815c3e96277e7da0e8eb02581c41.mp3str::
@@ -444,115 +444,115 @@ stepwood_2.wav::AudioStreamWAV::1109814137615115815::1780666659::1780668520::1::
 ::res://assets/sfx/rpg_sound_pack/::1780666659
 ::res://assets/sfx/rpg_sound_pack/__MACOSX/::1780666659
 ::res://assets/sfx/rpg_sound_pack/__MACOSX/RPG Sound Pack/::1780666659
-::res://assets/sfx/rpg_sound_pack/__MACOSX/RPG Sound Pack/battle/::1780682711
-._magic1.wav::AudioStreamWAV::566515802581974000::1780666659::1780682712::1::::<><><>0<>0<>0bacf38398589d7601913b6f6b3593bd<>res://.godot/imported/._magic1.wav-5e69d779b60c6b303487b8327cd7e168.sample::
-._spell.wav::AudioStreamWAV::2712811249829783620::1780666659::1780682712::1::::<><><>0<>0<>1724cf7b7d4cd44175990440fe8af621<>res://.godot/imported/._spell.wav-3e589224bb7a5d06e830694af489cbd5.sample::
-._swing2.wav::AudioStreamWAV::3813521928926429175::1780666659::1780682712::1::::<><><>0<>0<>b5f627f8f81f9fc9b1f9d90100db4f41<>res://.godot/imported/._swing2.wav-9af499facc1f74bdbfbe05a32053e9ef.sample::
-._swing3.wav::AudioStreamWAV::657755235239905916::1780666659::1780682712::1::::<><><>0<>0<>4e3c94b4c738a6046763ede29da0cb0a<>res://.godot/imported/._swing3.wav-e23915181aaee3807f3aa05ea25c6040.sample::
-._swing.wav::AudioStreamWAV::4718315012552801313::1780666659::1780682712::1::::<><><>0<>0<>f0e5654f1d997548c089122a35cf8e92<>res://.godot/imported/._swing.wav-c5027e561e2f119acac13e0e513cd083.sample::
-._sword-unsheathe2.wav::AudioStreamWAV::1978789544676389141::1780666659::1780682712::1::::<><><>0<>0<>19cddb6aa0cda75445b89e58b2ac5854<>res://.godot/imported/._sword-unsheathe2.wav-8d4e51da827e6d0d12deafa68d5d9b8a.sample::
-._sword-unsheathe3.wav::AudioStreamWAV::3350566924590353690::1780666659::1780682712::1::::<><><>0<>0<>810fa05ab86497ed386e578e263212b3<>res://.godot/imported/._sword-unsheathe3.wav-a9ee2ca1a7ec85d557319e56c05dabe1.sample::
-._sword-unsheathe4.wav::AudioStreamWAV::2982106981493747331::1780666659::1780682712::1::::<><><>0<>0<>edb850e40b940855f7ab9b9f5e9260f8<>res://.godot/imported/._sword-unsheathe4.wav-75f4fa637f6c1dc060822543f25be250.sample::
-._sword-unsheathe5.wav::AudioStreamWAV::5301250931604910834::1780666659::1780682711::1::::<><><>0<>0<>78205a06e669f2567b8fd799a3026e1a<>res://.godot/imported/._sword-unsheathe5.wav-0cfce3b505c6ebb1618544888c225e14.sample::
-._sword-unsheathe.wav::AudioStreamWAV::1576458846420274749::1780666659::1780682712::1::::<><><>0<>0<>d788fa91b14dbee354fd5abd8606db51<>res://.godot/imported/._sword-unsheathe.wav-5b2290cde5913e5cc756723063d1756f.sample::
-::res://assets/sfx/rpg_sound_pack/__MACOSX/RPG Sound Pack/interface/::1780682711
-._interface1.wav::AudioStreamWAV::4895379056849324107::1780666659::1780682712::1::::<><><>0<>0<>31b089a92dd22e777843d280c13375b6<>res://.godot/imported/._interface1.wav-e6fd8c168cf1ab685a34cbca38afabfa.sample::
-._interface2.wav::AudioStreamWAV::8367814015463208061::1780666659::1780682712::1::::<><><>0<>0<>bdfb38bc9bb91aebd112a2c8e48a00df<>res://.godot/imported/._interface2.wav-af3e31412a0d947da47f7eafbc2b4d71.sample::
-._interface3.wav::AudioStreamWAV::3677087184102121488::1780666659::1780682712::1::::<><><>0<>0<>c29c8cc0af8888682da618338bf03890<>res://.godot/imported/._interface3.wav-1d9ea4a9f67634b5c3b83d40ac9f0f8a.sample::
-._interface4.wav::AudioStreamWAV::1417343695452326824::1780666659::1780682712::1::::<><><>0<>0<>0bb3508088e0852edc25676edbaacbbb<>res://.godot/imported/._interface4.wav-50ebada78422604eb238628c505c0cf2.sample::
-._interface5.wav::AudioStreamWAV::1964048935023153946::1780666659::1780682712::1::::<><><>0<>0<>85df249a2223e04cd1b85582aa2af8c7<>res://.godot/imported/._interface5.wav-e3fb33bd20b287f0294b84cb05c76495.sample::
-._interface6.wav::AudioStreamWAV::1540450475598552933::1780666659::1780682712::1::::<><><>0<>0<>4e5944c2a1cc39471e5788dc38f453f5<>res://.godot/imported/._interface6.wav-a2d4f2e6ab590a3254e8090811851486.sample::
-::res://assets/sfx/rpg_sound_pack/__MACOSX/RPG Sound Pack/inventory/::1780682711
-._armor-light.wav::AudioStreamWAV::7012155021828618228::1780666659::1780682712::1::::<><><>0<>0<>a0ac8a6b2f9015e426fd1d25af98e030<>res://.godot/imported/._armor-light.wav-8d2954e376a5c76a3830313edd6aefc2.sample::
-._beads.wav::AudioStreamWAV::4281730469497562784::1780666659::1780682712::1::::<><><>0<>0<>0a2db94ed9537940ffd94e558162cdec<>res://.godot/imported/._beads.wav-417ab8eaf0f1ad9d9c0f4f96dca5c191.sample::
-._bottle.wav::AudioStreamWAV::1670009354011886248::1780666659::1780682712::1::::<><><>0<>0<>fbdb3fbdac6f0c7d1a5a8e70c5267892<>res://.godot/imported/._bottle.wav-98775fe0f2512f4a609f4ab738c1fa61.sample::
-._bubble2.wav::AudioStreamWAV::8448837414219093713::1780666659::1780682712::1::::<><><>0<>0<>d011b7c7cf48ad5a05b44c22cfcdb840<>res://.godot/imported/._bubble2.wav-70e00e0b154f079cdc9cb75f073beaad.sample::
-._bubble3.wav::AudioStreamWAV::8646024521052908508::1780666659::1780682712::1::::<><><>0<>0<>998df14b460bf05b5f1267e2a58572c1<>res://.godot/imported/._bubble3.wav-9a1b02650815dfb0f18aebcb09d5632d.sample::
-._bubble.wav::AudioStreamWAV::296122411550227252::1780666659::1780682712::1::::<><><>0<>0<>de8e7ec4d24ac4613cd6afbcae6824a8<>res://.godot/imported/._bubble.wav-08e418466b94a1e10fb9d45775edd864.sample::
-._chainmail1.wav::AudioStreamWAV::6989580351468259142::1780666659::1780682712::1::::<><><>0<>0<>fac2438035d13bf307524566f996822e<>res://.godot/imported/._chainmail1.wav-1f3f75148b330a1aa9268ba578d0769d.sample::
-._chainmail2.wav::AudioStreamWAV::8189177745300611768::1780666659::1780682712::1::::<><><>0<>0<>3acb1e03dbda1cc0e57e573aefd1f61c<>res://.godot/imported/._chainmail2.wav-ff2e5790b9387db3b3949a8b11f7b164.sample::
-._cloth-heavy.wav::AudioStreamWAV::6339873564366565675::1780666659::1780682712::1::::<><><>0<>0<>d6dec5623089a1790c0d6c6f245da4c7<>res://.godot/imported/._cloth-heavy.wav-9706c0ea3d578ac56c8db4ece726296b.sample::
-._cloth.wav::AudioStreamWAV::8742657195471934872::1780666659::1780682712::1::::<><><>0<>0<>7ef454a462fa4e1b36b6b6d419950d1f<>res://.godot/imported/._cloth.wav-e4112ac4c828bd81b0c15991b21fa57c.sample::
-._coin2.wav::AudioStreamWAV::5167892557394433148::1780666659::1780682711::1::::<><><>0<>0<>eb813664772d8d02dcdd8312e15299f3<>res://.godot/imported/._coin2.wav-e49ec28302ff9194d7a9d0eb7d025496.sample::
-._coin3.wav::AudioStreamWAV::6316668230377004547::1780666659::1780682711::1::::<><><>0<>0<>d8ee6c0cc6ff79a553a61a835c80a80c<>res://.godot/imported/._coin3.wav-45f45b92278ccc508477e1fd210e5c93.sample::
-._coin.wav::AudioStreamWAV::5666794020136022043::1780666659::1780682711::1::::<><><>0<>0<>1738e2726183595f544e03ec55e5c262<>res://.godot/imported/._coin.wav-fce3d310c959a85dbf5515e731fea5ac.sample::
-._metal-ringing.wav::AudioStreamWAV::8693120703461807396::1780666659::1780682711::1::::<><><>0<>0<>9625188bd0c32b771e9c9190bacb55fb<>res://.godot/imported/._metal-ringing.wav-338792f218a884e7f2551b435d4531a5.sample::
-._metal-small1.wav::AudioStreamWAV::2773346166044076029::1780666659::1780682711::1::::<><><>0<>0<>323a85e94b0b66f1c9347b514e36142a<>res://.godot/imported/._metal-small1.wav-9b6f50ae7209e3be8a7fea60f6efca54.sample::
-._metal-small2.wav::AudioStreamWAV::1668551522703318504::1780666659::1780682711::1::::<><><>0<>0<>85b3f62539b61f3d44f9c42e2e271835<>res://.godot/imported/._metal-small2.wav-ef8583632a50ceb2c7a40405f5aec2c6.sample::
-._metal-small3.wav::AudioStreamWAV::757434190455495570::1780666659::1780682711::1::::<><><>0<>0<>e2f70840c6549274c7db48383ed91694<>res://.godot/imported/._metal-small3.wav-fa1e7009b43601b325a35e49960df74a.sample::
-._wood-small.wav::AudioStreamWAV::5537036374914864071::1780666659::1780682711::1::::<><><>0<>0<>09783d41fac21291672c503bd19eefbe<>res://.godot/imported/._wood-small.wav-cfd225b547fe4434d59d74579c5d515d.sample::
-::res://assets/sfx/rpg_sound_pack/__MACOSX/RPG Sound Pack/misc/::1780682710
-._burp.wav::AudioStreamWAV::156172338220858600::1780666659::1780682711::1::::<><><>0<>0<>8eaf7e3bf61268fd2721f1468c0ed59d<>res://.godot/imported/._burp.wav-b2614693fb78598c2008fb5c3ad66499.sample::
-._random1.wav::AudioStreamWAV::7819532323822717732::1780666659::1780682711::1::::<><><>0<>0<>02a32e7a2e0beb2d27e2cf47824f1f38<>res://.godot/imported/._random1.wav-11edc6bfde6727ac3a3c733e3fe83b02.sample::
-._random2.wav::AudioStreamWAV::6188411403789521752::1780666659::1780682711::1::::<><><>0<>0<>70e01f56b4693335798ba75ad83a8fbf<>res://.godot/imported/._random2.wav-759bb6c346a6c35ebcda0f0c890f4640.sample::
-._random3.wav::AudioStreamWAV::4114178675827626283::1780666659::1780682711::1::::<><><>0<>0<>3223feae5c2489a5fcdedb1cd4f878ad<>res://.godot/imported/._random3.wav-d30d5e81082bf6b23a66bef185a9d876.sample::
-._random4.wav::AudioStreamWAV::2790480417550942213::1780666659::1780682711::1::::<><><>0<>0<>fef9f8680dc877fc8bff4448b4b2601c<>res://.godot/imported/._random4.wav-211c705a3ebadb66a380004592e1954a.sample::
-._random5.wav::AudioStreamWAV::4918522644922085824::1780666659::1780682711::1::::<><><>0<>0<>39d0b7b216fa38d81e510f469216036a<>res://.godot/imported/._random5.wav-16edab73589d972d3cc46af1eef36064.sample::
-._random6.wav::AudioStreamWAV::4373462550075079989::1780666659::1780682711::1::::<><><>0<>0<>cb48146738dae294eb82bed07ab72135<>res://.godot/imported/._random6.wav-10afd7f475f213de551744cc765ef5c0.sample::
+::res://assets/sfx/rpg_sound_pack/__MACOSX/RPG Sound Pack/battle/::1780682712
+._magic1.wav::AudioStreamWAV::566515802581974000::1780666659::1780683310::1::::<><><>0<>0<>0bacf38398589d7601913b6f6b3593bd<>res://.godot/imported/._magic1.wav-5e69d779b60c6b303487b8327cd7e168.sample::
+._spell.wav::AudioStreamWAV::2712811249829783620::1780666659::1780683310::1::::<><><>0<>0<>1724cf7b7d4cd44175990440fe8af621<>res://.godot/imported/._spell.wav-3e589224bb7a5d06e830694af489cbd5.sample::
+._swing2.wav::AudioStreamWAV::3813521928926429175::1780666659::1780683310::1::::<><><>0<>0<>b5f627f8f81f9fc9b1f9d90100db4f41<>res://.godot/imported/._swing2.wav-9af499facc1f74bdbfbe05a32053e9ef.sample::
+._swing3.wav::AudioStreamWAV::657755235239905916::1780666659::1780683310::1::::<><><>0<>0<>4e3c94b4c738a6046763ede29da0cb0a<>res://.godot/imported/._swing3.wav-e23915181aaee3807f3aa05ea25c6040.sample::
+._swing.wav::AudioStreamWAV::4718315012552801313::1780666659::1780683310::1::::<><><>0<>0<>f0e5654f1d997548c089122a35cf8e92<>res://.godot/imported/._swing.wav-c5027e561e2f119acac13e0e513cd083.sample::
+._sword-unsheathe2.wav::AudioStreamWAV::1978789544676389141::1780666659::1780683310::1::::<><><>0<>0<>19cddb6aa0cda75445b89e58b2ac5854<>res://.godot/imported/._sword-unsheathe2.wav-8d4e51da827e6d0d12deafa68d5d9b8a.sample::
+._sword-unsheathe3.wav::AudioStreamWAV::3350566924590353690::1780666659::1780683310::1::::<><><>0<>0<>810fa05ab86497ed386e578e263212b3<>res://.godot/imported/._sword-unsheathe3.wav-a9ee2ca1a7ec85d557319e56c05dabe1.sample::
+._sword-unsheathe4.wav::AudioStreamWAV::2982106981493747331::1780666659::1780683310::1::::<><><>0<>0<>edb850e40b940855f7ab9b9f5e9260f8<>res://.godot/imported/._sword-unsheathe4.wav-75f4fa637f6c1dc060822543f25be250.sample::
+._sword-unsheathe5.wav::AudioStreamWAV::5301250931604910834::1780666659::1780683310::1::::<><><>0<>0<>78205a06e669f2567b8fd799a3026e1a<>res://.godot/imported/._sword-unsheathe5.wav-0cfce3b505c6ebb1618544888c225e14.sample::
+._sword-unsheathe.wav::AudioStreamWAV::1576458846420274749::1780666659::1780683310::1::::<><><>0<>0<>d788fa91b14dbee354fd5abd8606db51<>res://.godot/imported/._sword-unsheathe.wav-5b2290cde5913e5cc756723063d1756f.sample::
+::res://assets/sfx/rpg_sound_pack/__MACOSX/RPG Sound Pack/interface/::1780682712
+._interface1.wav::AudioStreamWAV::4895379056849324107::1780666659::1780683310::1::::<><><>0<>0<>31b089a92dd22e777843d280c13375b6<>res://.godot/imported/._interface1.wav-e6fd8c168cf1ab685a34cbca38afabfa.sample::
+._interface2.wav::AudioStreamWAV::8367814015463208061::1780666659::1780683310::1::::<><><>0<>0<>bdfb38bc9bb91aebd112a2c8e48a00df<>res://.godot/imported/._interface2.wav-af3e31412a0d947da47f7eafbc2b4d71.sample::
+._interface3.wav::AudioStreamWAV::3677087184102121488::1780666659::1780683310::1::::<><><>0<>0<>c29c8cc0af8888682da618338bf03890<>res://.godot/imported/._interface3.wav-1d9ea4a9f67634b5c3b83d40ac9f0f8a.sample::
+._interface4.wav::AudioStreamWAV::1417343695452326824::1780666659::1780683310::1::::<><><>0<>0<>0bb3508088e0852edc25676edbaacbbb<>res://.godot/imported/._interface4.wav-50ebada78422604eb238628c505c0cf2.sample::
+._interface5.wav::AudioStreamWAV::1964048935023153946::1780666659::1780683310::1::::<><><>0<>0<>85df249a2223e04cd1b85582aa2af8c7<>res://.godot/imported/._interface5.wav-e3fb33bd20b287f0294b84cb05c76495.sample::
+._interface6.wav::AudioStreamWAV::1540450475598552933::1780666659::1780683310::1::::<><><>0<>0<>4e5944c2a1cc39471e5788dc38f453f5<>res://.godot/imported/._interface6.wav-a2d4f2e6ab590a3254e8090811851486.sample::
+::res://assets/sfx/rpg_sound_pack/__MACOSX/RPG Sound Pack/inventory/::1780682712
+._armor-light.wav::AudioStreamWAV::7012155021828618228::1780666659::1780683310::1::::<><><>0<>0<>a0ac8a6b2f9015e426fd1d25af98e030<>res://.godot/imported/._armor-light.wav-8d2954e376a5c76a3830313edd6aefc2.sample::
+._beads.wav::AudioStreamWAV::4281730469497562784::1780666659::1780683310::1::::<><><>0<>0<>0a2db94ed9537940ffd94e558162cdec<>res://.godot/imported/._beads.wav-417ab8eaf0f1ad9d9c0f4f96dca5c191.sample::
+._bottle.wav::AudioStreamWAV::1670009354011886248::1780666659::1780683310::1::::<><><>0<>0<>fbdb3fbdac6f0c7d1a5a8e70c5267892<>res://.godot/imported/._bottle.wav-98775fe0f2512f4a609f4ab738c1fa61.sample::
+._bubble2.wav::AudioStreamWAV::8448837414219093713::1780666659::1780683310::1::::<><><>0<>0<>d011b7c7cf48ad5a05b44c22cfcdb840<>res://.godot/imported/._bubble2.wav-70e00e0b154f079cdc9cb75f073beaad.sample::
+._bubble3.wav::AudioStreamWAV::8646024521052908508::1780666659::1780683310::1::::<><><>0<>0<>998df14b460bf05b5f1267e2a58572c1<>res://.godot/imported/._bubble3.wav-9a1b02650815dfb0f18aebcb09d5632d.sample::
+._bubble.wav::AudioStreamWAV::296122411550227252::1780666659::1780683310::1::::<><><>0<>0<>de8e7ec4d24ac4613cd6afbcae6824a8<>res://.godot/imported/._bubble.wav-08e418466b94a1e10fb9d45775edd864.sample::
+._chainmail1.wav::AudioStreamWAV::6989580351468259142::1780666659::1780683310::1::::<><><>0<>0<>fac2438035d13bf307524566f996822e<>res://.godot/imported/._chainmail1.wav-1f3f75148b330a1aa9268ba578d0769d.sample::
+._chainmail2.wav::AudioStreamWAV::8189177745300611768::1780666659::1780683310::1::::<><><>0<>0<>3acb1e03dbda1cc0e57e573aefd1f61c<>res://.godot/imported/._chainmail2.wav-ff2e5790b9387db3b3949a8b11f7b164.sample::
+._cloth-heavy.wav::AudioStreamWAV::6339873564366565675::1780666659::1780683310::1::::<><><>0<>0<>d6dec5623089a1790c0d6c6f245da4c7<>res://.godot/imported/._cloth-heavy.wav-9706c0ea3d578ac56c8db4ece726296b.sample::
+._cloth.wav::AudioStreamWAV::8742657195471934872::1780666659::1780683310::1::::<><><>0<>0<>7ef454a462fa4e1b36b6b6d419950d1f<>res://.godot/imported/._cloth.wav-e4112ac4c828bd81b0c15991b21fa57c.sample::
+._coin2.wav::AudioStreamWAV::5167892557394433148::1780666659::1780683310::1::::<><><>0<>0<>eb813664772d8d02dcdd8312e15299f3<>res://.godot/imported/._coin2.wav-e49ec28302ff9194d7a9d0eb7d025496.sample::
+._coin3.wav::AudioStreamWAV::6316668230377004547::1780666659::1780683310::1::::<><><>0<>0<>d8ee6c0cc6ff79a553a61a835c80a80c<>res://.godot/imported/._coin3.wav-45f45b92278ccc508477e1fd210e5c93.sample::
+._coin.wav::AudioStreamWAV::5666794020136022043::1780666659::1780683310::1::::<><><>0<>0<>1738e2726183595f544e03ec55e5c262<>res://.godot/imported/._coin.wav-fce3d310c959a85dbf5515e731fea5ac.sample::
+._metal-ringing.wav::AudioStreamWAV::8693120703461807396::1780666659::1780683310::1::::<><><>0<>0<>9625188bd0c32b771e9c9190bacb55fb<>res://.godot/imported/._metal-ringing.wav-338792f218a884e7f2551b435d4531a5.sample::
+._metal-small1.wav::AudioStreamWAV::2773346166044076029::1780666659::1780683310::1::::<><><>0<>0<>323a85e94b0b66f1c9347b514e36142a<>res://.godot/imported/._metal-small1.wav-9b6f50ae7209e3be8a7fea60f6efca54.sample::
+._metal-small2.wav::AudioStreamWAV::1668551522703318504::1780666659::1780683310::1::::<><><>0<>0<>85b3f62539b61f3d44f9c42e2e271835<>res://.godot/imported/._metal-small2.wav-ef8583632a50ceb2c7a40405f5aec2c6.sample::
+._metal-small3.wav::AudioStreamWAV::757434190455495570::1780666659::1780683310::1::::<><><>0<>0<>e2f70840c6549274c7db48383ed91694<>res://.godot/imported/._metal-small3.wav-fa1e7009b43601b325a35e49960df74a.sample::
+._wood-small.wav::AudioStreamWAV::5537036374914864071::1780666659::1780683310::1::::<><><>0<>0<>09783d41fac21291672c503bd19eefbe<>res://.godot/imported/._wood-small.wav-cfd225b547fe4434d59d74579c5d515d.sample::
+::res://assets/sfx/rpg_sound_pack/__MACOSX/RPG Sound Pack/misc/::1780682711
+._burp.wav::AudioStreamWAV::156172338220858600::1780666659::1780683310::1::::<><><>0<>0<>8eaf7e3bf61268fd2721f1468c0ed59d<>res://.godot/imported/._burp.wav-b2614693fb78598c2008fb5c3ad66499.sample::
+._random1.wav::AudioStreamWAV::7819532323822717732::1780666659::1780683310::1::::<><><>0<>0<>02a32e7a2e0beb2d27e2cf47824f1f38<>res://.godot/imported/._random1.wav-11edc6bfde6727ac3a3c733e3fe83b02.sample::
+._random2.wav::AudioStreamWAV::6188411403789521752::1780666659::1780683310::1::::<><><>0<>0<>70e01f56b4693335798ba75ad83a8fbf<>res://.godot/imported/._random2.wav-759bb6c346a6c35ebcda0f0c890f4640.sample::
+._random3.wav::AudioStreamWAV::4114178675827626283::1780666659::1780683310::1::::<><><>0<>0<>3223feae5c2489a5fcdedb1cd4f878ad<>res://.godot/imported/._random3.wav-d30d5e81082bf6b23a66bef185a9d876.sample::
+._random4.wav::AudioStreamWAV::2790480417550942213::1780666659::1780683310::1::::<><><>0<>0<>fef9f8680dc877fc8bff4448b4b2601c<>res://.godot/imported/._random4.wav-211c705a3ebadb66a380004592e1954a.sample::
+._random5.wav::AudioStreamWAV::4918522644922085824::1780666659::1780683310::1::::<><><>0<>0<>39d0b7b216fa38d81e510f469216036a<>res://.godot/imported/._random5.wav-16edab73589d972d3cc46af1eef36064.sample::
+._random6.wav::AudioStreamWAV::4373462550075079989::1780666659::1780683310::1::::<><><>0<>0<>cb48146738dae294eb82bed07ab72135<>res://.godot/imported/._random6.wav-10afd7f475f213de551744cc765ef5c0.sample::
 ::res://assets/sfx/rpg_sound_pack/__MACOSX/RPG Sound Pack/NPC/::1780666659
-::res://assets/sfx/rpg_sound_pack/__MACOSX/RPG Sound Pack/NPC/beetle/::1780682710
-._bite-small2.wav::AudioStreamWAV::6080660992137371823::1780666659::1780682711::1::::<><><>0<>0<>c19c897a92b1a4c3e1b2a4ce3d0864f6<>res://.godot/imported/._bite-small2.wav-dbd97b56ff9c1f3577f25af2cc58e0e9.sample::
-._bite-small3.wav::AudioStreamWAV::970280936553657175::1780666659::1780682711::1::::<><><>0<>0<>9f06c51b91f3563f532fdc04fe093c27<>res://.godot/imported/._bite-small3.wav-87e14623e8ab0a36a596565571ba9df2.sample::
-._bite-small.wav::AudioStreamWAV::2928090648853743896::1780666659::1780682711::1::::<><><>0<>0<>becbcbc371d8ad11cf3e0195a353213d<>res://.godot/imported/._bite-small.wav-1cf2de35e7182190aeabeb7c8bfad5b8.sample::
-::res://assets/sfx/rpg_sound_pack/__MACOSX/RPG Sound Pack/NPC/giant/::1780682710
-._giant1.wav::AudioStreamWAV::4866382287228514005::1780666659::1780682711::1::::<><><>0<>0<>0ecd3cc798b612dd618057d605fe618e<>res://.godot/imported/._giant1.wav-386758c12d4eb13592eff65446de76b9.sample::
-._giant2.wav::AudioStreamWAV::8269927258447223130::1780666659::1780682711::1::::<><><>0<>0<>da6e802321a6c46f284e3fdaae539404<>res://.godot/imported/._giant2.wav-e3cf3d1b15bad8cbdca624c2dcaef3a6.sample::
-._giant3.wav::AudioStreamWAV::189580518016140256::1780666659::1780682711::1::::<><><>0<>0<>1221e7cd18cd2ad046dd35490dad29fc<>res://.godot/imported/._giant3.wav-6ee1e71220741ca4b6b8fb58741db56b.sample::
-._giant4.wav::AudioStreamWAV::3411846373622750411::1780666659::1780682711::1::::<><><>0<>0<>c9a92ae17ee026b17995f38a83bee13e<>res://.godot/imported/._giant4.wav-e693b5e3aaa55c46f240a88eee2b2a61.sample::
-._giant5.wav::AudioStreamWAV::8529248676512920022::1780666659::1780682711::1::::<><><>0<>0<>5106aa55f5461c418d2061e30018c068<>res://.godot/imported/._giant5.wav-f94b4bf24c1ed4b78f044e8c28447b82.sample::
+::res://assets/sfx/rpg_sound_pack/__MACOSX/RPG Sound Pack/NPC/beetle/::1780682711
+._bite-small2.wav::AudioStreamWAV::6080660992137371823::1780666659::1780683310::1::::<><><>0<>0<>c19c897a92b1a4c3e1b2a4ce3d0864f6<>res://.godot/imported/._bite-small2.wav-dbd97b56ff9c1f3577f25af2cc58e0e9.sample::
+._bite-small3.wav::AudioStreamWAV::970280936553657175::1780666659::1780683310::1::::<><><>0<>0<>9f06c51b91f3563f532fdc04fe093c27<>res://.godot/imported/._bite-small3.wav-87e14623e8ab0a36a596565571ba9df2.sample::
+._bite-small.wav::AudioStreamWAV::2928090648853743896::1780666659::1780683310::1::::<><><>0<>0<>becbcbc371d8ad11cf3e0195a353213d<>res://.godot/imported/._bite-small.wav-1cf2de35e7182190aeabeb7c8bfad5b8.sample::
+::res://assets/sfx/rpg_sound_pack/__MACOSX/RPG Sound Pack/NPC/giant/::1780682711
+._giant1.wav::AudioStreamWAV::4866382287228514005::1780666659::1780683310::1::::<><><>0<>0<>0ecd3cc798b612dd618057d605fe618e<>res://.godot/imported/._giant1.wav-386758c12d4eb13592eff65446de76b9.sample::
+._giant2.wav::AudioStreamWAV::8269927258447223130::1780666659::1780683310::1::::<><><>0<>0<>da6e802321a6c46f284e3fdaae539404<>res://.godot/imported/._giant2.wav-e3cf3d1b15bad8cbdca624c2dcaef3a6.sample::
+._giant3.wav::AudioStreamWAV::189580518016140256::1780666659::1780683310::1::::<><><>0<>0<>1221e7cd18cd2ad046dd35490dad29fc<>res://.godot/imported/._giant3.wav-6ee1e71220741ca4b6b8fb58741db56b.sample::
+._giant4.wav::AudioStreamWAV::3411846373622750411::1780666659::1780683310::1::::<><><>0<>0<>c9a92ae17ee026b17995f38a83bee13e<>res://.godot/imported/._giant4.wav-e693b5e3aaa55c46f240a88eee2b2a61.sample::
+._giant5.wav::AudioStreamWAV::8529248676512920022::1780666659::1780683310::1::::<><><>0<>0<>5106aa55f5461c418d2061e30018c068<>res://.godot/imported/._giant5.wav-f94b4bf24c1ed4b78f044e8c28447b82.sample::
 ::res://assets/sfx/rpg_sound_pack/__MACOSX/RPG Sound Pack/NPC/gutteral beast/::1780682711
-._mnstr1.wav::AudioStreamWAV::4460616419542037499::1780666659::1780682711::1::::<><><>0<>0<>306b413e0a5e28017798c06666c09cca<>res://.godot/imported/._mnstr1.wav-83bc4ac522ac7d21bfe417cdb653888f.sample::
-._mnstr2.wav::AudioStreamWAV::980814456194087333::1780666659::1780682711::1::::<><><>0<>0<>58c05d31f1fd181db6acca331a3b87ac<>res://.godot/imported/._mnstr2.wav-135fa72b01fc07084bd860264884faac.sample::
-._mnstr3.wav::AudioStreamWAV::2976065574330597199::1780666659::1780682711::1::::<><><>0<>0<>1235ecbc6aff5bc224762f5aa423e682<>res://.godot/imported/._mnstr3.wav-78f6e27636886ebb915819933736948c.sample::
-._mnstr4.wav::AudioStreamWAV::2187179963229621490::1780666659::1780682711::1::::<><><>0<>0<>83812f74789c8c87e11b4943f361bd16<>res://.godot/imported/._mnstr4.wav-c2ce0b909f3afe5869f0de14aff443f2.sample::
-._mnstr5.wav::AudioStreamWAV::6447429600527898182::1780666659::1780682711::1::::<><><>0<>0<>c204f7c012dc734c536eb89f01c91681<>res://.godot/imported/._mnstr5.wav-d2f84b845d3ba04a31bcc5a595e5c00c.sample::
-._mnstr6.wav::AudioStreamWAV::720903848146393498::1780666659::1780682711::1::::<><><>0<>0<>30ded2288afce0d52d064bdd67d42401<>res://.godot/imported/._mnstr6.wav-e3d4f3e4c154b7277f0f63c6da0e0060.sample::
-._mnstr7.wav::AudioStreamWAV::5678395045196940254::1780666659::1780682711::1::::<><><>0<>0<>3914e3acb74f77f7a8602888161c066b<>res://.godot/imported/._mnstr7.wav-9eb5edafefb4cb969b5bc2e0bc6d41d6.sample::
-._mnstr8.wav::AudioStreamWAV::2652737629138352774::1780666659::1780682711::1::::<><><>0<>0<>c4cd143901d045253c660c65f7eac1db<>res://.godot/imported/._mnstr8.wav-6a82ba7f6845bfeffe1e9108a2b25e2d.sample::
-._mnstr9.wav::AudioStreamWAV::6866644342387730734::1780666659::1780682711::1::::<><><>0<>0<>e9169e15f4332c995d0853e6024bb2f4<>res://.godot/imported/._mnstr9.wav-520eef7a784669b8d24449a8708a7857.sample::
-._mnstr10.wav::AudioStreamWAV::2936571934384973690::1780666659::1780682711::1::::<><><>0<>0<>0dea89fe5e01e4b20b9ad362ab62e828<>res://.godot/imported/._mnstr10.wav-8f34da7179b90a77d74dfdec23a6b5ba.sample::
-._mnstr11.wav::AudioStreamWAV::7186837516074527844::1780666659::1780682711::1::::<><><>0<>0<>31550a79c6d703a94cccf5b164dd4536<>res://.godot/imported/._mnstr11.wav-7d2c7a3592629cfe2bb748d31efd61e9.sample::
-._mnstr12.wav::AudioStreamWAV::6467186364126884622::1780666659::1780682711::1::::<><><>0<>0<>f0865244aa278c94f9fbffa199b9e127<>res://.godot/imported/._mnstr12.wav-ea29243184f06c8f6af41209feadd186.sample::
-._mnstr13.wav::AudioStreamWAV::3195921812836087281::1780666659::1780682711::1::::<><><>0<>0<>67b4d8f3c7cc4436e76ba0ff1af6166c<>res://.godot/imported/._mnstr13.wav-1a1acf8b95212f8e4e31421278383c11.sample::
-._mnstr14.wav::AudioStreamWAV::2884497020593765829::1780666659::1780682711::1::::<><><>0<>0<>0fc83222c6f94ec9d392ea22f4337d4f<>res://.godot/imported/._mnstr14.wav-ebed0db3ef48ca9923cf092918c101bb.sample::
-._mnstr15.wav::AudioStreamWAV::4638851111483048218::1780666659::1780682711::1::::<><><>0<>0<>3b5cfd31755552c90bdde255a2cddc52<>res://.godot/imported/._mnstr15.wav-89a1ecaa9796f73ca40ab141fb2faa0f.sample::
+._mnstr1.wav::AudioStreamWAV::4460616419542037499::1780666659::1780683310::1::::<><><>0<>0<>306b413e0a5e28017798c06666c09cca<>res://.godot/imported/._mnstr1.wav-83bc4ac522ac7d21bfe417cdb653888f.sample::
+._mnstr2.wav::AudioStreamWAV::980814456194087333::1780666659::1780683310::1::::<><><>0<>0<>58c05d31f1fd181db6acca331a3b87ac<>res://.godot/imported/._mnstr2.wav-135fa72b01fc07084bd860264884faac.sample::
+._mnstr3.wav::AudioStreamWAV::2976065574330597199::1780666659::1780683310::1::::<><><>0<>0<>1235ecbc6aff5bc224762f5aa423e682<>res://.godot/imported/._mnstr3.wav-78f6e27636886ebb915819933736948c.sample::
+._mnstr4.wav::AudioStreamWAV::2187179963229621490::1780666659::1780683310::1::::<><><>0<>0<>83812f74789c8c87e11b4943f361bd16<>res://.godot/imported/._mnstr4.wav-c2ce0b909f3afe5869f0de14aff443f2.sample::
+._mnstr5.wav::AudioStreamWAV::6447429600527898182::1780666659::1780683310::1::::<><><>0<>0<>c204f7c012dc734c536eb89f01c91681<>res://.godot/imported/._mnstr5.wav-d2f84b845d3ba04a31bcc5a595e5c00c.sample::
+._mnstr6.wav::AudioStreamWAV::720903848146393498::1780666659::1780683310::1::::<><><>0<>0<>30ded2288afce0d52d064bdd67d42401<>res://.godot/imported/._mnstr6.wav-e3d4f3e4c154b7277f0f63c6da0e0060.sample::
+._mnstr7.wav::AudioStreamWAV::5678395045196940254::1780666659::1780683310::1::::<><><>0<>0<>3914e3acb74f77f7a8602888161c066b<>res://.godot/imported/._mnstr7.wav-9eb5edafefb4cb969b5bc2e0bc6d41d6.sample::
+._mnstr8.wav::AudioStreamWAV::2652737629138352774::1780666659::1780683310::1::::<><><>0<>0<>c4cd143901d045253c660c65f7eac1db<>res://.godot/imported/._mnstr8.wav-6a82ba7f6845bfeffe1e9108a2b25e2d.sample::
+._mnstr9.wav::AudioStreamWAV::6866644342387730734::1780666659::1780683310::1::::<><><>0<>0<>e9169e15f4332c995d0853e6024bb2f4<>res://.godot/imported/._mnstr9.wav-520eef7a784669b8d24449a8708a7857.sample::
+._mnstr10.wav::AudioStreamWAV::2936571934384973690::1780666659::1780683310::1::::<><><>0<>0<>0dea89fe5e01e4b20b9ad362ab62e828<>res://.godot/imported/._mnstr10.wav-8f34da7179b90a77d74dfdec23a6b5ba.sample::
+._mnstr11.wav::AudioStreamWAV::7186837516074527844::1780666659::1780683310::1::::<><><>0<>0<>31550a79c6d703a94cccf5b164dd4536<>res://.godot/imported/._mnstr11.wav-7d2c7a3592629cfe2bb748d31efd61e9.sample::
+._mnstr12.wav::AudioStreamWAV::6467186364126884622::1780666659::1780683310::1::::<><><>0<>0<>f0865244aa278c94f9fbffa199b9e127<>res://.godot/imported/._mnstr12.wav-ea29243184f06c8f6af41209feadd186.sample::
+._mnstr13.wav::AudioStreamWAV::3195921812836087281::1780666659::1780683310::1::::<><><>0<>0<>67b4d8f3c7cc4436e76ba0ff1af6166c<>res://.godot/imported/._mnstr13.wav-1a1acf8b95212f8e4e31421278383c11.sample::
+._mnstr14.wav::AudioStreamWAV::2884497020593765829::1780666659::1780683310::1::::<><><>0<>0<>0fc83222c6f94ec9d392ea22f4337d4f<>res://.godot/imported/._mnstr14.wav-ebed0db3ef48ca9923cf092918c101bb.sample::
+._mnstr15.wav::AudioStreamWAV::4638851111483048218::1780666659::1780683310::1::::<><><>0<>0<>3b5cfd31755552c90bdde255a2cddc52<>res://.godot/imported/._mnstr15.wav-89a1ecaa9796f73ca40ab141fb2faa0f.sample::
 ::res://assets/sfx/rpg_sound_pack/__MACOSX/RPG Sound Pack/NPC/misc/::1780682711
-._wolfman.wav::AudioStreamWAV::4567656586936370414::1780666659::1780682711::1::::<><><>0<>0<>a11c4d1c29e9128b40bc0ac357298bf0<>res://.godot/imported/._wolfman.wav-2d76d35ca33a5c6492211b58566e56bf.sample::
+._wolfman.wav::AudioStreamWAV::4567656586936370414::1780666659::1780683310::1::::<><><>0<>0<>a11c4d1c29e9128b40bc0ac357298bf0<>res://.godot/imported/._wolfman.wav-2d76d35ca33a5c6492211b58566e56bf.sample::
 ::res://assets/sfx/rpg_sound_pack/__MACOSX/RPG Sound Pack/NPC/ogre/::1780682711
-._ogre1.wav::AudioStreamWAV::7921948535934961115::1780666659::1780682711::1::::<><><>0<>0<>fdea99761b41938f4d0c7fe56e123b29<>res://.godot/imported/._ogre1.wav-e984619de3a44e045bd0bf7ee977f561.sample::
-._ogre2.wav::AudioStreamWAV::1363611162526259719::1780666659::1780682711::1::::<><><>0<>0<>3c235249ce1edd4e430717d6db4f07bc<>res://.godot/imported/._ogre2.wav-9ac0ac7050fcc0dec5fb54266f2f8b88.sample::
-._ogre3.wav::AudioStreamWAV::8797945853606288486::1780666659::1780682711::1::::<><><>0<>0<>0e6babd450a3a283ad88fcfc61807ccd<>res://.godot/imported/._ogre3.wav-8ab50cf0ca2cc1734d91d7e0923112f8.sample::
-._ogre4.wav::AudioStreamWAV::1762803290353140926::1780666659::1780682711::1::::<><><>0<>0<>f7a2ae6fbb9465ab2f29117fd3a14071<>res://.godot/imported/._ogre4.wav-3a86a8bd3975182f2f97954fc67a3907.sample::
-._ogre5.wav::AudioStreamWAV::6432475991289572630::1780666659::1780682711::1::::<><><>0<>0<>edb000b388a4c3988f9ba0acba0fad5c<>res://.godot/imported/._ogre5.wav-6907c4b2f5f1e56b0ad9243c470380ba.sample::
+._ogre1.wav::AudioStreamWAV::7921948535934961115::1780666659::1780683310::1::::<><><>0<>0<>fdea99761b41938f4d0c7fe56e123b29<>res://.godot/imported/._ogre1.wav-e984619de3a44e045bd0bf7ee977f561.sample::
+._ogre2.wav::AudioStreamWAV::1363611162526259719::1780666659::1780683310::1::::<><><>0<>0<>3c235249ce1edd4e430717d6db4f07bc<>res://.godot/imported/._ogre2.wav-9ac0ac7050fcc0dec5fb54266f2f8b88.sample::
+._ogre3.wav::AudioStreamWAV::8797945853606288486::1780666659::1780683310::1::::<><><>0<>0<>0e6babd450a3a283ad88fcfc61807ccd<>res://.godot/imported/._ogre3.wav-8ab50cf0ca2cc1734d91d7e0923112f8.sample::
+._ogre4.wav::AudioStreamWAV::1762803290353140926::1780666659::1780683310::1::::<><><>0<>0<>f7a2ae6fbb9465ab2f29117fd3a14071<>res://.godot/imported/._ogre4.wav-3a86a8bd3975182f2f97954fc67a3907.sample::
+._ogre5.wav::AudioStreamWAV::6432475991289572630::1780666659::1780683310::1::::<><><>0<>0<>edb000b388a4c3988f9ba0acba0fad5c<>res://.godot/imported/._ogre5.wav-6907c4b2f5f1e56b0ad9243c470380ba.sample::
 ::res://assets/sfx/rpg_sound_pack/__MACOSX/RPG Sound Pack/NPC/shade/::1780682711
-._shade1.wav::AudioStreamWAV::5271792508922737428::1780666659::1780682711::1::::<><><>0<>0<>30b826b49a9554499361626c834c1c82<>res://.godot/imported/._shade1.wav-8319ac881c33857be234d0eaf1b3405c.sample::
-._shade2.wav::AudioStreamWAV::2324727843426703273::1780666659::1780682711::1::::<><><>0<>0<>7fb75d5a0d05fc79afd1a3fe2a1f0a64<>res://.godot/imported/._shade2.wav-e0bb6d4b414d064eeec798be16c8923e.sample::
-._shade3.wav::AudioStreamWAV::2428597586739524028::1780666659::1780682711::1::::<><><>0<>0<>e9b6f07d2b9b0a9493c53798d285584f<>res://.godot/imported/._shade3.wav-f2cc2ddcd493fd947b26c71a2de1aadf.sample::
-._shade4.wav::AudioStreamWAV::5531122339278732262::1780666659::1780682711::1::::<><><>0<>0<>bee41b2ad79d341183ad6ad60cb52157<>res://.godot/imported/._shade4.wav-3e069f1156670dfa50caba10e10f15ab.sample::
-._shade5.wav::AudioStreamWAV::1638047773617191376::1780666659::1780682711::1::::<><><>0<>0<>881562fa9e81f8dfa78117d7960a1748<>res://.godot/imported/._shade5.wav-985b3159f74399314e015f8946927556.sample::
-._shade6.wav::AudioStreamWAV::1055126031745158261::1780666659::1780682711::1::::<><><>0<>0<>44aeb6ce14649c835be19bec9ae05d25<>res://.godot/imported/._shade6.wav-39742ed8b8ba29e794c40ead8b145173.sample::
-._shade7.wav::AudioStreamWAV::5790421226864220873::1780666659::1780682711::1::::<><><>0<>0<>056448660561c202adb249d15419a5b2<>res://.godot/imported/._shade7.wav-07126a6f7dad9ec6aeea0b8b2e3d9fec.sample::
-._shade8.wav::AudioStreamWAV::6851131588251029661::1780666659::1780682711::1::::<><><>0<>0<>5b57210c5626d45edee32f5bb2eb3f85<>res://.godot/imported/._shade8.wav-daed0e763936e6fec39cd9bcc0edd21f.sample::
-._shade9.wav::AudioStreamWAV::8310551909444702691::1780666659::1780682711::1::::<><><>0<>0<>fc2c4a8a6c7a8ff1de3f1c66a6fbf7e0<>res://.godot/imported/._shade9.wav-80baae285c4f535f8e233e36855f3e47.sample::
-._shade10.wav::AudioStreamWAV::7968178425985091972::1780666659::1780682711::1::::<><><>0<>0<>c5a485cccc50b9cab02ded695902a0c3<>res://.godot/imported/._shade10.wav-c20c532ad8e2a81b5488b269e5cd586c.sample::
-._shade11.wav::AudioStreamWAV::6443620393969772340::1780666659::1780682711::1::::<><><>0<>0<>f386cdcd60ca0688ca71e451e534ef26<>res://.godot/imported/._shade11.wav-2ccdbc0ff96d3d14c7dd4ee8fba85bbd.sample::
-._shade12.wav::AudioStreamWAV::6979149288417999712::1780666659::1780682711::1::::<><><>0<>0<>3483da442b7e21aa7f130def0e82a75f<>res://.godot/imported/._shade12.wav-7f7a9a729060f2e7522ae3a1586d9cea.sample::
-._shade13.wav::AudioStreamWAV::3548441243064110988::1780666659::1780682711::1::::<><><>0<>0<>6aa0ef2e534f924712534a09af0d923a<>res://.godot/imported/._shade13.wav-d28839d4d4d28b2a79f9f9077c9b5358.sample::
-._shade14.wav::AudioStreamWAV::9074737779136579441::1780666659::1780682711::1::::<><><>0<>0<>382cbdfe39c7ab35053b2bc439f9db59<>res://.godot/imported/._shade14.wav-f66e7413b484a4f1f510997917ffe986.sample::
-._shade15.wav::AudioStreamWAV::8013556856858111944::1780666659::1780682711::1::::<><><>0<>0<>de809b13bfac63f2a8b2dceac2e3d922<>res://.godot/imported/._shade15.wav-dfaf4f7fb24103e351748bfc10e045c9.sample::
+._shade1.wav::AudioStreamWAV::5271792508922737428::1780666659::1780683310::1::::<><><>0<>0<>30b826b49a9554499361626c834c1c82<>res://.godot/imported/._shade1.wav-8319ac881c33857be234d0eaf1b3405c.sample::
+._shade2.wav::AudioStreamWAV::2324727843426703273::1780666659::1780683310::1::::<><><>0<>0<>7fb75d5a0d05fc79afd1a3fe2a1f0a64<>res://.godot/imported/._shade2.wav-e0bb6d4b414d064eeec798be16c8923e.sample::
+._shade3.wav::AudioStreamWAV::2428597586739524028::1780666659::1780683310::1::::<><><>0<>0<>e9b6f07d2b9b0a9493c53798d285584f<>res://.godot/imported/._shade3.wav-f2cc2ddcd493fd947b26c71a2de1aadf.sample::
+._shade4.wav::AudioStreamWAV::5531122339278732262::1780666659::1780683310::1::::<><><>0<>0<>bee41b2ad79d341183ad6ad60cb52157<>res://.godot/imported/._shade4.wav-3e069f1156670dfa50caba10e10f15ab.sample::
+._shade5.wav::AudioStreamWAV::1638047773617191376::1780666659::1780683310::1::::<><><>0<>0<>881562fa9e81f8dfa78117d7960a1748<>res://.godot/imported/._shade5.wav-985b3159f74399314e015f8946927556.sample::
+._shade6.wav::AudioStreamWAV::1055126031745158261::1780666659::1780683310::1::::<><><>0<>0<>44aeb6ce14649c835be19bec9ae05d25<>res://.godot/imported/._shade6.wav-39742ed8b8ba29e794c40ead8b145173.sample::
+._shade7.wav::AudioStreamWAV::5790421226864220873::1780666659::1780683310::1::::<><><>0<>0<>056448660561c202adb249d15419a5b2<>res://.godot/imported/._shade7.wav-07126a6f7dad9ec6aeea0b8b2e3d9fec.sample::
+._shade8.wav::AudioStreamWAV::6851131588251029661::1780666659::1780683310::1::::<><><>0<>0<>5b57210c5626d45edee32f5bb2eb3f85<>res://.godot/imported/._shade8.wav-daed0e763936e6fec39cd9bcc0edd21f.sample::
+._shade9.wav::AudioStreamWAV::8310551909444702691::1780666659::1780683310::1::::<><><>0<>0<>fc2c4a8a6c7a8ff1de3f1c66a6fbf7e0<>res://.godot/imported/._shade9.wav-80baae285c4f535f8e233e36855f3e47.sample::
+._shade10.wav::AudioStreamWAV::7968178425985091972::1780666659::1780683310::1::::<><><>0<>0<>c5a485cccc50b9cab02ded695902a0c3<>res://.godot/imported/._shade10.wav-c20c532ad8e2a81b5488b269e5cd586c.sample::
+._shade11.wav::AudioStreamWAV::6443620393969772340::1780666659::1780683310::1::::<><><>0<>0<>f386cdcd60ca0688ca71e451e534ef26<>res://.godot/imported/._shade11.wav-2ccdbc0ff96d3d14c7dd4ee8fba85bbd.sample::
+._shade12.wav::AudioStreamWAV::6979149288417999712::1780666659::1780683310::1::::<><><>0<>0<>3483da442b7e21aa7f130def0e82a75f<>res://.godot/imported/._shade12.wav-7f7a9a729060f2e7522ae3a1586d9cea.sample::
+._shade13.wav::AudioStreamWAV::3548441243064110988::1780666659::1780683310::1::::<><><>0<>0<>6aa0ef2e534f924712534a09af0d923a<>res://.godot/imported/._shade13.wav-d28839d4d4d28b2a79f9f9077c9b5358.sample::
+._shade14.wav::AudioStreamWAV::9074737779136579441::1780666659::1780683310::1::::<><><>0<>0<>382cbdfe39c7ab35053b2bc439f9db59<>res://.godot/imported/._shade14.wav-f66e7413b484a4f1f510997917ffe986.sample::
+._shade15.wav::AudioStreamWAV::8013556856858111944::1780666659::1780683310::1::::<><><>0<>0<>de809b13bfac63f2a8b2dceac2e3d922<>res://.godot/imported/._shade15.wav-dfaf4f7fb24103e351748bfc10e045c9.sample::
 ::res://assets/sfx/rpg_sound_pack/__MACOSX/RPG Sound Pack/NPC/slime/::1780682711
-._slime1.wav::AudioStreamWAV::2812902601916256505::1780666659::1780682711::1::::<><><>0<>0<>a1a63cde2b2425e65b2e4f8f67376a77<>res://.godot/imported/._slime1.wav-8977093bf6fdc555347c2026b9a7141e.sample::
-._slime2.wav::AudioStreamWAV::2009346905394628468::1780666659::1780682711::1::::<><><>0<>0<>a7bad445e815ad9acd3885cd228a8c03<>res://.godot/imported/._slime2.wav-66db9c61e2b12626a3b8fe66d2b508e3.sample::
-._slime3.wav::AudioStreamWAV::3584424471834569901::1780666659::1780682711::1::::<><><>0<>0<>a9bf11a04035680c53764394aacee999<>res://.godot/imported/._slime3.wav-fff01b6e23f1dd29cec37276a6fd8a46.sample::
-._slime4.wav::AudioStreamWAV::8885266250054731873::1780666659::1780682711::1::::<><><>0<>0<>7124f7215604000d509a4b11e0622ce6<>res://.godot/imported/._slime4.wav-ae66baeffc285fe72d44061ed36ce308.sample::
-._slime5.wav::AudioStreamWAV::205918602066914141::1780666659::1780682711::1::::<><><>0<>0<>10b8e0a63a1f14cc4f38f7130c6735ab<>res://.godot/imported/._slime5.wav-3375a6d70870930beb2a098aa98c7063.sample::
-._slime6.wav::AudioStreamWAV::8730873766737037646::1780666659::1780682711::1::::<><><>0<>0<>58619893dcf10d0731f5caa36359e814<>res://.godot/imported/._slime6.wav-7ba6b707027e0c1e3ed946a8e6977a36.sample::
-._slime7.wav::AudioStreamWAV::2915366712520288008::1780666659::1780682711::1::::<><><>0<>0<>15a7a97ac7bb679fbf1c87466adba413<>res://.godot/imported/._slime7.wav-b88d0386b15af1ee9b82b95cfae67862.sample::
-._slime8.wav::AudioStreamWAV::1105680027612023355::1780666659::1780682711::1::::<><><>0<>0<>ac97dd8db3d7b4dd090d2f9f660190da<>res://.godot/imported/._slime8.wav-a4b4cca58edff8ed244cee2f140a9a3d.sample::
-._slime9.wav::AudioStreamWAV::7919055442967421734::1780666659::1780682711::1::::<><><>0<>0<>35c5ee69090423ecbef39d203e54f926<>res://.godot/imported/._slime9.wav-affa0808db0af626ce31061c2cc4be85.sample::
-._slime10.wav::AudioStreamWAV::8188449350291799805::1780666659::1780682711::1::::<><><>0<>0<>9c54f5c37602452f937e7fb63301b9d3<>res://.godot/imported/._slime10.wav-6414b252ba3b2e1c1d978726baad3034.sample::
+._slime1.wav::AudioStreamWAV::2812902601916256505::1780666659::1780683310::1::::<><><>0<>0<>a1a63cde2b2425e65b2e4f8f67376a77<>res://.godot/imported/._slime1.wav-8977093bf6fdc555347c2026b9a7141e.sample::
+._slime2.wav::AudioStreamWAV::2009346905394628468::1780666659::1780683310::1::::<><><>0<>0<>a7bad445e815ad9acd3885cd228a8c03<>res://.godot/imported/._slime2.wav-66db9c61e2b12626a3b8fe66d2b508e3.sample::
+._slime3.wav::AudioStreamWAV::3584424471834569901::1780666659::1780683310::1::::<><><>0<>0<>a9bf11a04035680c53764394aacee999<>res://.godot/imported/._slime3.wav-fff01b6e23f1dd29cec37276a6fd8a46.sample::
+._slime4.wav::AudioStreamWAV::8885266250054731873::1780666659::1780683310::1::::<><><>0<>0<>7124f7215604000d509a4b11e0622ce6<>res://.godot/imported/._slime4.wav-ae66baeffc285fe72d44061ed36ce308.sample::
+._slime5.wav::AudioStreamWAV::205918602066914141::1780666659::1780683310::1::::<><><>0<>0<>10b8e0a63a1f14cc4f38f7130c6735ab<>res://.godot/imported/._slime5.wav-3375a6d70870930beb2a098aa98c7063.sample::
+._slime6.wav::AudioStreamWAV::8730873766737037646::1780666659::1780683310::1::::<><><>0<>0<>58619893dcf10d0731f5caa36359e814<>res://.godot/imported/._slime6.wav-7ba6b707027e0c1e3ed946a8e6977a36.sample::
+._slime7.wav::AudioStreamWAV::2915366712520288008::1780666659::1780683310::1::::<><><>0<>0<>15a7a97ac7bb679fbf1c87466adba413<>res://.godot/imported/._slime7.wav-b88d0386b15af1ee9b82b95cfae67862.sample::
+._slime8.wav::AudioStreamWAV::1105680027612023355::1780666659::1780683310::1::::<><><>0<>0<>ac97dd8db3d7b4dd090d2f9f660190da<>res://.godot/imported/._slime8.wav-a4b4cca58edff8ed244cee2f140a9a3d.sample::
+._slime9.wav::AudioStreamWAV::7919055442967421734::1780666659::1780683310::1::::<><><>0<>0<>35c5ee69090423ecbef39d203e54f926<>res://.godot/imported/._slime9.wav-affa0808db0af626ce31061c2cc4be85.sample::
+._slime10.wav::AudioStreamWAV::8188449350291799805::1780666659::1780683310::1::::<><><>0<>0<>9c54f5c37602452f937e7fb63301b9d3<>res://.godot/imported/._slime10.wav-6414b252ba3b2e1c1d978726baad3034.sample::
 ::res://assets/sfx/rpg_sound_pack/__MACOSX/RPG Sound Pack/world/::1780682711
-._door.wav::AudioStreamWAV::8850355307349385439::1780666659::1780682711::1::::<><><>0<>0<>f747506fd2323b8748761efbd33ceec2<>res://.godot/imported/._door.wav-473f0d63c01b3177c33d78e67dcc1760.sample::
+._door.wav::AudioStreamWAV::8850355307349385439::1780666659::1780683310::1::::<><><>0<>0<>f747506fd2323b8748761efbd33ceec2<>res://.godot/imported/._door.wav-473f0d63c01b3177c33d78e67dcc1760.sample::
 ::res://assets/sfx/rpg_sound_pack/RPG Sound Pack/::1780666659
 ::res://assets/sfx/rpg_sound_pack/RPG Sound Pack/battle/::1780668519
 magic1.wav::AudioStreamWAV::4602600385538936225::1780666659::1780668519::1::::<><><>0<>0<>b4b325b29aa08aac56a9ce0a90d128a0<>res://.godot/imported/magic1.wav-d95ab63a38afb608e7ffe7a9e946e766.sample::
