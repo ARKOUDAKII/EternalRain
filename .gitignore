@@ -1,0 +1,7 @@
+# Godot generated data
+.godot/
+.mono/
+
+# OS noise
+.DS_Store
+Thumbs.db
