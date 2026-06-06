@@ -22,7 +22,7 @@ shader_parameter/torch_right = Vector2(0.88, 0.45)
 
 [sub_resource type="CameraTexture" id="CameraTexture_w6iw8"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eej2w"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hdcp2"]
 texture = ExtResource("3_0sh0m")
 0:0/0 = 0
 1:0/0 = 0
@@ -3804,7 +3804,7 @@ texture = ExtResource("3_0sh0m")
 70:67/0 = 0
 71:67/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_46pvp"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0sh0m"]
 texture = ExtResource("1_2gnxo")
 2:0/0 = 0
 3:0/0 = 0
@@ -4648,7 +4648,7 @@ texture = ExtResource("1_2gnxo")
 36:35/0 = 0
 37:35/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kywyf"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u5kxy"]
 texture = ExtResource("3_0sh0m")
 0:0/0 = 0
 1:0/0 = 0
@@ -8430,7 +8430,7 @@ texture = ExtResource("3_0sh0m")
 70:67/0 = 0
 71:67/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k3t84"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6v87g"]
 texture = ExtResource("5_u5kxy")
 0:0/0 = 0
 0:1/0 = 0
@@ -13329,7 +13329,7 @@ texture = ExtResource("5_u5kxy")
 71:66/0 = 0
 71:67/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mwy45"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u7qcp"]
 texture = ExtResource("6_6v87g")
 0:0/0 = 0
 0:1/0 = 0
@@ -18228,7 +18228,7 @@ texture = ExtResource("6_6v87g")
 71:66/0 = 0
 71:67/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i0433"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p713f"]
 texture = ExtResource("7_u7qcp")
 0:1/0 = 0
 0:2/0 = 0
@@ -21112,12 +21112,12 @@ texture = ExtResource("7_u7qcp")
 71:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_uvnp6"]
-sources/0 = SubResource("TileSetAtlasSource_eej2w")
-sources/2 = SubResource("TileSetAtlasSource_46pvp")
-sources/3 = SubResource("TileSetAtlasSource_kywyf")
-sources/4 = SubResource("TileSetAtlasSource_k3t84")
-sources/5 = SubResource("TileSetAtlasSource_mwy45")
-sources/6 = SubResource("TileSetAtlasSource_i0433")
+sources/0 = SubResource("TileSetAtlasSource_hdcp2")
+sources/2 = SubResource("TileSetAtlasSource_0sh0m")
+sources/3 = SubResource("TileSetAtlasSource_u5kxy")
+sources/4 = SubResource("TileSetAtlasSource_6v87g")
+sources/5 = SubResource("TileSetAtlasSource_u7qcp")
+sources/6 = SubResource("TileSetAtlasSource_p713f")
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_61fi6"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -22197,7 +22197,7 @@ metadata/_edit_use_anchors_ = true
 material = SubResource("ShaderMaterial_p713f")
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 2.3948412
+anchor_left = 1.3551587
 anchor_top = 0.65967363
 anchor_right = 1.3551587
 anchor_bottom = 1.2494173
